@@ -1,0 +1,44 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org/">
+<head>
+  <meta charset="utf-8">
+  <title>Bandwagon- your live music gig locator</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+	
+<div ng:controller="EventListCtrl">
+	  
+	<ul class="controls">
+	    <li>
+	      Search: <input type="text" name="query"/>
+	    </li>
+	    <li>
+	      Sort by:
+	      <select name="orderProp">
+	        <option value="day">Days</option>
+	        <option value="genre">Genre</option>
+	      </select>
+	    </li>
+	  </ul>
+	 
+	 <ul class="event">
+	    <li ng:repeat="event in events.$filter(query).$orderBy(orderProp)">
+	      {{event.date}}
+	    <p>{{event.day}}</p>
+	       <p>{{event.place_name}}</p>
+	    <p>{{event.artiste}}</p>
+	    <p>{{event.genre}}</p>
+	    <p>{{event.time}}</p>
+	    <p>{{event.price}}</p>
+	    <p>{{event.description}}</p>
+	        <br />
+	    </li>
+	  </ul>
+</div>
+
+  <script src="lib/angular/angular.js" ng:autobind></script>
+  <script src="js/controllers.js"></script>
+
+</body>
+</html>
