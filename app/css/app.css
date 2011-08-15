@@ -1,5 +1,4 @@
 /* app css stylesheet */
-
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -29,8 +28,52 @@
   padding: 0;
 }
 
-.event {
-	margin-left: 100px;
+ul#controls {
 	list-style-type: none;
-	display: inline;
+	margin-bottom: 30px;
+	padding: 0px;
+}
+
+ul#controls li {
+	display: inline;		
+}
+
+body {
+	width: 1000px;
+}
+
+div#mytitle {
+	background-color: #B4DBE6;
+	text-align: center;
+}
+
+div#event {
+	position: absolute;
+	margin: 0px auto;
+}
+
+table {
+	border: 1px solid black; 
+	border-collapse:collapse; 
+	table-layout: fixed;
+	width: 1000px;
+	
+	}
+
+th { 
+	overflow: scroll;
+	border-spacing: 0px 1px; 
+	color: white; 
+	background: #0675ad;
+	vertical-align: bottom; 
+	padding: 3px; 
+	border-spacing: 0px 1px; 
+	}
+
+td {
+		border-bottom: 1px solid black;
+		text-align: center;
+		table-layout: fixed;
+		height:20px;
+		overflow: scroll;
 }

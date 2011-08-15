@@ -7,9 +7,14 @@
 </head>
 <body>
 	
+<div id=mytitle>
+	<h1>live music gigs in Singapore </h1>
+</div>
+	
+	
 <div ng:controller="EventListCtrl">
 	  
-	<ul class="controls">
+	<ul id="controls">
 	    <li>
 	      Search: <input type="text" name="query"/>
 	    </li>
@@ -22,19 +27,39 @@
 	    </li>
 	  </ul>
 	 
-	 <ul class="event">
-	    <li ng:repeat="event in events.$filter(query).$orderBy(orderProp)">
-	      {{event.date}}
-	    <p>{{event.day}}</p>
-	       <p>{{event.place_name}}</p>
-	    <p>{{event.artiste}}</p>
-	    <p>{{event.genre}}</p>
-	    <p>{{event.time}}</p>
-	    <p>{{event.price}}</p>
-	    <p>{{event.description}}</p>
-	        <br />
-	    </li>
-	  </ul>
+	<div id="event">
+	
+	<table summary="Your list of live music gigs in Singapore">
+	
+
+	
+	<thead> 
+		<tr>
+		<th scope="column">Date</th>
+		<th scope="column">Day</th>	
+		<th scope="column">Place</th>
+		<th scope="column">Artiste</th>
+		<th scope="column">Genre</th>
+		<th scope="column">Price</th>
+		<th scope="column">Description</th>	
+		</tr>	
+	</thead>
+	
+	<tbody>
+		<tr ng:repeat="event in events.$filter(query).$orderBy(orderProp)">
+			<td>{{event.date}}</td>
+			<td>{{event.place_name}}</td>
+		    <td>{{event.artiste}}</td>
+		    <td>{{event.genre}}</td>
+		    <td>{{event.time}}</td>
+		    <td>{{event.price}}</td>
+		    <td>{{event.description}}</td>			
+		</tr>
+	</tbody>
+	</table>
+
+	</div>
+	
 </div>
 
   <script src="lib/angular/angular.js" ng:autobind></script>
