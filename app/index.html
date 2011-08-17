@@ -40,6 +40,7 @@
 		<th scope="column">Place</th>
 		<th scope="column">Artiste</th>
 		<th scope="column">Genre</th>
+		<th scope="column">Time</th>
 		<th scope="column">Price</th>
 		<th scope="column">Description</th>	
 		</tr>	
@@ -48,6 +49,7 @@
 	<tbody>
 		<tr ng:repeat="event in events.$filter(query).$orderBy(orderProp)">
 			<td>{{event.date}}</td>
+			<td>{{event.day}}</td>
 			<td>{{event.place_name}}</td>
 		    <td>{{event.artiste}}</td>
 		    <td>{{event.genre}}</td>

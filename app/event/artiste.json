@@ -1,3 +1,4 @@
+#Show the name, picture, description of artiste, where else they are playing.#
 
 this.events = [
 {

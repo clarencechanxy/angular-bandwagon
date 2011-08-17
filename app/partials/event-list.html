@@ -1,0 +1,47 @@
+<ul id="controls">
+    <li>
+      Search: <input type="text" name="query"/>
+    </li>
+    <li>
+      Sort by:
+      <select name="orderProp">
+        <option value="day">Days</option>
+        <option value="genre">Genre</option>
+      </select>
+    </li>
+  </ul>
+ 
+<div id="event">
+
+<table summary="Your list of live music gigs in Singapore">
+
+<thead> 
+	<tr>
+	<th scope="column">Date</th>
+	<th scope="column">Day</th>	
+	<th scope="column">Place</th>
+	<th scope="column">Artiste</th>
+	<th scope="column">Genre</th>
+	<th scope="column">Time</th>
+	<th scope="column">Price</th>
+	<th scope="column">Description</th>	
+	</tr>	
+</thead>
+
+<tbody>
+	<tr ng:repeat="event in events.$filter(query).$orderBy(orderProp)">
+		<td>{{event.date}}</td>
+		<td>{{event.day}}</td>
+		<td>{{event.place_name}}</td>
+	    <td>{{event.artiste}}</td>
+	    <td>{{event.genre}}</td>
+	    <td>{{event.time}}</td>
+	    <td>{{event.price}}</td>
+	    <td>{{event.description}}</td>			
+	</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
