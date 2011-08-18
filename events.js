@@ -2,7 +2,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Nelson",
 "genre": "Acoustic",
 "time": "1900-2100",
@@ -12,7 +12,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Tuna Pop",
 "genre": "Acoustic",
 "time": "2130-0045",
@@ -22,7 +22,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Blujaz Cafe",
+"place": "Blujaz Cafe",
 "artiste": "Greg Lyons and 10 piece band, Omniform",
 "genre": "Jazz",
 "time": "2130",
@@ -32,7 +32,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Brix",
+"place": "Brix",
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
@@ -42,7 +42,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "China One",
+"place": "China One",
 "artiste": "Tonelab",
 "genre": "",
 "time": "2100",
@@ -52,7 +52,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Crazy Elephant",
+"place": "Crazy Elephant",
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
@@ -62,7 +62,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Esplanade Concert Hall",
+"place": "Esplanade Concert Hall",
 "artiste": "The 50s Rock & Roll",
 "genre": "Rock",
 "time": "1030; 1500",
@@ -72,7 +72,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Highlander",
+"place": "Highlander",
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
@@ -82,7 +82,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Hood",
+"place": "Hood",
 "artiste": "Wanyue",
 "genre": "Pop",
 "time": "",
@@ -92,7 +92,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Quarubar",
+"place": "Quarubar",
 "artiste": "Dawn Ho & Munir Alsagoff",
 "genre": "Jazz; Latin; Tango",
 "time": "",
@@ -102,7 +102,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Timbre Arts House",
+"place": "Timbre Arts House",
 "artiste": "Surath & Rene",
 "genre": "Jazz",
 "time": "2030-2330",
@@ -112,7 +112,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Timbre Old School",
+"place": "Timbre Old School",
 "artiste": "Pam & Chris",
 "genre": "Jazz",
 "time": "1945-2300",
@@ -122,7 +122,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Timbre Substation",
+"place": "Timbre Substation",
 "artiste": "Michaela Therese",
 "genre": "Jazz",
 "time": "2215-0030",
@@ -132,7 +132,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "Three",
 "genre": "Pop Rock",
 "time": "Prime Time",
@@ -142,7 +142,7 @@ this.events = [
 {
 "date": "7/4/2011",
 "day": "Monday",
-"place_name": "Yello Jello Retrobar",
+"place": "Yello Jello Retrobar",
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
@@ -152,7 +152,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Joshua Alexis",
 "genre": "Acoustic",
 "time": "1900-2100",
@@ -162,7 +162,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Kulture",
 "genre": "Acoustic",
 "time": "2130-0045",
@@ -172,7 +172,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Brix",
+"place": "Brix",
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
@@ -182,7 +182,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "China One",
+"place": "China One",
 "artiste": "Lydia Low and DJ Tovan",
 "genre": "",
 "time": "2100",
@@ -192,7 +192,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Crazy Elephant",
+"place": "Crazy Elephant",
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
@@ -202,7 +202,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Highlander",
+"place": "Highlander",
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
@@ -212,7 +212,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Hood",
+"place": "Hood",
 "artiste": "Singapore Char Siew Bao",
 "genre": "",
 "time": "",
@@ -222,7 +222,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Quarubar",
+"place": "Quarubar",
 "artiste": "Dawn Ho & Munir Alsagoff",
 "genre": "Jazz; Latin; Tango",
 "time": "",
@@ -232,7 +232,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "The Pump Room",
+"place": "The Pump Room",
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
@@ -242,7 +242,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Timbre Arts House",
+"place": "Timbre Arts House",
 "artiste": "53A",
 "genre": "Rock",
 "time": "2015-2330",
@@ -252,7 +252,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Timbre Old School",
+"place": "Timbre Old School",
 "artiste": "Fatt, Shili & Adi",
 "genre": "Rock",
 "time": "1945-2300",
@@ -262,7 +262,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Timbre Substation",
+"place": "Timbre Substation",
 "artiste": "Goodfellas",
 "genre": "Rock",
 "time": "2115-0030",
@@ -272,7 +272,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "Hush",
 "genre": "Pop Rock",
 "time": "1900",
@@ -282,7 +282,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "Tabula",
 "genre": "Pop Rock",
 "time": "Prime Time",
@@ -292,7 +292,7 @@ this.events = [
 {
 "date": "7/5/2011",
 "day": "Tuesday",
-"place_name": "Yello Jello Retrobar",
+"place": "Yello Jello Retrobar",
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
@@ -302,7 +302,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Jamiel",
 "genre": "Acoustic",
 "time": "1900-2100",
@@ -312,7 +312,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Pam & Fatt",
 "genre": "Acoustic",
 "time": "2130-0045",
@@ -322,7 +322,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Brix",
+"place": "Brix",
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
@@ -332,7 +332,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "China One",
+"place": "China One",
 "artiste": "Inertia (Acoustic) & DJ Tovan",
 "genre": "",
 "time": "2100",
@@ -342,7 +342,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Crazy Elephant",
+"place": "Crazy Elephant",
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
@@ -352,7 +352,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Highlander",
+"place": "Highlander",
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
@@ -362,7 +362,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Hood",
+"place": "Hood",
 "artiste": "Shimona",
 "genre": "",
 "time": "",
@@ -372,7 +372,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Quarubar",
+"place": "Quarubar",
 "artiste": "Lily Nuris & Wayne Sandz",
 "genre": "Jazz; Latin; Tango",
 "time": "",
@@ -382,7 +382,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "The Pump Room",
+"place": "The Pump Room",
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
@@ -392,7 +392,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Timbre Arts House",
+"place": "Timbre Arts House",
 "artiste": "Enigma",
 "genre": "Rock",
 "time": "2015-2330",
@@ -402,7 +402,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Timbre Old School",
+"place": "Timbre Old School",
 "artiste": "Liza & Joey",
 "genre": "Rock",
 "time": "1945-2300",
@@ -412,7 +412,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Timbre Substation",
+"place": "Timbre Substation",
 "artiste": "Raw Earth",
 "genre": "Rock",
 "time": "2115-0030",
@@ -422,7 +422,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "Ngak",
 "genre": "Pop Rock",
 "time": "1900",
@@ -432,7 +432,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "Timmy",
 "genre": "Pop Rock",
 "time": "Prime Time",
@@ -442,7 +442,7 @@ this.events = [
 {
 "date": "7/6/2011",
 "day": "Wednesday",
-"place_name": "Yello Jello Retrobar",
+"place": "Yello Jello Retrobar",
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
@@ -452,7 +452,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Nelson",
 "genre": "Acoustic",
 "time": "1900-2100",
@@ -462,7 +462,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Tuna Pop",
 "genre": "Acoustic",
 "time": "2130-0045",
@@ -472,7 +472,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Brix",
+"place": "Brix",
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
@@ -482,7 +482,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "China One",
+"place": "China One",
 "artiste": "Tabula (Acoustic) & DJ Tovan",
 "genre": "",
 "time": "2100",
@@ -492,7 +492,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Crazy Elephant",
+"place": "Crazy Elephant",
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
@@ -502,7 +502,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Highlander",
+"place": "Highlander",
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
@@ -512,7 +512,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Hood",
+"place": "Hood",
 "artiste": "Howie + Nelson",
 "genre": "",
 "time": "",
@@ -522,7 +522,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Quarubar",
+"place": "Quarubar",
 "artiste": "Wayne Sandz & Joe",
 "genre": "Jazz; Latin; Tango",
 "time": "",
@@ -532,7 +532,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "The Pump Room",
+"place": "The Pump Room",
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
@@ -542,7 +542,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Timbre Arts House",
+"place": "Timbre Arts House",
 "artiste": "Iris Feat. Liza",
 "genre": "Rock",
 "time": "2015-2330",
@@ -552,7 +552,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Timbre Old School",
+"place": "Timbre Old School",
 "artiste": "53A",
 "genre": "Rock",
 "time": "2015-2330",
@@ -562,7 +562,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Timbre Substation",
+"place": "Timbre Substation",
 "artiste": "Goodfellas",
 "genre": "Rock",
 "time": "2215-0045",
@@ -572,7 +572,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "Victor Tang",
 "genre": "Pop Rock",
 "time": "1900",
@@ -582,7 +582,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "The Unexpected",
 "genre": "Pop Rock",
 "time": "Prime Time",
@@ -592,7 +592,7 @@ this.events = [
 {
 "date": "7/7/2011",
 "day": "Thursday",
-"place_name": "Yello Jello Retrobar",
+"place": "Yello Jello Retrobar",
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
@@ -602,7 +602,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Matt",
 "genre": "Acoustic",
 "time": "1900-2100",
@@ -612,7 +612,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Sofia & Fatt",
 "genre": "Acoustic",
 "time": "2130-0015",
@@ -622,7 +622,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Sugarlove",
 "genre": "Acoustic",
 "time": "0030-0215",
@@ -632,7 +632,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Brix",
+"place": "Brix",
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
@@ -642,7 +642,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "China One",
+"place": "China One",
 "artiste": "Tabula (Full Band) and DJ Tovan",
 "genre": "",
 "time": "2100",
@@ -652,7 +652,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Crazy Elephant",
+"place": "Crazy Elephant",
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
@@ -662,7 +662,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Esplanade Concert Hall",
+"place": "Esplanade Concert Hall",
 "artiste": "Presidents Young Performers Concert",
 "genre": "Classical",
 "time": "1930",
@@ -672,7 +672,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Highlander",
+"place": "Highlander",
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
@@ -682,7 +682,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Hood",
+"place": "Hood",
 "artiste": "Timmy! Band",
 "genre": "",
 "time": "",
@@ -692,7 +692,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Quarubar",
+"place": "Quarubar",
 "artiste": "Carlos",
 "genre": "Jazz; Latin; Tango",
 "time": "",
@@ -702,7 +702,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "The Pump Room",
+"place": "The Pump Room",
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
@@ -712,7 +712,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Timbre Arts House",
+"place": "Timbre Arts House",
 "artiste": "Goodfellas",
 "genre": "Pop",
 "time": "2130-1245",
@@ -722,7 +722,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Timbre Old School",
+"place": "Timbre Old School",
 "artiste": "Alicia Pan & Adrian",
 "genre": "Pop",
 "time": "2015-2330",
@@ -732,7 +732,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Timbre Substation",
+"place": "Timbre Substation",
 "artiste": "53A",
 "genre": "Pop",
 "time": "2230-0145",
@@ -742,7 +742,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "53A",
 "genre": "Pop Rock",
 "time": "1900",
@@ -752,7 +752,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "The Common People",
 "genre": "Pop Rock",
 "time": "Prime Time",
@@ -762,7 +762,7 @@ this.events = [
 {
 "date": "7/8/2011",
 "day": "Friday",
-"place_name": "Yello Jello Retrobar",
+"place": "Yello Jello Retrobar",
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
@@ -772,7 +772,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Faisal",
 "genre": "Acoustic",
 "time": "1900-2100",
@@ -782,7 +782,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Kulture",
 "genre": "Acoustic",
 "time": "2130-0015",
@@ -792,7 +792,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Sugarlove",
 "genre": "Acoustic",
 "time": "0030-0215",
@@ -802,7 +802,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Blujaz Cafe",
+"place": "Blujaz Cafe",
 "artiste": "Ayaschool",
 "genre": "Jazz",
 "time": "2130",
@@ -812,7 +812,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Brix",
+"place": "Brix",
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
@@ -822,7 +822,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "China One",
+"place": "China One",
 "artiste": "Tabula (Full Band) and DJ Tovan",
 "genre": "",
 "time": "2100",
@@ -832,7 +832,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Crazy Elephant",
+"place": "Crazy Elephant",
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
@@ -842,7 +842,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Esplanade Concert Hall",
+"place": "Esplanade Concert Hall",
 "artiste": "Colours of the Wind东西双笛韵",
 "genre": "Classical; Chinese",
 "time": "1930",
@@ -852,7 +852,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Highlander",
+"place": "Highlander",
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
@@ -862,7 +862,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Hood",
+"place": "Hood",
 "artiste": "Pennylane Band",
 "genre": "",
 "time": "",
@@ -872,7 +872,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Quarubar",
+"place": "Quarubar",
 "artiste": "Alemay & Shawn Letts",
 "genre": "Jazz; Latin; Tango",
 "time": "",
@@ -882,7 +882,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "The Pump Room",
+"place": "The Pump Room",
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
@@ -892,7 +892,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Timbre Arts House",
+"place": "Timbre Arts House",
 "artiste": "Iris Feat. Liza",
 "genre": "Rock",
 "time": "2130-1245",
@@ -902,7 +902,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Timbre Old School",
+"place": "Timbre Old School",
 "artiste": "Sofia & Fatt",
 "genre": "Rock",
 "time": "2115-1230",
@@ -912,7 +912,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Timbre Substation",
+"place": "Timbre Substation",
 "artiste": "Goodfellas",
 "genre": "Rock",
 "time": "2230-0145",
@@ -922,7 +922,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "The Unexpected",
 "genre": "Pop Rock",
 "time": "Prime Time",
@@ -932,7 +932,7 @@ this.events = [
 {
 "date": "7/9/2011",
 "day": "Saturday",
-"place_name": "Yello Jello Retrobar",
+"place": "Yello Jello Retrobar",
 "artiste": "",
 "genre": "",
 "time": "",
@@ -942,7 +942,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Acid Bar",
+"place": "Acid Bar",
 "artiste": "Sugarlove",
 "genre": "Acoustic",
 "time": "2100-0030",
@@ -952,7 +952,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Crazy Elephant",
+"place": "Crazy Elephant",
 "artiste": "Jam Session",
 "genre": "Blues",
 "time": "2200",
@@ -962,7 +962,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Esplanade Concert Hall",
+"place": "Esplanade Concert Hall",
 "artiste": "Sparks Goes POP! Sparks流行风!",
 "genre": "Classical; Chinese",
 "time": "1500",
@@ -972,7 +972,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Esplanade Recital Studio",
+"place": "Esplanade Recital Studio",
 "artiste": "The Tryst",
 "genre": "",
 "time": "1930",
@@ -982,7 +982,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Hood",
+"place": "Hood",
 "artiste": "Victor Tang",
 "genre": "",
 "time": "",
@@ -992,7 +992,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "The Pump Room",
+"place": "The Pump Room",
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
@@ -1002,7 +1002,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Timbre Substation",
+"place": "Timbre Substation",
 "artiste": "Timbre Academy All Stars",
 "genre": "Pop",
 "time": "2145-0030",
@@ -1012,7 +1012,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Wala Wala",
+"place": "Wala Wala",
 "artiste": "Jack & Rai",
 "genre": "Pop Rock",
 "time": "Prime Time",
@@ -1022,7 +1022,7 @@ this.events = [
 {
 "date": "7/10/2011",
 "day": "Sunday",
-"place_name": "Yello Jello Retrobar",
+"place": "Yello Jello Retrobar",
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",

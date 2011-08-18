@@ -3,7 +3,7 @@
 /**
  * App service which is responsible for the main configuration of the app.
  */
-angular.service('myAngularApp', function($route, $location, $window) {
+/*angular.service('myAngularApp', function($route, $location, $window) {
 
   $route.when('/view1', {template: 'partials/partial1.html', controller: MyCtrl1});
   $route.when('/view2', {template: 'partials/partial2.html', controller: MyCtrl2});
@@ -20,4 +20,4 @@ angular.service('myAngularApp', function($route, $location, $window) {
     }
   });
 
-}, {$inject:['$route', '$location', '$window'], $eager: true});
+}, {$inject:['$route', '$location', '$window'], $eager: true});*/
