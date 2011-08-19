@@ -4,7 +4,7 @@ function EventsCatCtrl($route) {
 var self = this;
 
 $route.when('/events', {template: 'partials/events-list.html', controller: EventsListCtrl});
-$route.when('/place/:place', {template: 'partials/place-detail.html', controller: PlaceDetailCtrl});
+$route.when('/place/:place', {template: 'partials/place-detail.html', controller: EventsListCtrl});
 $route.otherwise({redirectTo: '/events'});
 
 $route.onChange(function(){
@@ -250,6 +250,4 @@ function EventsListCtrl() {
 	"description": "none",
 	}, ] }
 
-function PlaceDetailCtrl() {
-      this.name = "PlaceDetailCtrl";
-}
+

@@ -18,7 +18,7 @@
         </li>
     </ul>
     
-    <div id="event">
+    <div id="events">
         <table summary="Your list of live music gigs in Singapore">
             <thead>
                 <tr>
@@ -27,6 +27,7 @@
                     <th scope="column">Place</th>
                     <th scope="column">Artiste</th>
                     <th scope="column">Genre</th>
+					<th scope="column">Time</th>
                     <th scope="column">Price</th>
                     <th scope="column">Description</th>    
                 </tr>    
@@ -35,6 +36,7 @@
             <tbody>
                 <tr ng:repeat="event in events.$filter(query).$orderBy(orderProp)">
                     <td>{{event.date}}</td>
+					<td>{{event.day}}</td>
                     <td><a href="#/place/{{event.place}}">{{event.place}}</a></td>
                     <td><a href="#/artiste/{{event.artiste}}">{{event.artiste}}</a></td>
                     <td>{{event.genre}}</td>
@@ -45,4 +47,10 @@
             </tbody>
         </table>
     </div>
+	
+	list = angular.Array.filter(everything, filter);
+	<div ng:show="list"><div ng:repeat="events"></div>
+	<div ng:hide="list"> Whoops. No items found.</div>
+
+
 </div>

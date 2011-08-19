@@ -1,23 +1,48 @@
-<h1>{{event.place_name}}</h1>
+<div ng:controller="EventsListCtrl">
+	<div id=mytitle>
+		<h1>{{params.place}}</h1>
+	</div>
+	
+	<ul id="controls">
+        <li>
+            Search: <input type="text" name="query" />
+        </li>
+        <li>
+            Sort by:
+            <select name="orderProp">
+                <option value="day">Days</option>
+                <option value="genre">Genre</option>
+            </select>
+        </li>
+    </ul>
 
-
-<div id=mytitle>
-	<h1>live music gigs in Singapore </h1>
+<div id="event">
+    <table summary="Your list of live music gigs in Singapore">
+        <thead>
+            <tr>
+                <th scope="column">Date</th>
+                <th scope="column">Day</th>    
+                <th scope="column">Artiste</th>
+                <th scope="column">Genre</th>
+				<th scope="column">Time</th>
+                <th scope="column">Price</th>
+                <th scope="column">Description</th>    
+            </tr>    
+        </thead>
+        
+        <tbody>
+            <tr ng:repeat="event in events.$filter({place: params.place}).$orderBy(orderProp)">
+                <td>{{event.date}}</td>
+		 		<td>{{event.day}}</td>
+                <td><a href="#/artiste/{{event.artiste}}">{{event.artiste}}</a></td>
+                <td>{{event.genre}}</td>
+                <td>{{event.time}}</td>
+                <td>{{event.price}}</td>
+                <td>{{event.description}}</td>            
+            </tr>
+        </tbody>
+    </table>
+</div>
 </div>
 
-ul id="controls">
-    <li>
-      Search: <input type="text" name="query"/>
-    </li>
-    <li>
-      Sort by:
-      <select name="orderProp">
-        <option value="day">Days</option>
-        <option value="genre">Genre</option>
-      </select>
-    </li>
-  </ul>
- 
-<p>This is the partial for view 2.</p>
-
-
+<script src="http://code.angularjs.org/0.9.18/angular-0.9.18.min.js" ng:autobind></script>
