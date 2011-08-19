@@ -28,8 +28,7 @@
                     <th scope="column">Artiste</th>
                     <th scope="column">Genre</th>
 					<th scope="column">Time</th>
-                    <th scope="column">Price</th>
-                    <th scope="column">Description</th>    
+                    <th scope="column">Price</th> 
                 </tr>    
             </thead>
             
@@ -41,14 +40,13 @@
                     <td><a href="#/artiste/{{event.artiste}}">{{event.artiste}}</a></td>
                     <td>{{event.genre}}</td>
                     <td>{{event.time}}</td>
-                    <td>{{event.price}}</td>
-                    <td>{{event.description}}</td>            
+                    <td>{{event.price}}</td>         
                 </tr>
             </tbody>
         </table>
     </div>
 	
-	list = angular.Array.filter(everything, filter);
+	
 	<div ng:show="list"><div ng:repeat="events"></div>
 	<div ng:hide="list"> Whoops. No items found.</div>
 

@@ -1,4 +1,4 @@
-this.events = [
+[
 {
 "date": "7/4/2011",
 "day": "Monday",
@@ -1028,5 +1028,5 @@ this.events = [
 "time": "2200",
 "price": "$$ *Free entry",
 "description": "none",
-},
+}
 ]
