@@ -1,1 +1,48 @@
-<p>This is the partial for view 2.</p>
+<div ng:controller="EventsListCtrl">
+	<div id=mytitle>
+		<h1>{{params.artiste}}</h1>
+	</div>
+	
+	<ul id="controls">
+        <li>
+            Search: <input type="text" name="query" />
+        </li>
+        <li>
+            Sort by:
+            <select name="orderProp">
+                <option value="day">Days</option>
+                <option value="genre">Genre</option>
+            </select>
+        </li>
+    </ul>
+
+<div id="event">
+    <table summary="Your list of live music gigs in Singapore">
+        <thead>
+            <tr>
+                <th scope="column">Date</th>
+                <th scope="column">Day</th>    
+                <th scope="column">Place</th>
+                <th scope="column">Genre</th>
+				<th scope="column">Time</th>
+                <th scope="column">Price</th>
+                <th scope="column">Description</th>    
+            </tr>    
+        </thead>
+        
+        <tbody>
+            <tr ng:repeat="event in events.$filter({artiste: params.artiste}).$orderBy(orderProp)">
+                <td>{{event.date}}</td>
+		 		<td>{{event.day}}</td>
+                <td><a href="#/artiste/{{event.place}}">{{event.place}}</a></td>
+                <td>{{event.genre}}</td>
+                <td>{{event.time}}</td>
+                <td>{{event.price}}</td>
+                <td>{{event.description}}</td>            
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+<script src="http://code.angularjs.org/0.9.18/angular-0.9.18.min.js" ng:autobind></script>
