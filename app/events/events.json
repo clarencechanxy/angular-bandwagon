@@ -26,7 +26,7 @@
 "artiste": "Greg Lyons and 10 piece band, Omniform",
 "genre": "Jazz",
 "time": "2130",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "What started off as a chance to play Greg’s arrangements has evolved to include all the individual characters that form the band. The repertoire is still made up largely of Greg’s compositions and wholly of his arrangements which draw from just about every genre of music. Omniform also features some awesome and very individual soloists. Monster Trio, sometimes a quartet consists of talented musicians.",
 },
 {
@@ -36,7 +36,7 @@
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -46,7 +46,7 @@
 "artiste": "Tonelab",
 "genre": "",
 "time": "2100",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -56,7 +56,7 @@
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -76,7 +76,7 @@
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -86,7 +86,7 @@
 "artiste": "Wanyue",
 "genre": "Pop",
 "time": "",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -96,7 +96,7 @@
 "artiste": "Dawn Ho & Munir Alsagoff",
 "genre": "Jazz; Latin; Tango",
 "time": "",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -106,7 +106,7 @@
 "artiste": "Surath & Rene",
 "genre": "Jazz",
 "time": "2030-2330",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -116,7 +116,7 @@
 "artiste": "Pam & Chris",
 "genre": "Jazz",
 "time": "1945-2300",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -126,7 +126,7 @@
 "artiste": "Michaela Therese",
 "genre": "Jazz",
 "time": "2215-0030",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -136,7 +136,7 @@
 "artiste": "Three",
 "genre": "Pop Rock",
 "time": "Prime Time",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -146,7 +146,7 @@
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -186,7 +186,7 @@
 "artiste": "Lydia Low and DJ Tovan",
 "genre": "",
 "time": "2100",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -196,7 +196,7 @@
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -206,7 +206,7 @@
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -216,7 +216,7 @@
 "artiste": "Singapore Char Siew Bao",
 "genre": "",
 "time": "",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -226,7 +226,7 @@
 "artiste": "Dawn Ho & Munir Alsagoff",
 "genre": "Jazz; Latin; Tango",
 "time": "",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -236,7 +236,7 @@
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -246,7 +246,7 @@
 "artiste": "53A",
 "genre": "Rock",
 "time": "2015-2330",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -256,7 +256,7 @@
 "artiste": "Fatt, Shili & Adi",
 "genre": "Rock",
 "time": "1945-2300",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -266,7 +266,7 @@
 "artiste": "Goodfellas",
 "genre": "Rock",
 "time": "2115-0030",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -276,7 +276,7 @@
 "artiste": "Hush",
 "genre": "Pop Rock",
 "time": "1900",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -286,7 +286,7 @@
 "artiste": "Tabula",
 "genre": "Pop Rock",
 "time": "Prime Time",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -296,7 +296,7 @@
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -326,7 +326,7 @@
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -336,7 +336,7 @@
 "artiste": "Inertia (Acoustic) & DJ Tovan",
 "genre": "",
 "time": "2100",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -346,7 +346,7 @@
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -356,7 +356,7 @@
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -366,7 +366,7 @@
 "artiste": "Shimona",
 "genre": "",
 "time": "",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -376,7 +376,7 @@
 "artiste": "Lily Nuris & Wayne Sandz",
 "genre": "Jazz; Latin; Tango",
 "time": "",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -386,7 +386,7 @@
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -396,7 +396,7 @@
 "artiste": "Enigma",
 "genre": "Rock",
 "time": "2015-2330",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -406,7 +406,7 @@
 "artiste": "Liza & Joey",
 "genre": "Rock",
 "time": "1945-2300",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -416,7 +416,7 @@
 "artiste": "Raw Earth",
 "genre": "Rock",
 "time": "2115-0030",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -426,7 +426,7 @@
 "artiste": "Ngak",
 "genre": "Pop Rock",
 "time": "1900",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -436,7 +436,7 @@
 "artiste": "Timmy",
 "genre": "Pop Rock",
 "time": "Prime Time",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -446,7 +446,7 @@
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -476,7 +476,7 @@
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -486,7 +486,7 @@
 "artiste": "Tabula (Acoustic) & DJ Tovan",
 "genre": "",
 "time": "2100",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -496,7 +496,7 @@
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -506,7 +506,7 @@
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -516,7 +516,7 @@
 "artiste": "Howie + Nelson",
 "genre": "",
 "time": "",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -526,7 +526,7 @@
 "artiste": "Wayne Sandz & Joe",
 "genre": "Jazz; Latin; Tango",
 "time": "",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -536,7 +536,7 @@
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -546,7 +546,7 @@
 "artiste": "Iris Feat. Liza",
 "genre": "Rock",
 "time": "2015-2330",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -556,7 +556,7 @@
 "artiste": "53A",
 "genre": "Rock",
 "time": "2015-2330",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -566,7 +566,7 @@
 "artiste": "Goodfellas",
 "genre": "Rock",
 "time": "2215-0045",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -576,7 +576,7 @@
 "artiste": "Victor Tang",
 "genre": "Pop Rock",
 "time": "1900",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -586,7 +586,7 @@
 "artiste": "The Unexpected",
 "genre": "Pop Rock",
 "time": "Prime Time",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -596,7 +596,7 @@
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -636,7 +636,7 @@
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -646,7 +646,7 @@
 "artiste": "Tabula (Full Band) and DJ Tovan",
 "genre": "",
 "time": "2100",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -656,7 +656,7 @@
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -676,7 +676,7 @@
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -686,7 +686,7 @@
 "artiste": "Timmy! Band",
 "genre": "",
 "time": "",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -696,7 +696,7 @@
 "artiste": "Carlos",
 "genre": "Jazz; Latin; Tango",
 "time": "",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -706,7 +706,7 @@
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -716,7 +716,7 @@
 "artiste": "Goodfellas",
 "genre": "Pop",
 "time": "2130-1245",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -726,7 +726,7 @@
 "artiste": "Alicia Pan & Adrian",
 "genre": "Pop",
 "time": "2015-2330",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -736,7 +736,7 @@
 "artiste": "53A",
 "genre": "Pop",
 "time": "2230-0145",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -746,7 +746,7 @@
 "artiste": "53A",
 "genre": "Pop Rock",
 "time": "1900",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -756,7 +756,7 @@
 "artiste": "The Common People",
 "genre": "Pop Rock",
 "time": "Prime Time",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -766,7 +766,7 @@
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -806,7 +806,7 @@
 "artiste": "Ayaschool",
 "genre": "Jazz",
 "time": "2130",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "Ayaschool visits Blu Jaz Cafe on Saturdays where Aya Sekine brings friends like DJ KoFlow, Alemay Fernandez, Angelita Li, Fendi, Budi to the mic. And by her second set, she brings down the house with her incredible improvisation and energy.",
 },
 {
@@ -816,7 +816,7 @@
 "artiste": "Shades",
 "genre": "R&B; Soul; Calypso",
 "time": "",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -826,7 +826,7 @@
 "artiste": "Tabula (Full Band) and DJ Tovan",
 "genre": "",
 "time": "2100",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -836,7 +836,7 @@
 "artiste": "Crazy Elephant Band",
 "genre": "Blues",
 "time": "2200",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -856,7 +856,7 @@
 "artiste": "Dejavu",
 "genre": "Acoustic",
 "time": "2130",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -876,7 +876,7 @@
 "artiste": "Alemay & Shawn Letts",
 "genre": "Jazz; Latin; Tango",
 "time": "",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -886,7 +886,7 @@
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -896,7 +896,7 @@
 "artiste": "Iris Feat. Liza",
 "genre": "Rock",
 "time": "2130-1245",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -906,7 +906,7 @@
 "artiste": "Sofia & Fatt",
 "genre": "Rock",
 "time": "2115-1230",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -916,7 +916,7 @@
 "artiste": "Goodfellas",
 "genre": "Rock",
 "time": "2230-0145",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -936,7 +936,7 @@
 "artiste": "",
 "genre": "",
 "time": "",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -956,7 +956,7 @@
 "artiste": "Jam Session",
 "genre": "Blues",
 "time": "2200",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -986,7 +986,7 @@
 "artiste": "Victor Tang",
 "genre": "",
 "time": "",
-"price": "$ + Free entry",
+"price": "$ (Free entry)",
 "description": "none",
 },
 {
@@ -996,7 +996,7 @@
 "artiste": "Jive Talkin'",
 "genre": "Pop, Rock, Jazz",
 "time": "2245",
-"price": "$$$ + Free entry",
+"price": "$$$ (Free entry)",
 "description": "none",
 },
 {
@@ -1006,7 +1006,7 @@
 "artiste": "Timbre Academy All Stars",
 "genre": "Pop",
 "time": "2145-0030",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -1016,7 +1016,7 @@
 "artiste": "Jack & Rai",
 "genre": "Pop Rock",
 "time": "Prime Time",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 },
 {
@@ -1026,7 +1026,7 @@
 "artiste": "John Molina & Krueger",
 "genre": "Rock",
 "time": "2200",
-"price": "$$ + Free entry",
+"price": "$$ (Free entry)",
 "description": "none",
 }
 ]

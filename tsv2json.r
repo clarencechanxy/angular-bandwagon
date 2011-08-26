@@ -4,7 +4,7 @@ REBOL [
   Author: onetom@hackerspace.sg
 ]
 
-lines: read/lines %"Bandwagon test data.tsv"
+lines: read/lines %"Place test data.tsv"
 fields: parse/all lines/1 "^-"  remove lines
 
 print "this.events = ["
