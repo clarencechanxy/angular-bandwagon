@@ -17,11 +17,11 @@
         </li>
     </ul>
 
-<div id="info" ng:controller="PlacesDetailCtrl">
-	<h2>Where is it?</h2>
-		<p> {{place.address}}</p>
-		<p> {{place.postal}}</p>
-		<p> {{place.tel}}</p>
+<div id="info">
+	<h2>Where is it?</h2> 
+		<p> Address: {{places[params.place].address}}</p>
+		<p> Postal code: {{places[params.place].postal}}</p>
+		<p> Tel: {{places[params.place].tel}}</p>
 		
 	<br />
 	
@@ -31,7 +31,7 @@
 
 <div id="map">
 	<h1>Map</h1>
-	<ui:map style="height:300px;width:400px;border:2px solid #777777;float:left;margin:3px;" ui:options="{center:{lat:22,lng:52}, bindZoom:true, bindMapType:true}" ui:pin="maps.map.point" ui:view="maps.map.view"></ui:map>
+	<ui:map style="height:300px;width:400px;border:2px solid #777777;float:left;margin:3px;" ui:options="{center:{lat:50,lng:60}, bindZoom:true, bindMapType:true}" ui:pin="maps.map.point" ui:view="maps.map.view"></ui:map>
 	
 </div>
 
