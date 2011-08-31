@@ -1,9 +1,9 @@
-this.places = [
+places = [
 "Acid Bar": {
 "address": "180 Orchard Road, Peranakan Place",
 "postal": "238846",
 "tel": "6738 8828",
-"details": "Aptly described as an enclave with edge and soul by grungy barflies and creative cracks. Experience a blend of sensory elements and take flight to a different plane. Acoustic sessions featuring genres of radio alternatives, top 40s and an occasional touch of percussions are played nightly from 7pm. Consume nightly before rest a myriad of concoctions; tray of 25 apple/lychee shooters and buckets of the golden juice with touch go budgets. Fret not growling guts as our kitchen maestro whips up tantelicious hot chicken wings and crunchy calamari while acid bar croons and the blue cows dance.",
+"details": "Aptly described as an enclave with edge and soul by grungy barflies and creative cracks. Experience a blend of sensory elements and take flight to a different plane. Acoustic sessions featuring genres of radio alternatives, top 40s and an occasional touch of percussions are played nightly from 7pm.  Consume nightly before rest a myriad of concoctions; tray of 25 apple/lychee shooters and buckets of the golden juice with touch go budgets.  Fret not growling guts as our kitchen maestro whips up tantelicious hot chicken wings and crunchy calamari while acid bar croons and the blue cows dance.",
 },
 "Blujaz Cafe": {
 "address": "11 Bali Lane",
@@ -84,4 +84,3 @@ this.places = [
 "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit ante in arcu consequat vel mollis nisi auctor. Aenean convallis, erat nec ultrices gravida, diam ligula pellentesque mauris, eget hendrerit lorem mauris at turpis. Suspendisse fringilla egestas augue vel varius. Etiam lorem est, viverra vel convallis in, volutpat sed risus. Sed ac orci tortor, sed euismod neque. Mauris nibh libero, varius in molestie at, accumsan ullamcorper mauris. Ut eu urna nec mauris volutpat suscipit et ac dui.",
 },
 ]
-
