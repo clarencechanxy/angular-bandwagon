@@ -17,10 +17,8 @@ $route.parent(this);
 
 //EventsCatCtrl.$inject = ['$route'];
 
-function EventsListCtrl() {
-var self = this;
-	this.events =
-	[
+function Event_list () {
+	
 	{
 	"date": "7/4/2011",
 	"day": "Monday",
@@ -91,9 +89,11 @@ var self = this;
 	"price": "$10-12",
 	"description": "Enjoy and rock to the music of the 50s including Johnny Be Good, Rock Around the Clock, Great Balls of Fire, Hound Dog, La Bamba and more, performed by home grown band Jerry N The Neu Faces!",
 	}
-	]
+	
+}
 
-	this.places = {
+function Place_list () {
+	
 	"Acid Bar": {
 	"place": "Acid Bar",
 	"address": "180 Orchard Road, Peranakan Place",
@@ -107,9 +107,12 @@ var self = this;
 	"tel": "6292 3800",
 	"details": "At BluJaz, we believe in the simple things of life. Simple things that have somehow become so hard to find. Good food. Love. Laughter. Friends. Family. Music. Conversation. And decent prices, because no one should be allowed to pay fifty dollars for a meal.",
 	}
-	}
 	
-	this.artistes = {
+	
+}
+
+function Artiste_list () {
+	
 	"Nelson": {
 	"details": "Lorem Ipsum",
 	"link": "http://www.youtube.com",
@@ -118,6 +121,14 @@ var self = this;
 	"details": "Lorem Ipsum",
 	"link": "http://www.youtube.com",
 	}
-	}
+	
+}	
+
+
+function EventsListCtrl() {
+var self = this;
+	this.events = Event_list;
+	this.places = Place_list;
+	this.artistes = Artiste_list;
 
 }
