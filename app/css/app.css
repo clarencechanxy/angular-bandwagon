@@ -1,69 +1,84 @@
 /* app css stylesheet */
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+
+body {
+	width: 900px;
+	background-image: url("../img/image3.gif");
+	background-repeat: no-repeat;
+	background-position: center 20px;
+	background-attachment: fixed;
 }
 
-.menu:before {
-  content: "[";
-}
+/*div#logo {
+	display: block;
+	position: relative;
+	 width: 510px;
+	 height: 120px;
 
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
+} */
 
 ul#controls {
 	list-style-type: none;
-	margin-bottom: 30px;
 	padding: 0px;
+	margin-top: 115px;
+	margin-left: 300px;
 }
 
-ul#controls li {
-	display: inline;
-	margin: auto 100px;		
-}
 
-body {
-	width: 1000px;
-}
-
-div#mytitle {
-	background-color: #B4DBE6;
-	text-align: center;
-	margin: auto 100px;
-}
-
-div#events {
+/*iv#events {
 	position: absolute;
-	margin: auto 100px;
+	margin: auto 50px;
+	
+} */
+
+#bar {
+	height: 20px;
+	width: 350px;
+	font-size: 16px;
+	margin-top: 200px auto;
 }
 
 table {
-	border: 1px solid black; 
 	border-collapse:collapse; 
 	table-layout: fixed;
 	width: 1000px;
 	margin-bottom: 30px;
-	
+	text-align: center;
 	}
+	
+.button {
+   border-top: 1px solid #0e0f0f;
+   background: #303233;
+   background: -webkit-gradient(linear, left top, left bottom, from(#161b1f), to(#303233));
+   background: -webkit-linear-gradient(top, #161b1f, #303233);
+   background: -moz-linear-gradient(top, #161b1f, #303233);
+   background: -ms-linear-gradient(top, #161b1f, #303233);
+   background: -o-linear-gradient(top, #161b1f, #303233);
+   padding: 11px 22px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 13px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #323436;
+   background: #323436;
+   color: #787678;
+   }
+.button:active {
+   border-top-color: #297296;
+   background: #297296;
+   }
 
-th { 
+
+/*th { 
 	overflow: scroll;
 	border-spacing: 0px 1px; 
 	color: white; 
@@ -79,4 +94,4 @@ td {
 		table-layout: fixed;
 		height:20px;
 		overflow: scroll;
-}
+} */
