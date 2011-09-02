@@ -2,6 +2,7 @@
 
 body {
 	width: 900px;
+	position: relative;
 	background-image: url("../img/image3.gif");
 	background-repeat: no-repeat;
 	background-position: center 20px;
@@ -71,7 +72,7 @@ ul#controls {
    background: #297296;
    }
 
-table {
+.table1 {
 	clear: both;
 	border-collapse:collapse; 
 	table-layout: fixed;
@@ -80,31 +81,45 @@ table {
 	margin-bottom: 30px;
 	text-align: center;
 	}
+	
+div#info {
+	margin-top: -15px;
+	
+}
 
 div#mytitle {
+	position: inherit;
 	text-align: center;
 	margin-top: 120px;
 	margin-bottom: 60px;
 }
 
-div#info {
+div#container {
+		position: relative;
 		border: 1px solid #4c4c4c;  
-	     border-top: 3px solid #4c4c4c;  
-	     padding: 20px;
-		float: left;
-		width: 400px;
-		height: 500px;
-		overflow: scroll;
-		margin-right: 30px;
+	    border-top: 3px solid #4c4c4c;
+	    padding: 20px;
+		width: 600px;
+		height: 100%;
+		margin: 0 180px 50px;
 }
 
+div#whiteline {
+		border-top: 1.5px solid #272326;
+
+}
 div#mymap {
-	border: 1px solid #4c4c4c;  
-     border-top: 3px solid #4c4c4c;
-	width: 400px;
-	float: left;
-	height: 500px;
-	padding: 8px;
+	height: 395px;
+}
+
+.table2 {
+	border-collapse:collapse; 
+	table-layout: fixed;
+	width: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	
 }
 
 /*th { 

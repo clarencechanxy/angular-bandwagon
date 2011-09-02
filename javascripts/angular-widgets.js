@@ -335,7 +335,7 @@ angular.widget('ui:map', function(el) {
 	var elem = el;
 	var pinExpr = widgetUtils.parseAttrExpr(el, 'ui:pin');
 	var viewExpr = widgetUtils.parseAttrExpr(el, 'ui:view');
-	var defaults = {bindZoom : false, bindMapType: false, center: {lat:0, lng:0}, pinDraggable: true, map: {zoom: 13, mapTypeId: google.maps.MapTypeId.ROADMAP}};
+	var defaults = {bindZoom : false, bindMapType: false, center: {lat:0, lng:0}, pinDraggable: true, map: {zoom: 16, mapTypeId: google.maps.MapTypeId.ROADMAP}};
 	var options = widgetUtils.getOptions(el, defaults);
 	defaults.map.center = new google.maps.LatLng(defaults.center.lat, defaults.center.lng);
 	return function(el) {

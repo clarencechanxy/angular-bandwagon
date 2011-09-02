@@ -4,6 +4,7 @@ function EventsCatCtrl($route) {
 var self = this;
 
 $route.when('/events', {template: 'partials/events-list.html', controller: EventsListCtrl});
+$route.when('/full-events-list', {template: 'partials/full-events-list.html', controller: EventsListCtrl});
 $route.when('/place/:place', {template: 'partials/place-detail.html', controller: EventsListCtrl});
 $route.when('/artiste/:artiste', {template: 'partials/artiste-detail.html', controller: EventsListCtrl});
 $route.otherwise({redirectTo: '/events'});

@@ -10,20 +10,21 @@
 		<p> Postal code: {{places[params.place].postal}}</p>
 		<p> Tel: {{places[params.place].tel}}</p>
 		
-	<br />
-	
+	<div id="whiteline"></div>
 	<h2>About this place</h2>
 		<p> {{places[params.place].details}}</p>		
 </div>
 
+	<div id="whiteline"></div>
 <div id="mymap">
-	<h1>Map</h1>
-	<ui:map style="height:300px;width:350px;border:2px solid #777777;float:left;margin:3px;" ui:options="{center:{lat:1.301430,lng:103.839260}, bindZoom:true, bindMapType:true}" ui:marker= "{center:{lat:1.301430,lng:103.839260}" ui:pin="maps.map.point" ui:view="maps.map.view"></ui:map>	
+	<h2>Map</h2>
+	<ui:map style="height:300px;width:350px;border:2px solid #777777;float:left;margin:3px;" ui:options="{center:{lat:1.301430,lng:103.839260}, bindZoom:true, bindMapType:true}"  ui:pin="maps.map.point" ui:view="maps.map.view"></ui:map>	
 </div>
-</div> 
 
+<div id="whiteline"></div>
+<h2>What's happening</h2>
 <div id="event" ng:controller="EventsListCtrl">
-    <table summary="Your list of live music gigs in Singapore">
+    <table class="table2" summary="Your list of live music gigs in Singapore">
         <thead>
             <tr>
                 <th scope="column">Date</th>
@@ -50,6 +51,14 @@
         </tbody>
     </table>
 </div>
+
+
+
+
+
+</div> 
+
+
 
 
 <script src="http://code.angularjs.org/0.9.18/angular-0.9.18.min.js" ng:autobind></script>

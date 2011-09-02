@@ -2,53 +2,44 @@
 	<div id=mytitle>
 		<h1>{{params.artiste}}</h1>
 	</div>
+
+<div id="container">	
+	<div id="info">
+		<h2>Details:</h2> 
+			<p> {{artistes[params.artiste].details}}</p>
+			<p> {{artistes[params.artiste].link}}</p>	
+	</div>
+
+	<div id="whiteline"></div>
 	
-	<ul id="controls">
-        <li>
-            Search: <input type="text" name="query" />
-        </li>
-        <li>
-            Sort by:
-            <select name="orderProp">
-          		<option value="date">Days</option>
-                <option value="genre">Genre</option>
-            </select>
-        </li>
-    </ul>
-
-<div id="info">
-	<h2>Details:</h2> 
-		<p> {{artistes[params.artiste].details}}</p>
-		<p> {{artistes[params.artiste].link}}</p>	
-</div>
-
-
-<div id="event">
-    <table summary="Your list of live music gigs in Singapore">
-        <thead>
-            <tr>
-                <th scope="column">Date</th>
-                <th scope="column">Day</th>    
-                <th scope="column">Place</th>
-                <th scope="column">Genre</th>
-				<th scope="column">Time</th>
-                <th scope="column">Price</th>
-                <th scope="column">Description</th>    
-            </tr>    
-        </thead>
+	<div id="event">
+		<h2>What's happening</h2>
+	    <table class="table2" summary="Your list of live music gigs in Singapore">
+	        <thead>
+	            <tr>
+	                <th scope="column">Date</th>
+	                <th scope="column">Day</th>    
+	                <th scope="column">Place</th>
+	                <th scope="column">Genre</th>
+					<th scope="column">Time</th>
+	                <th scope="column">Price</th>
+	                <th scope="column">Description</th>    
+	            </tr>    
+	        </thead>
         
-        <tbody>
-            <tr ng:repeat="event in events.$filter({artiste: params.artiste}).$orderBy(orderProp)">
-                <td>{{event.date}}</td>
-		 		<td>{{event.day}}</td>
-                <td><a href="#/artiste/{{event.place}}">{{event.place}}</a></td>
-                <td>{{event.genre}}</td>
-                <td>{{event.time}}</td>
-                <td>{{event.price}}</td>
-                <td>{{event.description}}</td>            
-            </tr>
-        </tbody>
-    </table>
+	        <tbody>
+	            <tr ng:repeat="event in events.$filter({artiste: params.artiste}).$orderBy(orderProp)">
+	                <td>{{event.date}}</td>
+			 		<td>{{event.day}}</td>
+	                <td><a href="#/artiste/{{event.place}}">{{event.place}}</a></td>
+	                <td>{{event.genre}}</td>
+	                <td>{{event.time}}</td>
+	                <td>{{event.price}}</td>
+	                <td>{{event.description}}</td>            
+	            </tr>
+	        </tbody>
+	    </table>
+	</div>
 </div>
 </div>
 
