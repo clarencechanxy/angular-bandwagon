@@ -1,22 +1,9 @@
 <div>
-	
-<div id=mytitle>
+<div id="mytitle">
 	<h1>{{params.place}}</h1>
 </div>
-	
-	<ul id="controls">
-        <li>
-            Search: <input type="text" name="query" />
-        </li>
-        <li>
-            Sort by:
-            <select name="orderProp">
-        		<option value="date">Date</option>
-                <option value="genre">Genre</option>
-            </select>
-        </li>
-    </ul>
 
+<div id="container">
 <div id="info">
 	<h2>Where is it?</h2> 
 		<p> Address: {{places[params.place].address}}</p>
@@ -26,14 +13,14 @@
 	<br />
 	
 	<h2>About this place</h2>
-		<p> {{place.details}}</p>		
+		<p> {{places[params.place].details}}</p>		
 </div>
 
-<div id="map">
+<div id="mymap">
 	<h1>Map</h1>
-	<ui:map style="height:300px;width:400px;border:2px solid #777777;float:left;margin:3px;" ui:options="{center:{lat:1.301430,lng:103.839260}, bindZoom:true, bindMapType:true}" ui:pin="maps.map.point" ui:view="maps.map.view"></ui:map>
-	
+	<ui:map style="height:300px;width:350px;border:2px solid #777777;float:left;margin:3px;" ui:options="{center:{lat:1.301430,lng:103.839260}, bindZoom:true, bindMapType:true}" ui:marker= "{center:{lat:1.301430,lng:103.839260}" ui:pin="maps.map.point" ui:view="maps.map.view"></ui:map>	
 </div>
+</div> 
 
 <div id="event" ng:controller="EventsListCtrl">
     <table summary="Your list of live music gigs in Singapore">
@@ -48,6 +35,7 @@
                 <th scope="column">Description</th>    
             </tr>    
         </thead>
+</div>
         
         <tbody>
             <tr ng:repeat="event in events.$filter({place: params.place}).$orderBy(orderProp)">
@@ -62,6 +50,6 @@
         </tbody>
     </table>
 </div>
-</div>
+
 
 <script src="http://code.angularjs.org/0.9.18/angular-0.9.18.min.js" ng:autobind></script>
