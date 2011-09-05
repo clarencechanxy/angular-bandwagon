@@ -333,17 +333,24 @@ angular.widget('ui:map', function(el) {
 		return;
 	var compiler = this;
 	var elem = el;
+	var lat = widgetUtils.parseAttrExpr(el, 'ui:lat');
+	var lng = widgetUtils.parseAttrExpr(el, 'ui:lng');
+	console.log(lat);
+	
 	var pinExpr = widgetUtils.parseAttrExpr(el, 'ui:pin');
 	var viewExpr = widgetUtils.parseAttrExpr(el, 'ui:view');
 	var defaults = {bindZoom : false, bindMapType: false, center: {lat:0, lng:0}, pinDraggable: true, map: {zoom: 16, mapTypeId: google.maps.MapTypeId.ROADMAP}};
 	var options = widgetUtils.getOptions(el, defaults);
-	defaults.map.center = new google.maps.LatLng(defaults.center.lat, defaults.center.lng);
+//	defaults.map.center = new google.maps.LatLng(defaults.center.lat, defaults.center.lng);
+	defaults.map.center = new google.maps.LatLng(lat, lng);
 	return function(el) {
     var currentScope = this;
 		$(elem).append('<div/>')
 		var div = ('div', elem).get(0);
 		var map = new google.maps.Map(div,options.map);	
 		var marker = new google.maps.Marker({ position: map.center, map: map});
+		marker.setVisible(true);
+		marker.setPosition(map.center);
 		marker.setDraggable(options.pinDraggable);
 		
 		google.maps.event.addListener(map, 'click', function(e) {
@@ -392,7 +399,7 @@ angular.widget('ui:map', function(el) {
 			var marker = $(elem).data('marker');
 			var newPos = widgetUtils.getValue(currentScope, pinExpr);
 			if(!newPos || !newPos.lat || !newPos.lng){
-				marker.setVisible(false);
+				marker.setVisible(true);
 				return;
 			}
 			marker.setPosition(new google.maps.LatLng(newPos.lat, newPos.lng));
@@ -404,7 +411,7 @@ angular.widget('ui:map', function(el) {
 			var marker = $(elem).data('marker');
 			var newPos = widgetUtils.getValue(currentScope, pinExpr);
 			if(!newPos || !newPos.lat || !newPos.lng){
-				marker.setVisible(false);
+				marker.setVisible(true);
 				return;
 			}
 			marker.setPosition(new google.maps.LatLng(newPos.lat, newPos.lng));

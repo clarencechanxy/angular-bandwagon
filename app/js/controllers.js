@@ -96,18 +96,32 @@ this.events =
 
 this.places = {
 "Acid Bar": {
-"place": "Acid Bar",
 "address": "180 Orchard Road, Peranakan Place",
 "postal": "238846",
 "tel": "6738 8828",
-"details": "Aptly described as an enclave with edge and soul by grungy barflies and creative cracks. Experience a blend of sensory elements and take flight to a different plane. Acoustic sessions featuring genres of radio alternatives, top 40s and an occasional touch of percussions are played nightly from 7pm. Consume nightly before rest a myriad of concoctions; tray of 25 apple/lychee shooters and buckets of the golden juice with touch go budgets. Fret not growling guts as our kitchen maestro whips up tantelicious hot chicken wings and crunchy calamari while acid bar croons and the blue cows dance.",
+"website": "www.peranakanplace.com/acidbar.html",
+"details": "Aptly described as an enclave with edge and soul by grungy barflies and creative cracks. Experience a blend of sensory elements and take flight to a different plane. Acoustic sessions featuring genres of radio alternatives, top 40s and an occasional touch of percussions are played nightly from 7pm.  Consume nightly before rest a myriad of concoctions; tray of 25 apple/lychee shooters and buckets of the golden juice with touch go budgets.  Fret not growling guts as our kitchen maestro whips up tantelicious hot chicken wings and crunchy calamari while acid bar croons and the blue cows dance.",
+"latlng": "lat:1.3014626,lng:103.8391229",
+"longitude": "103.8391229",
 },
 "Blujaz Cafe": {
 "address": "11 Bali Lane",
 "postal": "189848",
 "tel": "6292 3800",
+"website": "www.blujaz.net/",
 "details": "At BluJaz, we believe in the simple things of life. Simple things that have somehow become so hard to find. Good food. Love. Laughter. Friends. Family. Music. Conversation. And decent prices, because no one should be allowed to pay fifty dollars for a meal.",
-}
+"latlng": "lat:1.300639,lng:103.858993",
+"longitude": "103.858993",
+},
+"Brix": {
+"address": "10 Scotts Rd, Basement, Grand Hyatt Singapore",
+"postal": "228211",
+"tel": "6732-1234",
+"website": "http://singapore.grand.hyatt.com/hyatt/hotels/entertainment/lounges/index.jsp",
+"details": "There’s a lively yet sophisticated feel to Brix, buried in the basement of the Grand Hyatt Regency. Despite its subterranean location, it’s not at all dingy, and crowds flock here to enjoy the live music from the popular house band. International bands occasionally perform too. Divided in two, a Music Bar, where the band play a pleasing blend of jazz and R&B, and a Wine & Whiskey Bar, which, good to its name, serves up a fine selection of wine, Scotch, and cognac. It can get quite lively on the weekend, the blend of music, dancing and decent drinks, unsurprisingly proving alluring, so dress to impress to ensure you get in. Reservations are also recommended on busy nights.",
+"latlng": "lat:1.2894365,lng:103.8499802",
+"longitude": "103.8499802",
+},
 }
 
 this.artistes = {

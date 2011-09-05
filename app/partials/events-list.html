@@ -1,5 +1,5 @@
 <div ng:controller="EventsListCtrl">
-    
+
     <ul id="controls">
         <li id="search">
             <input type="text" name="query" id="bar"/>
@@ -8,7 +8,8 @@
 	<div id="button-box">
 		<a href="#/full-events-list" class="button">Browse all</a>
 	</div>	
-    
+   
+
     <div id="events" ng:show="query != ''">
         <table class="table1"summary="Your list of live music gigs in Singapore">
             <thead>
@@ -38,8 +39,6 @@
     </div>
 	
 	
-	<div ng:show="list"><div ng:repeat="events"></div>
-	<div ng:hide="list"> Whoops. No items found.</div>
 
 
 </div>
