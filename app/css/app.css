@@ -1,21 +1,62 @@
 /* app css stylesheet */
 
+.twitter-share-button {
+	float: left;	
+	margin-left: 100px;
+	margin-right: 5px;
+}
+
+div#facebook {
+	float: left;
+	width: 60px;
+}
+
+
+#header {
+		height: 40px;
+		float: left;
+		font-weight: bold;
+		color: black;
+		font-size: 1.2em;
+		margin-top: 15px;
+		margin-left: 160px;
+}
+
+#header :link {
+	color: black;
+	text-decoration:none;
+	padding: 10px 10px;
+}
+
+#header :visited {
+	color: black;
+}
+
+#header :hover {
+	background: #323436;
+	color: white;
+}
+
+/*.a {
+	word-spacing: 30px;
+}*/
+
 body {
 	font-family: serif;
 	font-size: medium;
 	background-image: url("../img/image3.gif");
 	background-repeat: no-repeat;
-	background-position: center 20px;
+	background-position: center 55px;
 	background-attachment: scroll;
 }
 
 ul#controls {
+	clear: both;
 	float: left;
-
 	list-style-type: none;
 	padding: 0px;
-	margin-top: 5px;
-	margin-left: 30%;
+	margin-top: 45px;
+	margin-left: 27%;
 	margin-right: 5px;
 	padding:5px;
 }
@@ -23,9 +64,9 @@ ul#controls {
 
 #bar {
 	height: 20px;
-	width: 335px;
-
-	font-size: 16px;
+	width: 355px;
+	font-family: serif;
+	font-size: 20px;
 	padding: 5px;
 }
 	
@@ -51,7 +92,7 @@ ul#controls {
    text-decoration: none;
    vertical-align: middle;
    float: left;
-   margin-top: 10px;
+   margin-top: 50px;
    }
 
 .button:hover {
@@ -74,10 +115,9 @@ ul#controls {
 	text-align: center;
 	}
 	
-div#info {
-	margin-top: -15px;
-	
-}
+/* div#info {
+	margin-top: -15px;	
+} */
 
 div#mytitle {
 	text-align: center;
@@ -86,13 +126,14 @@ div#mytitle {
 }
 
 div#container {
-		position: relative;
+		clear: both;
+		float: left;
 		border: 1px solid #4c4c4c;  
 	    border-top: 3px solid #4c4c4c;
 	    padding: 20px;
 		width: 600px;
 		height: 100%;
-		margin: 0 180px 50px;
+		margin: 200px 180px 50px;
 }
 
 div#whiteline {
@@ -113,18 +154,8 @@ div#mymap {
 	
 }
 
-.fb-root {
-	float: left;
-}
-
-.twitter-share-button {
-	float: left;	
-	margin-left: 100px;
-	margin-right: 5px;
-}
-
 .h2 {
-	font-size: medium;	
+	font-size: 1.3em;	
 }
 
 /*th { 
