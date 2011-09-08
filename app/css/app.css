@@ -55,7 +55,7 @@ ul#controls {
 	float: left;
 	list-style-type: none;
 	padding: 0px;
-	margin-top: 45px;
+	margin-top: 40px;
 	margin-left: 27%;
 	margin-right: 5px;
 	padding:5px;
@@ -92,7 +92,7 @@ ul#controls {
    text-decoration: none;
    vertical-align: middle;
    float: left;
-   margin-top: 50px;
+   margin-top: 47px;
    }
 
 .button:hover {
@@ -119,24 +119,29 @@ ul#controls {
 	margin-top: -15px;	
 } */
 
-div#mytitle {
-	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 60px;
+.detailsMain {
+	width: 1000px;
+	position: absolute;
+	margin: 120px auto;
+	clear: both;
 }
 
-div#container {
-		clear: both;
-		float: left;
+h1 {
+	text-align: center;
+	font-size: 2.0em;
+}
+
+.container {
+	
 		border: 1px solid #4c4c4c;  
 	    border-top: 3px solid #4c4c4c;
 	    padding: 20px;
-		width: 600px;
+		width: 700px;
 		height: 100%;
-		margin: 200px 180px 50px;
+		margin: 0px 15% 50px;
 }
 
-div#whiteline {
+.whiteline {
 		border-top: 1.5px solid #272326;
 
 }
@@ -156,6 +161,12 @@ div#mymap {
 
 .h2 {
 	font-size: 1.3em;	
+}
+
+.p {
+	clear:both;
+	width: 200px;
+	
 }
 
 /*th { 

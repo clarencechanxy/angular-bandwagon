@@ -7,8 +7,16 @@
   <meta name="alexaVerifyID" content="dKnLvXkAsdHHPv9qF21tYTB5Ntc" />
   <meta name="description" content="Bandwagon, live music gig finder that connects you to live music" /> 
   <meta name="keywords" content="Bandwagon, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
+<link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="/stylesheets/smoothness/jquery-ui-1.8.14.custom.css"/>
 <link type="text/css" rel="stylesheet" href="/stylesheets/tasks.css"/>
+<script src="js/noSpam.js" type="text/javascript">
+// No spam script
+function nospam(user,domain) {
+locationstring = "mailto:" + user + "@" + domain;
+window.location = locationstring;
+}
+</script>
 </head>
 <body ng:controller="EventsCatCtrl">
 
@@ -21,12 +29,12 @@
 </div>
 
 <div id="header">
-	<a href="/partials/aboutus.html">About</a>
-	<a href="/contribute.html">Contribute</a>
-	<a href="/contact.html">Contact</a>
+	<a href="about.html">About</a>
+	<a href="contribute-contact.html">Contribute and Contact</a>
 </div>
 
 <ng:view></ng:view>
+
 
   <script src="lib/angular/angular.js" ng:autobind></script>
   <script src="js/controllers.js"></script>

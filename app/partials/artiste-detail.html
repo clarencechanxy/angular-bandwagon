@@ -1,18 +1,17 @@
-<div ng:controller="EventsListCtrl">
-	<div id="mytitle">
-		<h1>{{params.artiste}}</h1>
-	</div>
 
-<div id="container">	
-	<div id="info">
+<div class="detailsMain">
+	<h1>{{params.artiste}}</h1>
+
+<div class="container">	
+	<div class="info">
 		<h2>Details:</h2> 
 			<p> {{artistes[params.artiste].details}}</p>
 			<p> {{artistes[params.artiste].link}}</p>	
 	</div>
 
-	<div id="whiteline"></div>
+	<div class="whiteline"></div>
 	
-	<div id="event">
+	<div class="event">
 		<h2>What's happening</h2>
 	    <table class="table2" summary="Your list of live music gigs in Singapore">
 	        <thead>

@@ -1,29 +1,27 @@
-<div>
-<div id="mytitle">
-	<h1>{{params.place}}</h1>
-</div>
+<div class="detailsMain">
+<h1>{{params.place}}</h1>
 
-<div id="container">
-<div id="info">
+<div class="container">
+<div class="info">
 	<h2>Where is it?</h2> 
 		<p> Address: {{places[params.place].address}}</p>
 		<p> Postal code: {{places[params.place].postal}}</p>
 		<p> Tel: {{places[params.place].tel}}</p>
 		
-	<div id="whiteline"></div>
+	<div class="whiteline"></div>
 	<h2>About this place</h2>
 		<p> {{places[params.place].details}}</p>		
 </div>
 
-	<div id="whiteline"></div>
+	<div class="whiteline"></div>
 <div id="mymap">
 	<h2>Map</h2>
 	<ui:map style="height:300px;width:350px;border:2px solid #777777;float:left;margin:3px;" ui:options="{center:{lat:1.3,lng:103}, bindZoom:true, bindMapType:true}"  ui:lat="{{places[params.place].latitude}}" ui:pin="maps.map.pin" ui:view="maps.map.view"></ui:map>	
 </div>
 
-<div id="whiteline"></div>
+<div class="whiteline"></div>
 <h2>What's happening</h2>
-<div id="event" ng:controller="EventsListCtrl">
+<div class="event" ng:controller="EventsListCtrl">
     <table class="table2" summary="Your list of live music gigs in Singapore">
         <thead>
             <tr>
@@ -51,9 +49,6 @@
         </tbody>
     </table>
 </div>
-
-
-
 
 
 </div> 
