@@ -329,224 +329,222 @@ angular.widget('@ui:datepicker', function(expr, el, val) {
 // ui:map widget
 // Google Maps API v. 3.5
 angular.widget('ui:map', function(el) {
-	if(!google || !google.maps)
-		return;
-	var compiler = this;
-	var elem = el;
-	var lat = widgetUtils.parseAttrExpr(el, 'ui:lat');
-	var lng = widgetUtils.parseAttrExpr(el, 'ui:lng');
-	console.log(lat);
-	
-	var pinExpr = widgetUtils.parseAttrExpr(el, 'ui:pin');
-	var viewExpr = widgetUtils.parseAttrExpr(el, 'ui:view');
-	var defaults = {bindZoom : false, bindMapType: false, center: {lat:0, lng:0}, pinDraggable: true, map: {zoom: 16, mapTypeId: google.maps.MapTypeId.ROADMAP}};
-	var options = widgetUtils.getOptions(el, defaults);
-//	defaults.map.center = new google.maps.LatLng(defaults.center.lat, defaults.center.lng);
-	defaults.map.center = new google.maps.LatLng(lat, lng);
-	return function(el) {
+if(!google || !google.maps)
+return;
+var compiler = this;
+var elem = el;
+var pinExpr = widgetUtils.parseAttrExpr(el, 'ui:pin');
+var viewExpr = widgetUtils.parseAttrExpr(el, 'ui:view');
+var defaults = {bindZoom : false, bindMapType: false, center: {lat:0, lng:0}, pinDraggable: true, map: {zoom: 16, mapTypeId: google.maps.MapTypeId.ROADMAP}};
+var options = widgetUtils.getOptions(el, defaults);
+defaults.map.center = new google.maps.LatLng(defaults.center.lat, defaults.center.lng);
+return function(el) {
     var currentScope = this;
-		$(elem).append('<div/>')
-		var div = ('div', elem).get(0);
-		var map = new google.maps.Map(div,options.map);	
-		var marker = new google.maps.Marker({ position: map.center, map: map});
-		marker.setVisible(true);
-		marker.setPosition(map.center);
-		marker.setDraggable(options.pinDraggable);
-		
-		google.maps.event.addListener(map, 'click', function(e) {
-			marker.setPosition(e.latLng);
-			marker.setVisible(true);
-			var o = widgetUtils.getValue(currentScope, pinExpr) || {};
-			$.extend(o, {lat:e.latLng.lat(), lng:e.latLng.lng()});
-			widgetUtils.setValue(currentScope, pinExpr, o);
-		});
-  	
-  	google.maps.event.addListener(marker, 'dragend', function(e) {
-			var o = widgetUtils.getValue(currentScope, pinExpr) || {};
-			$.extend(o, {lat: e.latLng.lat(), lng: e.latLng.lng()});
-			widgetUtils.setValue(currentScope, pinExpr, o);
-  	});
-  	
-  	google.maps.event.addListener(map, 'dragend', function() {
-			var c = map.getCenter();
-			var o = widgetUtils.getValue(currentScope, viewExpr) || {};
-			$.extend(o, {lat: c.lat(), lng: c.lng()});
-			widgetUtils.setValue(currentScope, viewExpr, o);
-  	});
+$(elem).append('<div/>')
+var div = ('div', elem).get(0);
+var map = new google.maps.Map(div,options.map);
+var marker = new google.maps.Marker({ position: map.center, map: map});
+marker.setVisible(true);
+marker.setPosition(map.center);
+marker.setDraggable(options.pinDraggable);
 
-  	if(defaults.bindZoom)
-			google.maps.event.addListener(map, 'zoom_changed', function() {
-				var c = map.getCenter();
-				var z = map.getZoom();
-				var o = widgetUtils.getValue(currentScope, viewExpr) || {};
-				$.extend(o, {lat: c.lat(), lng: c.lng(), zoom: z});
-				widgetUtils.setValue(currentScope, viewExpr, o);
-			});
+google.maps.event.addListener(map, 'click', function(e) {
+marker.setPosition(e.latLng);
+marker.setVisible(true);
+var o = widgetUtils.getValue(currentScope, pinExpr) || {};
+$.extend(o, {lat:e.latLng.lat(), lng:e.latLng.lng()});
+widgetUtils.setValue(currentScope, pinExpr, o);
+});
+  
+   google.maps.event.addListener(marker, 'dragend', function(e) {
+var o = widgetUtils.getValue(currentScope, pinExpr) || {};
+$.extend(o, {lat: e.latLng.lat(), lng: e.latLng.lng()});
+widgetUtils.setValue(currentScope, pinExpr, o);
+   });
+  
+   google.maps.event.addListener(map, 'dragend', function() {
+var c = map.getCenter();
+var o = widgetUtils.getValue(currentScope, viewExpr) || {};
+$.extend(o, {lat: c.lat(), lng: c.lng()});
+widgetUtils.setValue(currentScope, viewExpr, o);
+   });
 
-	  if(defaults.bindMapType)
-	  	google.maps.event.addListener(map, 'maptypeid_changed', function() {
-				var t = map.getMapTypeId();	
-				var o = widgetUtils.getValue(currentScope, viewExpr) || {};
-				$.extend(o, {mapType: t});
-				widgetUtils.setValue(currentScope, viewExpr, o);
-  		});
+   if(defaults.bindZoom)
+google.maps.event.addListener(map, 'zoom_changed', function() {
+var c = map.getCenter();
+var z = map.getZoom();
+var o = widgetUtils.getValue(currentScope, viewExpr) || {};
+$.extend(o, {lat: c.lat(), lng: c.lng(), zoom: z});
+widgetUtils.setValue(currentScope, viewExpr, o);
+});
 
-		$(elem).data('map', map);
-		$(elem).data('marker', marker);  
+if(defaults.bindMapType)
+google.maps.event.addListener(map, 'maptypeid_changed', function() {
+var t = map.getMapTypeId();
+var o = widgetUtils.getValue(currentScope, viewExpr) || {};
+$.extend(o, {mapType: t});
+widgetUtils.setValue(currentScope, viewExpr, o);
+   });
+
+$(elem).data('map', map);
+$(elem).data('marker', marker);
     
     currentScope.$watch(pinExpr.expression + '.lat', function() {
-			var map = $(elem).data('map');
-			var marker = $(elem).data('marker');
-			var newPos = widgetUtils.getValue(currentScope, pinExpr);
-			if(!newPos || !newPos.lat || !newPos.lng){
-				marker.setVisible(true);
-				return;
-			}
-			marker.setPosition(new google.maps.LatLng(newPos.lat, newPos.lng));
-			marker.setVisible(true);  
+var map = $(elem).data('map');
+var marker = $(elem).data('marker');
+var newPos = widgetUtils.getValue(currentScope, pinExpr);
+if(!newPos || !newPos.lat || !newPos.lng){
+marker.setVisible(true); //changed false to true
+return;
+}
+marker.setPosition(new google.maps.LatLng(newPos.lat, newPos.lng));
+marker.setVisible(true);
     }, null, true);
     
     currentScope.$watch(pinExpr.expression + '.lng', function() {
-			var map = $(elem).data('map');
-			var marker = $(elem).data('marker');
-			var newPos = widgetUtils.getValue(currentScope, pinExpr);
-			if(!newPos || !newPos.lat || !newPos.lng){
-				marker.setVisible(true);
-				return;
-			}
-			marker.setPosition(new google.maps.LatLng(newPos.lat, newPos.lng));
-			marker.setVisible(true);  
+var map = $(elem).data('map');
+var marker = $(elem).data('marker');
+var newPos = widgetUtils.getValue(currentScope, pinExpr);
+if(!newPos || !newPos.lat || !newPos.lng){
+marker.setVisible(true); //changed false to true
+return;
+}
+marker.setPosition(new google.maps.LatLng(newPos.lat, newPos.lng));
+marker.setVisible(true);
     }, null, true);
     
     currentScope.$watch(viewExpr.expression + '.lng', function() {
-			var map = $(elem).data('map');
-			var newPos = widgetUtils.getValue(currentScope, viewExpr);
-			if(newPos)
-				map.setCenter(new google.maps.LatLng(newPos.lat, newPos.lng));
+var map = $(elem).data('map');
+var newPos = widgetUtils.getValue(currentScope, viewExpr);
+if(newPos)
+map.setCenter(new google.maps.LatLng(newPos.lat, newPos.lng));
     }, null, true);
     
     currentScope.$watch(viewExpr.expression + '.lat', function() {
-			var map = $(elem).data('map');
-			var newPos = widgetUtils.getValue(currentScope, viewExpr);
-			if(newPos)
-				map.setCenter(new google.maps.LatLng(newPos.lat, newPos.lng));
+var map = $(elem).data('map');
+var newPos = widgetUtils.getValue(currentScope, viewExpr);
+if(newPos)
+map.setCenter(new google.maps.LatLng(newPos.lat, newPos.lng));
     }, null, true);
     
     if(defaults.bindMapType)
-	    currentScope.$watch(viewExpr.expression + '.mapType', function(val) {
-				var map = $(elem).data('map');
-				if(val)
-					map.setMapTypeId(val);
-	   	}, null, true);
+currentScope.$watch(viewExpr.expression + '.mapType', function(val) {
+var map = $(elem).data('map');
+if(val)
+map.setMapTypeId(val);
+}, null, true);
     
     if(defaults.bindZoom)
-			currentScope.$watch(viewExpr.expression + '.zoom', function(val) {
-				var map = $(elem).data('map');
-				if(val)
-					map.setZoom(val);
-	  	}, null, true);
+currentScope.$watch(viewExpr.expression + '.zoom', function(val) {
+var map = $(elem).data('map');
+if(val)
+map.setZoom(val);
+}, null, true);
     
   };
 });
 
 
 
+
+
 // ui:enter directive
 // calls a function when ENTER is pressed
 angular.directive('ui:enter', function(expr, el) {
-	return function(el) {
-		var compiler = this;
-		$(el).keyup(function(event){
-			if(event.keyCode == 13){
-				compiler.$tryEval(expr, el);
-				$(el).val('');
-				compiler.$parent.$eval();
-				event.stopPropagation();
-			}
-		});
-	};
+return function(el) {
+var compiler = this;
+$(el).keyup(function(event){
+if(event.keyCode == 13){
+compiler.$tryEval(expr, el);
+$(el).val('');
+compiler.$parent.$eval();
+event.stopPropagation();
+}
+});
+};
 });
 
 
 
 // handy widgets functions
 var widgetUtils = {
-	highlight: function(term, text){
-		if(!text)
-			return null;
-		var rx = new RegExp("("+$.ui.autocomplete.escapeRegex(term)+")", "ig" );
-  	return text.replace(rx, "<strong>$1</strong>");
-	},
-	noHighlight: function(term, text){
-		return text;
-	},
-	getOptions : function (el, defaults, attrName){
-		attrName = attrName || 'ui:options';
-		var opts = $(el).attr(attrName);
-		defaults = defaults || {};
-		if(!opts)
-			return defaults;
-		var options = angular.fromJson('['+opts+']')[0];	
-		return $.extend(defaults, options);
-	},
-	parseExpr: function(val){
-		if(!val || val=='')
-			return null;
-		var expr = {formatters:[]};
-		var pts = val.split('|');
-		expr.expression = pts[0];
-		if(pts.length==1)
-			return expr;
-		for (var i = 0; i < pts.length; i++){
-			var args = pts[i].split(':');
-			var name = args.shift();
-			var frmt = angular.formatter[name];
-			if(frmt)
-				expr.formatters.push({name: name, parse: frmt.parse, format: frmt.format, arguments: args});
-		}
-		return expr;
-	},
-	parseAttrExpr: function (el, attrName){
-		if(!attrName)
-			return null;
-		var attr = $(el).attr(attrName);
-		return this.parseExpr(attr);	
-	},
-	setValue: function (scope, attrExpr, value){
-		if(!attrExpr || !attrExpr.expression)
-			return;
-		var v = value;
-		v = this.parseValue(v, attrExpr, scope);	
-		scope.$set(attrExpr.expression, v);
-		scope.$parent.$eval();	
-	},
-	getValue: function (scope, attrExpr){
-		if(!attrExpr || !attrExpr.expression)
-			return null;
-		var val = scope.$get(attrExpr.expression);
-		val = this.formatValue(val, attrExpr, scope);
-		return val;
-	},
-	parseValue: function (value, attrExpr, scope){
-		if(!attrExpr || !attrExpr.formatters || attrExpr.formatters.length==0)
-			return value;
-		var v = value;	
-		for (var i = 0; i < attrExpr.formatters.length; i++) {
-			var fm = attrExpr.formatters[i];
-			if(fm && fm.parse)
-				v = fm.parse.apply(scope, [v].concat(fm.arguments));
-		};
-		return v;	
-	},
-	formatValue: function (value, attrExpr, scope){
-		if(!attrExpr || !attrExpr.formatters || attrExpr.formatters.length==0)
-			return value;
-		var v = value;	
-		for (var i = 0; i < attrExpr.formatters.length; i++) {
-			var fm = attrExpr.formatters[i];
-			if(fm && fm.format)
-				v = fm.format.apply(scope, [v].concat(fm.arguments));
-		};
-		return v;
-	}
+highlight: function(term, text){
+if(!text)
+return null;
+var rx = new RegExp("("+$.ui.autocomplete.escapeRegex(term)+")", "ig" );
+   return text.replace(rx, "<strong>$1</strong>");
+},
+noHighlight: function(term, text){
+return text;
+},
+getOptions : function (el, defaults, attrName){
+attrName = attrName || 'ui:options';
+var opts = $(el).attr(attrName);
+defaults = defaults || {};
+if(!opts)
+return defaults;
+var options = angular.fromJson('['+opts+']')[0];
+return $.extend(defaults, options);
+},
+parseExpr: function(val){
+if(!val || val=='')
+return null;
+var expr = {formatters:[]};
+var pts = val.split('|');
+expr.expression = pts[0];
+if(pts.length==1)
+return expr;
+for (var i = 0; i < pts.length; i++){
+var args = pts[i].split(':');
+var name = args.shift();
+var frmt = angular.formatter[name];
+if(frmt)
+expr.formatters.push({name: name, parse: frmt.parse, format: frmt.format, arguments: args});
+}
+return expr;
+},
+parseAttrExpr: function (el, attrName){
+if(!attrName)
+return null;
+var attr = $(el).attr(attrName);
+return this.parseExpr(attr);
+},
+setValue: function (scope, attrExpr, value){
+if(!attrExpr || !attrExpr.expression)
+return;
+var v = value;
+v = this.parseValue(v, attrExpr, scope);
+scope.$set(attrExpr.expression, v);
+scope.$parent.$eval();
+},
+getValue: function (scope, attrExpr){
+if(!attrExpr || !attrExpr.expression)
+return null;
+var val = scope.$get(attrExpr.expression);
+val = this.formatValue(val, attrExpr, scope);
+return val;
+},
+parseValue: function (value, attrExpr, scope){
+if(!attrExpr || !attrExpr.formatters || attrExpr.formatters.length==0)
+return value;
+var v = value;
+for (var i = 0; i < attrExpr.formatters.length; i++) {
+var fm = attrExpr.formatters[i];
+if(fm && fm.parse)
+v = fm.parse.apply(scope, [v].concat(fm.arguments));
 };
+return v;
+},
+formatValue: function (value, attrExpr, scope){
+if(!attrExpr || !attrExpr.formatters || attrExpr.formatters.length==0)
+return value;
+var v = value;
+for (var i = 0; i < attrExpr.formatters.length; i++) {
+var fm = attrExpr.formatters[i];
+if(fm && fm.format)
+v = fm.format.apply(scope, [v].concat(fm.arguments));
+};
+return v;
+}
+};
+

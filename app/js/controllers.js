@@ -53,7 +53,7 @@ this.events =
 "genre": "Jazz",
 "time": "2130",
 "price": "$$ (Free entry)",
-"description": "What started off as a chance to play Greg’s arrangements has evolved to include all the individual characters that form the band. The repertoire is still made up largely of Greg’s compositions and wholly of his arrangements which draw from just about every genre of music. Omniform also features some awesome and very individual soloists. Monster Trio, sometimes a quartet consists of talented musicians.",
+"description": "",
 },
 {
 "date": "7/4/2011",

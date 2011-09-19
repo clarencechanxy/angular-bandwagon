@@ -44,7 +44,7 @@ div#facebook {
 }*/
 
 body {
-	font-family: serif;
+	font-family: 'Annie Use Your Telescope', cursive; 
 	font-size: medium;
 	background-image: url("../img/image3.gif");
 	background-repeat: no-repeat;
@@ -67,7 +67,7 @@ ul#controls {
 #bar {
 	height: 20px;
 	width: 355px;
-	font-family: serif;
+	font-family: 'Annie Use Your Telescope', cursive; 
 	font-size: 20px;
 	padding: 5px;
 }
@@ -80,7 +80,7 @@ ul#controls {
    background: -moz-linear-gradient(top, #161b1f, #303233);
    background: -ms-linear-gradient(top, #161b1f, #303233);
    background: -o-linear-gradient(top, #161b1f, #303233);
-   padding: 8.5px 17px;
+   padding: 5px 10px;
    -webkit-border-radius: 0px;
    -moz-border-radius: 0px;
    border-radius: 0px;
@@ -89,12 +89,12 @@ ul#controls {
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
-   font-size: 13px;
-   font-family: Helvetica, Arial, Sans-Serif;
+   font-size: 16px;
+   font-family: 'Annie Use Your Telescope', cursive; 
    text-decoration: none;
    vertical-align: middle;
    float: left;
-   margin-top: 47px;
+   margin-top: 45px;
    }
 
 .button:hover {
@@ -115,6 +115,8 @@ ul#controls {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	text-align: center;
+	font-family: 'Annie Use Your Telescope', cursive; 
+	font-size: 1.1em;
 	}
 	
 /* div#info {
@@ -158,6 +160,7 @@ div#mymap {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
+	font-size: 18px;
 	
 }
 
