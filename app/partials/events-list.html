@@ -2,43 +2,35 @@
 
     <ul id="controls">
         <li id="search">
-            <input type="text" name="query" id="bar" value="Type a genre, artiste etc. to start gig finding!" style="text-size: 12px; color:grey" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+            <input type="text" name="query" id="bar" placeholder="Filter your gig search!" style="text-size: 10px; color:grey"/>
         </li>	
     </ul>
-	<div id="button-box">
-		<a href="#/full-events-list" class="button">Browse all</a>
-	</div>	
    	
 
-    <div id="events" ng:show="query != ''">
+    <div id="events">
         <table class="table1"summary="Your list of live music gigs in Singapore">
             <thead>
                 <tr>
-                    <th scope="column">Date</th>
-                    <th scope="column">Day</th>    
-                    <th scope="column">Place</th>
-                    <th scope="column">Artiste</th>
+					<th scope="column">Date</th>
+            		<th scope="column">Time</th>
+					<th scope="column">Name</th>
+                    <th scope="column">Place</th>    
                     <th scope="column">Genre</th>
-					<th scope="column">Time</th>
-                    <th scope="column">Price</th> 
+                    <th scope="column">Price</th>
                 </tr>    
             </thead>
             
             <tbody>
                 <tr ng:repeat="event in events.$filter(query).$orderBy(orderProp)">
                     <td>{{event.date}}</td>
-					<td>{{event.day}}</td>
-                    <td><a href="#/place/{{event.place}}">{{event.place}}</a></td>
-                    <td><a href="#/artiste/{{event.artiste}}">{{event.artiste}}</a></td>
+				   	<td>{{event.time}}</td>
+					<td>{{event.name}}</td>
+					<td>{{event.place}}</td>
                     <td>{{event.genre}}</td>
-                    <td>{{event.time}}</td>
-                    <td>{{event.price}}</td>         
+                    <td>{{event.price}}</td> 
+					<td><a href="{{event.website}}" target="_blank">See more</a></td>
                 </tr>
             </tbody>
         </table>
     </div>
-	
-	
-
-
 </div>

@@ -4,17 +4,18 @@ REBOL [
   Author: onetom@hackerspace.sg
 ]
 
-lines: read/lines %"Place test data.tsv"
+lines: read/lines %"11_3_SEP_27.tsv"
 fields: parse/all lines/1 "^-"  remove lines
 
-print "this.events = ["
+print "events = ["
 foreach l lines [
-  l: parse/all l "^-"
-  print "{"
-  for i 1 length? fields 1 [
-    print rejoin [{"} fields/:i {": "}
-      replace/all trim to-string l/:i {"} {\"} {",}]
-  ]
-  print "},"
+l: parse/all l "^-"
+print "{"
+for i 1 length? fields 1 [
+print rejoin [{"} fields/:i {": "}
+	replace/all trim to-string l/:i {"} {\"} {",}]
+]
+print "},"
 ]
 print "]"
+

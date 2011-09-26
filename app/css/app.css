@@ -1,17 +1,10 @@
 /* app css stylesheet */
 
-.twitter-share-button {
-	float: left;	
-	margin-left: 100px;
-	margin-right: 5px;
+div#container {
+	position: relative;
+	width: 1200px;
+	
 }
-
-div#facebook {
-	float: left;
-	width: 60px;
-}
-
-
 #header {
 		height: 40px;
 		float: left;
@@ -19,9 +12,26 @@ div#facebook {
 		color: black;
 		font-size: 1.2em;
 		margin-top: 15px;
-		margin-left: 140px;
-		font-family: 'Annie Use Your Telescope', cursive; 
+		margin-left: 360px;
+		font-family: 'Annie Use Your Telescope', verdana; 
 		font-size: 1.2em;
+}
+
+#smedia {
+	float: left;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+.twitter-share-button {
+	float: left;	
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+div#facebook {
+	float: left;
+	width: 60px;
 }
 
 #header :link {
@@ -43,13 +53,20 @@ div#facebook {
 	word-spacing: 30px;
 }*/
 
+#logo {
+	float: left;
+	margin-left: 260px;
+	margin-right: 30px;
+}
+
+#tweet {
+	float: left;
+	
+}
+
 body {
-	font-family: 'Annie Use Your Telescope', cursive; 
+	font-family: 'Annie Use Your Telescope', verdana; 
 	font-size: medium;
-	background-image: url("../img/image3.gif");
-	background-repeat: no-repeat;
-	background-position: center 55px;
-	background-attachment: scroll;
 }
 
 ul#controls {
@@ -57,19 +74,19 @@ ul#controls {
 	float: left;
 	list-style-type: none;
 	padding: 0px;
-	margin-top: 40px;
-	margin-left: 27%;
+	margin-top: 0px;
+	margin-left: 380px;
 	margin-right: 5px;
 	padding:5px;
 }
 
 
 #bar {
-	height: 20px;
+	height: 25px;
 	width: 355px;
-	font-family: 'Annie Use Your Telescope', cursive; 
-	font-size: 20px;
-	padding: 5px;
+	font-family: 'Annie Use Your Telescope', verdana; 
+	font-size: 18px;
+	padding: 3px;
 }
 	
 .button {
@@ -90,11 +107,11 @@ ul#controls {
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 16px;
-   font-family: 'Annie Use Your Telescope', cursive; 
+   font-family: 'Annie Use Your Telescope', verdana; 
    text-decoration: none;
    vertical-align: middle;
    float: left;
-   margin-top: 45px;
+   margin-top: 21px;
    }
 
 .button:hover {
@@ -109,14 +126,15 @@ ul#controls {
 
 .table1 {
 	clear: both;
-	border-collapse:collapse; 
+	border-collapse:separate; 
 	table-layout: fixed;
-	width: 1000px;
+	width: 1100px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+	margin-left:30px;
 	text-align: center;
-	font-family: 'Annie Use Your Telescope', cursive; 
-	font-size: 1.1em;
+	font-family: 'Annie Use Your Telescope', verdana; 
+	font-size: 0.9em;
 	}
 	
 /* div#info {
@@ -133,16 +151,6 @@ ul#controls {
 h1 {
 	text-align: center;
 	font-size: 2.0em;
-}
-
-.container {
-	
-		border: 1px solid #4c4c4c;  
-	    border-top: 3px solid #4c4c4c;
-	    padding: 20px;
-		width: 700px;
-		height: 100%;
-		margin: 0px 15% 50px;
 }
 
 .whiteline {

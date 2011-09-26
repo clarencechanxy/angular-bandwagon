@@ -1,4 +1,4 @@
-this.artistes = [
+artistes = [ 
 "Nelson": {
 "details": "Lorem Ipsum",
 "link": "http://www.youtube.com",
