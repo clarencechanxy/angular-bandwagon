@@ -1,37 +1,40 @@
 /* app css stylesheet */
-
-div#container {
+body {
+	font-family: verdana, serif; 
+	font-size: medium;
 	position: relative;
 	width: 1200px;
-	
+	margin: 0 auto;
 }
+
+
 #header {
+		position: absolute;
+		top: 15px;
+		left: 360px;
 		height: 40px;
-		float: left;
 		font-weight: bold;
 		color: black;
 		font-size: 1.2em;
-		margin-top: 15px;
-		margin-left: 360px;
-		font-family: 'Annie Use Your Telescope', verdana; 
+		font-family: verdana, serif; 
 		font-size: 1.2em;
 }
 
 #smedia {
-	float: left;
-	margin-top: 20px;
-	margin-left: 100px;
+	position: absolute;
+	right: 115px;
+	top: 20px;
 }
 
 .twitter-share-button {
-	float: left;	
-	margin-left: 10px;
-	margin-right: 5px;
+float: left;
+margin-left: 10px;
+margin-right: 5px;
 }
 
 div#facebook {
-	float: left;
-	width: 60px;
+float: left;
+width: 60px;
 }
 
 #header :link {
@@ -54,24 +57,22 @@ div#facebook {
 }*/
 
 #logo {
-	float: left;
-	margin-left: 260px;
-	margin-right: 30px;
+	position: absolute;
+	top: 40px;
+	left: 300px;
 }
 
 #tweet {
-	float: left;
+	position: absolute;
+	top: 50px;
+	right: 30px;
 	
 }
 
-body {
-	font-family: 'Annie Use Your Telescope', verdana; 
-	font-size: medium;
-}
 
 ul#controls {
-	clear: both;
-	float: left;
+	position: absolute;
+	top: 250px;
 	list-style-type: none;
 	padding: 0px;
 	margin-top: 0px;
@@ -84,48 +85,15 @@ ul#controls {
 #bar {
 	height: 25px;
 	width: 355px;
-	font-family: 'Annie Use Your Telescope', verdana; 
+	font-family: verdana, serif; 
 	font-size: 18px;
 	padding: 3px;
 }
 	
-.button {
-   border-top: 1px solid #0e0f0f;
-   background: #303233;
-   background: -webkit-gradient(linear, left top, left bottom, from(#161b1f), to(#303233));
-   background: -webkit-linear-gradient(top, #161b1f, #303233);
-   background: -moz-linear-gradient(top, #161b1f, #303233);
-   background: -ms-linear-gradient(top, #161b1f, #303233);
-   background: -o-linear-gradient(top, #161b1f, #303233);
-   padding: 5px 10px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 16px;
-   font-family: 'Annie Use Your Telescope', verdana; 
-   text-decoration: none;
-   vertical-align: middle;
-   float: left;
-   margin-top: 21px;
-   }
-
-.button:hover {
-   border-top-color: #323436;
-   background: #323436;
-   color: #787678;
-   }
-.button:active {
-   border-top-color: #297296;
-   background: #297296;
-   }
 
 .table1 {
-	clear: both;
+	position: absolute;
+	top: 300px;
 	border-collapse:separate; 
 	table-layout: fixed;
 	width: 1100px;
@@ -133,7 +101,7 @@ ul#controls {
 	margin-bottom: 30px;
 	margin-left:30px;
 	text-align: center;
-	font-family: 'Annie Use Your Telescope', verdana; 
+	font-family: verdana, serif; 
 	font-size: 0.9em;
 	}
 	
