@@ -4,7 +4,8 @@ body {
 	font-size: medium;
 	position: relative;
 	width: 1200px;
-	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -109,12 +110,6 @@ ul#controls {
 	margin-top: -15px;	
 } */
 
-.detailsMain {
-	width: 1000px;
-	position: absolute;
-	margin: 120px auto;
-	clear: both;
-}
 
 h1 {
 	text-align: center;
@@ -149,21 +144,3 @@ div#mymap {
 	width: 200px;
 	
 }
-
-/*th { 
-	overflow: scroll;
-	border-spacing: 0px 1px; 
-	color: white; 
-	background: #0675ad;
-	vertical-align: bottom; 
-	padding: 3px; 
-	border-spacing: 0px 1px; 
-	}
-
-td {
-		border-bottom: 1px solid black;
-		text-align: center;
-		table-layout: fixed;
-		height:20px;
-		overflow: scroll;
-}  */
