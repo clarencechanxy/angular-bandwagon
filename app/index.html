@@ -7,25 +7,13 @@
   <meta name="description" content="Connecting you to live music." /> 
   <meta name="keywords" content="Bandwagon, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
 <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25914988-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </head>
 <body ng:controller="EventsCatCtrl">
 
 <!--get facebook open graph tag http://developers.facebook.com/docs/reference/plugins/like/#-->
 
-
+<div id="container">
 <div id="header">
 	<a href="#/home">Home</a>	
 	<a href="#/about">About</a>	
@@ -90,8 +78,8 @@ new TWTR.Widget({
 	locationstring = "mailto:" + user + "@" + domain + "?subject=" + subject;
 	window.location = locationstring;
 	}
-	</script>
-
+   </script> 
+</div>
 </div>
 </body>
 </html>
