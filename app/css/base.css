@@ -183,6 +183,49 @@ nav#main ul li:hover {
   border-bottom: none !important;
 }
 
+table#events {
+  margin: 90px 0 0;
+}
+
+table#events a {
+  color: #c56936;
+  text-decoration: none;
+}
+
+table#events a:hover {
+  text-decoration: underline;
+}
+
+table#events th {
+  background-color: #c56936;
+  color: #fff;
+  text-align: left;
+  padding: 4px 10px;
+}
+
+table#events tbody tr:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
+
+table#events tbody tr:hover {
+  background-color: #efece4;
+  cursor: pointer;
+}
+
+table#events tbody tr td {
+  font-size: 16px;
+  color: #555;
+  padding: 3px 8px 3px 10px;
+}
+
+table#events tbody tr td.when {
+  width: 130px;
+}
+
+table#events tbody tr td.link {
+  width: 65px;
+}
+
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
 		Outer margins: 28px.

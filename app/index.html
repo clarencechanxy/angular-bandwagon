@@ -10,17 +10,18 @@
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body ng:controller="EventsCatCtrl">
+  
   <header>
     <h1>bandwagon</h1>
     <h2>live music gig finder</h2>
     <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
-  </header>
+  </header> 
   
   <nav id="main">
     <ul>
       <li class="current"><a href="#/search">search</a></li>
-      <li><a href="#/about">about</a></li>
-      <li><a href="#/join-us">join us</a></li>
+      <li class="about"><a href="#/about">about</a></li>
+      <li class="join-us"><a href="#/join-us">join us</a></li>
       <li><a href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
     </ul>
     <section class="social" style="display:none;">
@@ -30,12 +31,13 @@
         <li>facebook</li>
       </ul>
     </section>
-  </nav>
+   </nav>
   
   <div id="calendar">
     <span class="date_of_mth"></span>
     <span class="day_name"></span>
     <span class="month"></span>
+    <input type="hidden" name="query"/>
   </div>
   
   <div id="tweet">
@@ -71,10 +73,10 @@
     }).render().setUser('bandwagonapp').start();
     </script>
   </div>
+  
+  <ng:view></ng:view> 
     
-  <br>  
-    
-  <div id="smedia">
+  <div id="smedia" style="display:none;">
 	  <a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-via="BandwagonApp">Tweet</a>
 	  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
@@ -84,41 +86,36 @@
 	    <fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true" font=""></fb:like> 
 	  </div>
   </div>
-
-  <div id="tweet" style="display:none;">	
-    
-  </div>
-<ng:view></ng:view>
   
   <script src="lib/angular/angular.min.js" ng:autobind></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
   <script src="events.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/noSpam.js" type="text/javascript">
-  	// No spam script
-  	function nospam(user,domain,subject) {
-  	locationstring = "mailto:" + user + "@" + domain + "?subject=" + subject;
-  	window.location = locationstring;
-	}
-   </script> 
-   <script>
+    // No spam script
+    function nospam(user,domain,subject) {
+      locationstring = "mailto:" + user + "@" + domain + "?subject=" + subject;
+      window.location = locationstring;
+    }
+  </script> 
+  <script>
     $(document).ready(function() {
       $(".day_name").html(current_day);
       $(".date_of_mth").html(day_name);
       $(".month").html(current_month);
-      $("#calendar").fadeIn(500);
+      $("#calendar").fadeIn(400);
+      $("#calendar").click(function() {
+        $("#calendar input").val("8 Oct 11").change();
+      });
     });
-    
+
     var dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
     var month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");  
-    
+
     var d = new Date();
     var current_day = d.getDate();
     var day_name = dayNames[d.getDay()];
     var current_month = month[d.getMonth()];
-    
-  
-   </script>
-</div>
+  </script>
 </body>
 </html>
