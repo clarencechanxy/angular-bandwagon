@@ -90,7 +90,7 @@
   </div>
 <ng:view></ng:view>
   
-  <script src="lib/angular/angular.js" ng:autobind></script>
+  <script src="lib/angular/angular.min.js" ng:autobind></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
   <script src="events.js"></script>
   <script src="js/controllers.js"></script>
@@ -106,6 +106,7 @@
       $(".day_name").html(current_day);
       $(".date_of_mth").html(day_name);
       $(".month").html(current_month);
+      $("#calendar").fadeIn(500);
     });
     
     var dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
@@ -116,9 +117,6 @@
     var day_name = dayNames[d.getDay()];
     var current_month = month[d.getMonth()];
     
-    // console.log(day_name);
-    // console.log(current_day);
-    // console.log(current_month);
   
    </script>
 </div>

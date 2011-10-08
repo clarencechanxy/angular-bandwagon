@@ -84,6 +84,12 @@ header input#search {
   padding: 6px 8px;
   border: 1px solid #ccc;
   color: #555;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 1px 1px 10px #d2d2d2;
+  -webkit-box-shadow: 1px 1px 10px #ccc;
+  box-shadow: 1px 1px 10px #ccc;
 }
 
 header input#search:focus {
@@ -133,6 +139,7 @@ nav#main ul li:hover {
   width: 140px;
   height: 191px;
   z-index: 0;
+  display: none;
 }
 
 #calendar span {
@@ -141,11 +148,11 @@ nav#main ul li:hover {
   font-weight: bold;
   font-size: 1.1em;
   color: #4d4d4d;
-  text-shadow: 2px 2px 1px #f2f2f2;
+  text-shadow: 2px 2px 1px #fff;
 }
 
 #calendar .date_of_mth {
-  margin: 45px 0 0;
+  margin: 48px 0 0;
 }
 
 #calendar .day_name {  
