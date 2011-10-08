@@ -1,0 +1,211 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography
+	------------------	*/
+
+body {
+/*  font: 17px/24px Palatino, Constantia, "Palatino Linotype", serif;*/
+  font: 1.2em/24px "Helvetica-Narrow", "Arial Narrow", Helvetica, Arial, sans-serif;  
+}
+
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+html {background-color: #f9f9f9;}
+
+body {
+	width: 896px;
+	padding: 72px 48px 84px;
+	background: #fff;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+  margin: 0 auto;
+}
+
+header {
+  width: 330px;
+  height: 107px;
+  background: url(../img/logo.png) no-repeat;
+  margin: 0 0 0 220px;
+}
+
+header h1, header h2 {
+  display: none;
+}
+
+header input#search {
+  width: 96%;
+  margin: 125px 0 0;
+  font-size: 14px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+}
+
+nav#main {  
+  width: 896px;
+  position: absolute;
+  top: 0;
+  background-color: #e6e6e6;
+  -moz-box-shadow: 2px 5px 5px #ccc;
+  -webkit-box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;
+  z-index: 1;
+}
+
+nav#main ul li {
+  display: block;
+  list-style-type: none;
+  float: left;
+} 
+
+nav#main ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: helveticaneue-ultralight, "helvetica narrow", sans-serif;
+  letter-spacing: 1px;
+  color: #555;
+  padding: 4px 20px 8px;
+}
+
+nav#main ul li.current a{
+  background-color: #333;
+  color: #fff;
+}
+
+nav#main ul li:hover {
+  background-color: #d6d6d6;
+}
+
+#calendar {
+  position: absolute;
+  top: 37px;
+  background: url(../img/calendar_bg.png) no-repeat;
+  width: 140px;
+  height: 191px;
+  z-index: 0;
+}
+
+#twitter-widget {
+  position: absolute;
+  top: 37px;
+  margin-left: 618px;
+  background: url(../img/amp.png) no-repeat;
+  width: 280px;
+  height: 210px;
+}
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+		width: 712px;
+		padding: 48px 28px 60px;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+		width: 252px;
+		padding: 48px 34px 60px;
+	}
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		width: 436px;
+		padding: 36px 22px 48px;
+	}
+	
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+	
+	}
+	
+}
