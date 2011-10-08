@@ -33,6 +33,9 @@
   </nav>
   
   <div id="calendar">
+    <span class="date_of_mth"></span>
+    <span class="day_name"></span>
+    <span class="month"></span>
   </div>
   
   <div id="tweet">
@@ -53,7 +56,7 @@
         tweets: {
           background: 'none',
           color: '#fff',
-          links: '#c56836'
+          links: '#c56936'
         }
       },
       features: {
@@ -68,6 +71,8 @@
     }).render().setUser('bandwagonapp').start();
     </script>
   </div>
+    
+  <br>  
     
   <div id="smedia">
 	  <a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-via="BandwagonApp">Tweet</a>
@@ -84,17 +89,38 @@
     
   </div>
 <ng:view></ng:view>
-
+  
   <script src="lib/angular/angular.js" ng:autobind></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
   <script src="events.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/noSpam.js" type="text/javascript">
-	// No spam script
-	function nospam(user,domain,subject) {
-	locationstring = "mailto:" + user + "@" + domain + "?subject=" + subject;
-	window.location = locationstring;
+  	// No spam script
+  	function nospam(user,domain,subject) {
+  	locationstring = "mailto:" + user + "@" + domain + "?subject=" + subject;
+  	window.location = locationstring;
 	}
    </script> 
+   <script>
+    $(document).ready(function() {
+      $(".day_name").html(current_day);
+      $(".date_of_mth").html(day_name);
+      $(".month").html(current_month);
+    });
+    
+    var dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
+    var month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");  
+    
+    var d = new Date();
+    var current_day = d.getDate();
+    var day_name = dayNames[d.getDay()];
+    var current_month = month[d.getMonth()];
+    
+    // console.log(day_name);
+    // console.log(current_day);
+    // console.log(current_month);
+  
+   </script>
 </div>
 </body>
 </html>

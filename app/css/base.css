@@ -83,6 +83,11 @@ header input#search {
   font-size: 14px;
   padding: 6px 8px;
   border: 1px solid #ccc;
+  color: #555;
+}
+
+header input#search:focus {
+  color: #c56836;
 }
 
 nav#main {  
@@ -128,6 +133,25 @@ nav#main ul li:hover {
   width: 140px;
   height: 191px;
   z-index: 0;
+}
+
+#calendar span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #4d4d4d;
+  text-shadow: 2px 2px 1px #f2f2f2;
+}
+
+#calendar .date_of_mth {
+  margin: 45px 0 0;
+}
+
+#calendar .day_name {  
+  color: #c56936;
+  font-size: 4.5em;
+  margin: 20px 0;
 }
 
 #tweet {
