@@ -15,7 +15,7 @@
     <h2>live music gig finder</h2>
     <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
   </header>
-  
+
   <nav id="main">
     <ul>
       <li class="search"><a href="#/search">search</a></li>
@@ -23,15 +23,19 @@
       <li class="join-us"><a href="#/join-us">join us</a></li>
       <li class="blog"><a href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
     </ul>
-    <section class="social" style="display:none;">
-      <ul>
-        <li>google +</li>
-        <li>twitter</li>
-        <li>facebook</li>
-      </ul>
-    </section>
-   </nav>
-  
+    <ul class="social">
+      <li class="tweeter">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-via="BandwagonApp"></a>
+   	  </li>
+   	  <li>
+     	  <div id="facebook">
+     	    <div id="fb-root"></div>
+     	    <fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true" font=""></fb:like> 
+     	  </div>
+   	  </li>
+    </ul>
+  </nav>
+   
   <div id="calendar">
     <span class="day_name"></span>
     <span class="date_of_mth"></span>
@@ -77,18 +81,7 @@
   </div>
   
   <ng:view></ng:view> 
-    
-  <div id="smedia" style="display:none;">
-	  <a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-via="BandwagonApp">Tweet</a>
-	  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-	  <div id="facebook">
-	    <div id="fb-root"></div>
-	    <script src="http://connect.facebook.net/en_US/all.js#appId=258528160836345&amp;xfbml=1"></script>
-	    <fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true" font=""></fb:like> 
-	  </div>
-  </div>
-  
+      
   <footer>
     &#169; Copyright 2011 Bandwagon, All rights reserved | <a href="javascript:nospam('bandwagon','bandwagon.sg','Get in touch!')">bandwagon [at] bandwagon.sg</a>
   </footer>
@@ -97,6 +90,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
   <script src="events.js"></script>
   <script src="js/controllers.js"></script>
+  <script src="http://platform.twitter.com/widgets.js"></script>
+  <script src="http://connect.facebook.net/en_US/all.js#appId=258528160836345&amp;xfbml=1"></script>
   <script src="js/noSpam.js" type="text/javascript">
     // No spam script
     function nospam(user,domain,subject) {

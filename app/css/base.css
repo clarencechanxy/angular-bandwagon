@@ -33,7 +33,7 @@ a img {border: 0;}
 
 body {
 /*  font: 17px/24px Palatino, Constantia, "Palatino Linotype", serif;*/
-  font: 1.2em/20px "Helvetica-Narrow", "Arial Narrow", Helvetica, Arial, sans-serif;  
+  font: 1.2em/22px "Helvetica-Narrow", "Arial Narrow", Helvetica, Arial, sans-serif;  
 }
 
 a:link, a:visited, a:hover, a:active  {
@@ -115,7 +115,7 @@ nav#main {
   -moz-box-shadow: 2px 5px 5px #ccc;
   -webkit-box-shadow: 2px 5px 5px #ccc;
   box-shadow: 2px 5px 5px #ccc;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav#main ul li {
@@ -138,6 +138,19 @@ nav#main ul li:hover {
   background-color: #d6d6d6;
 }
 
+nav#main ul.social {
+  float: right;
+  margin: 4px -9px 0;
+}
+
+nav#main ul.social li:hover {
+  background-color:inherit;
+}
+
+nav#main ul.social li.tweeter {
+  margin: 2px 6px 0 0;
+}
+
 body.bandwagon.search nav#main li.search a,
 body.bandwagon.events nav#main li.search a,
 body.bandwagon.about nav#main li.about a,
@@ -152,7 +165,7 @@ body.bandwagon.join-us nav#main li.join-us a {
   background: url(../img/calendar_bg.png) no-repeat;
   width: 140px;
   height: 191px;
-  z-index: 0;
+  z-index: 1;
   display: none;
 }
 
@@ -193,7 +206,6 @@ body.bandwagon.join-us nav#main li.join-us a {
   margin: 26px 0 0 90px;
   padding: 4px 0;
   width: 120px;
-  opacity: .9;
 }
 
 #tweet .twtr-widget .twtr-doc .twtr-hd, #tweet .twtr-widget .twtr-doc .twtr-ft {
@@ -203,6 +215,7 @@ body.bandwagon.join-us nav#main li.join-us a {
 #tweet .twtr-widget .twtr-doc .twtr-bd .twtr-timeline {
   margin: 12px 0 0 10px !important;
   font-size: 1.2em !important;
+  z-index: 0;
 }
 
 #tweet .twtr-widget .twtr-tweet {
@@ -330,7 +343,7 @@ footer {
   clear: both;
   border-top: 1px solid #ccc;
   font-size: 13px;
-  color: #ccc;
+  color: #bbb;
   margin: 60px 0 0;
   padding: 5px 0 0;
 }
