@@ -9,13 +9,7 @@
   <link rel="stylesheet" href="css/base.css"/>
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body ng:controller="EventsCatCtrl">
-  
-  <header>
-    <h1>bandwagon</h1>
-    <h2>live music gig finder</h2>
-    <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
-  </header> 
+<body ng:controller="EventsCatCtrl" id="home">
   
   <nav id="main">
     <ul>
@@ -34,10 +28,10 @@
    </nav>
   
   <div id="calendar">
-    <span class="date_of_mth"></span>
     <span class="day_name"></span>
+    <span class="date_of_mth"></span>
     <span class="month"></span>
-    <input type="hidden" name="query"/>
+    <input type="hidden" name="cal_date.date"/>
   </div>
   
   <div id="tweet">
@@ -100,17 +94,30 @@
   </script> 
   <script>
     $(document).ready(function() {
-      $(".day_name").html(current_day);
-      $(".date_of_mth").html(day_name);
+      $(".day_name").html(day_name);
+      $(".date_of_mth").html(current_day);
       $(".month").html(current_month);
       $("#calendar").fadeIn(400);
       $("#calendar").click(function() {
-        $("#calendar input").val("8 Oct 11").change();
+        $("#calendar input").val("9 Oct 11").change();
       });
     });
 
     var dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
-    var month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");  
+    var month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");
+    
+    // JANUARY", 
+    // "FEBRUARY", 
+    // "MARCH",  
+    // "APRIL", 
+    // "MAY", 
+    // "JUNE", 
+    // "JULY", 
+    // "AUGUST", 
+    // "SEPTEMBER", 
+    // "OCTOBER", 
+    // "NOVEMBER", 
+    // "DECEMBER"  
 
     var d = new Date();
     var current_day = d.getDate();

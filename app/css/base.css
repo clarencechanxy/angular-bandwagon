@@ -87,7 +87,7 @@ header input#search {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -moz-box-shadow: 1px 1px 10px #d2d2d2;
+  -moz-box-shadow: 1px 1px 10px #ccc;
   -webkit-box-shadow: 1px 1px 10px #ccc;
   box-shadow: 1px 1px 10px #ccc;
 }
@@ -146,19 +146,21 @@ nav#main ul li:hover {
   display: block;
   text-align: center;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: .9em;
+  font-family: arial black;
+  letter-spacing: -1px;
   color: #4d4d4d;
-  text-shadow: 2px 2px 1px #fff;
+  text-shadow: 1px 1px 1px #fff;
 }
 
-#calendar .date_of_mth {
+#calendar .day_name {
   margin: 48px 0 0;
 }
 
-#calendar .day_name {  
+#calendar .date_of_mth {  
   color: #c56936;
-  font-size: 4.5em;
-  margin: 20px 0;
+  font-size: 3.4em;
+  margin: 12px 0 14px;
 }
 
 #tweet {
@@ -184,12 +186,18 @@ nav#main ul li:hover {
 }
 
 table#events {
+  width: 100%;
   margin: 90px 0 0;
+  border: 1px solid #d2d2d2;
+  -moz-box-shadow: 1px 1px 10px #d2d2d2;
+  -webkit-box-shadow: 1px 1px 10px #d2d2d2;
+  box-shadow: 1px 1px 10px #d2d2d2;
 }
 
 table#events a {
   color: #c56936;
   text-decoration: none;
+  font-weight: bold;
 }
 
 table#events a:hover {
@@ -201,6 +209,11 @@ table#events th {
   color: #fff;
   text-align: left;
   padding: 4px 10px;
+  font-size: 17px;
+}
+
+table#events tbody tr td{
+  border-bottom: 1px solid #ccc;
 }
 
 table#events tbody tr:nth-child(2n+1) {
@@ -213,9 +226,9 @@ table#events tbody tr:hover {
 }
 
 table#events tbody tr td {
-  font-size: 16px;
+  font-size: 15px;
   color: #555;
-  padding: 3px 8px 3px 10px;
+  padding: 5px 8px 5px 10px;
 }
 
 table#events tbody tr td.when {
