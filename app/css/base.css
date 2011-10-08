@@ -33,7 +33,12 @@ a img {border: 0;}
 
 body {
 /*  font: 17px/24px Palatino, Constantia, "Palatino Linotype", serif;*/
-  font: 1.2em/24px "Helvetica-Narrow", "Arial Narrow", Helvetica, Arial, sans-serif;  
+  font: 1.2em/20px "Helvetica-Narrow", "Arial Narrow", Helvetica, Arial, sans-serif;  
+}
+
+a:link, a:visited, a:hover, a:active  {
+  color: #c56936;
+  text-decoration: none;
 }
 
 
@@ -196,8 +201,8 @@ body.bandwagon.join-us nav#main li.join-us a {
 }
 
 #tweet .twtr-widget .twtr-doc .twtr-bd .twtr-timeline {
-  margin: 68px 0 0 10px;
-  font-size: 98%;
+  margin: 12px 0 0 10px !important;
+  font-size: 1.2em !important;
 }
 
 #tweet .twtr-widget .twtr-tweet {
@@ -214,8 +219,6 @@ table#events {
 }
 
 table#events a {
-  color: #c56936;
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -257,6 +260,81 @@ table#events tbody tr td.when {
 table#events tbody tr td.link {
   width: 68px;
 }
+
+.content {
+  width: 896px;
+}
+
+.content .cols {
+  float: left;
+  margin-right: 8px;
+  color: #555;
+}
+
+.content .cols h2 {
+  background-color: #c56936;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 0 0 20px;
+  font-size: 17px;
+  -moz-box-shadow: 2px 5px 5px #ccc;
+  -webkit-box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;
+}
+
+.content .cols p {
+  font-size: .85em;
+  margin: 0 10px 10px;
+}
+
+.content .cols.once_upon {
+  width: 436px;
+}
+
+.content .cols.once_upon blockquote {
+  width: 90%;
+  margin: 20px auto;
+  font-style: italic;
+  color: #444;
+}
+
+.content .cols.about_clarence {
+  width: 344px;
+}
+
+.content .cols.about_clarence blockquote {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #444;
+  text-align: right;
+  margin-bottom: 55px;
+}
+
+.content .cols.about_clarence img {
+  float: left;
+  margin: 0 18px 10px 10px;
+  -moz-box-shadow: 2px 5px 5px #ccc;
+  -webkit-box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;
+}
+
+.content .cols img.join_us {
+  width: 100%;
+  margin-bottom: 2px;
+  -moz-box-shadow: 2px 5px 5px #ccc;
+  -webkit-box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;
+}
+
+footer {
+  clear: both;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+  color: #ccc;
+  margin: 60px 0 0;
+  padding: 5px 0 0;
+}
+
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.

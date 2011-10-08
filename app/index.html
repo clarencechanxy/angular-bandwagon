@@ -40,7 +40,7 @@
   </div>
   
   <div id="tweet">
-    <a href="http://twitter.com/bandwagonapp" target="_blank" class="follow_us" title="Follow us! Join the conversation.">
+    <a href="http://twitter.com/bandwagonapp" target="_blank" class="follow_us" title="Follow us! Join in the conversation!">
       Follow us! Join the conversation.
     </a>
     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -48,10 +48,10 @@
     new TWTR.Widget({
       version: 2,
       type: 'profile',
-      rpp: 4,
+      rpp: 1,
       interval: 30000,
       width: 270,
-      height: 120,
+      height: 140,
       theme: {
         shell: {
           background: 'none',
@@ -64,7 +64,7 @@
         }
       },
       features: {
-        scrollbar: true,
+        scrollbar: false,
         loop: false,
         live: true,
         hashtags: true,
@@ -90,7 +90,7 @@
   </div>
   
   <footer>
-    &#169; 2011 Bandwagon, All rights reserverd | <a href="javascript:nospam('bandwagon','bandwagon.sg','Contributor')">bandwagon [at] bandwagon.sg</a>
+    &#169; Copyright 2011 Bandwagon, All rights reserved | <a href="javascript:nospam('bandwagon','bandwagon.sg','Get in touch!')">bandwagon [at] bandwagon.sg</a>
   </footer>
   
   <script src="lib/angular/angular.min.js" ng:autobind></script>
@@ -115,9 +115,9 @@
       $(".date_of_mth").html(current_day);
       $(".month").html(current_month);
       
-      $("#calendar").click(function() {
-        $("#calendar input").val("9 Oct 11").change();
-      });
+      // $("#calendar").click(function() {
+        $("#calendar input").val("19 Oct 11").change();
+      // });
       
       // Navigation current
       $("#main ul li a").click(function() {
