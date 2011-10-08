@@ -9,14 +9,19 @@
   <link rel="stylesheet" href="css/base.css"/>
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body ng:controller="EventsCatCtrl" id="home">
+<body ng:controller="EventsCatCtrl" class="bandwagon">
+  <header>
+    <h1>bandwagon</h1>
+    <h2>live music gig finder</h2>
+    <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
+  </header>
   
   <nav id="main">
     <ul>
-      <li class="current"><a href="#/search">search</a></li>
+      <li class="search"><a href="#/search">search</a></li>
       <li class="about"><a href="#/about">about</a></li>
       <li class="join-us"><a href="#/join-us">join us</a></li>
-      <li><a href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
+      <li class="blog"><a href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
     </ul>
     <section class="social" style="display:none;">
       <ul>
@@ -35,6 +40,9 @@
   </div>
   
   <div id="tweet">
+    <a href="http://twitter.com/bandwagonapp" target="_blank" class="follow_us" title="Follow us! Join the conversation.">
+      Follow us! Join the conversation.
+    </a>
     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
     <script>
     new TWTR.Widget({
@@ -81,6 +89,10 @@
 	  </div>
   </div>
   
+  <footer>
+    &#169; 2011 Bandwagon, All rights reserverd | <a href="javascript:nospam('bandwagon','bandwagon.sg','Contributor')">bandwagon [at] bandwagon.sg</a>
+  </footer>
+  
   <script src="lib/angular/angular.min.js" ng:autobind></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
   <script src="events.js"></script>
@@ -94,30 +106,35 @@
   </script> 
   <script>
     $(document).ready(function() {
+
+      $("body").addClass(getCurrentPath());
+      $("#calendar, header, #tweet").fadeIn(400);
+      
+      // Calendar
       $(".day_name").html(day_name);
       $(".date_of_mth").html(current_day);
       $(".month").html(current_month);
-      $("#calendar").fadeIn(400);
+      
       $("#calendar").click(function() {
         $("#calendar input").val("9 Oct 11").change();
       });
+      
+      // Navigation current
+      $("#main ul li a").click(function() {
+        var new_path = $(this).parent().attr("class");
+        $("body").removeClass(getCurrentPath());
+        $("body").addClass(new_path);
+      });
+      
     });
+    
+    function getCurrentPath() {
+     var path = document.location.href.split('#/')[1]; 
+     return path;
+    }
 
     var dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
-    var month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");
-    
-    // JANUARY", 
-    // "FEBRUARY", 
-    // "MARCH",  
-    // "APRIL", 
-    // "MAY", 
-    // "JUNE", 
-    // "JULY", 
-    // "AUGUST", 
-    // "SEPTEMBER", 
-    // "OCTOBER", 
-    // "NOVEMBER", 
-    // "DECEMBER"  
+    var month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");  
 
     var d = new Date();
     var current_day = d.getDate();

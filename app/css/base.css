@@ -66,11 +66,17 @@ body {
   margin: 0 auto;
 }
 
+.bandwagon.about header, .bandwagon.about #calendar, .bandwagon.about #tweet,
+.bandwagon.join-us header, .bandwagon.join-us #calendar, .bandwagon.join-us #tweet {
+  display: none !important;
+}
+
 header {
   width: 330px;
   height: 107px;
   background: url(../img/logo.png) no-repeat;
   margin: 0 0 0 220px;
+  display: none;
 }
 
 header h1, header h2 {
@@ -123,13 +129,16 @@ nav#main ul li a {
   padding: 4px 20px 8px;
 }
 
-nav#main ul li.current a{
-  background-color: #333;
-  color: #fff;
-}
-
 nav#main ul li:hover {
   background-color: #d6d6d6;
+}
+
+body.bandwagon.search nav#main li.search a,
+body.bandwagon.events nav#main li.search a,
+body.bandwagon.about nav#main li.about a,
+body.bandwagon.join-us nav#main li.join-us a {
+  background-color: #333;
+  color: #fff;
 }
 
 #calendar {
@@ -170,6 +179,16 @@ nav#main ul li:hover {
   background: url(../img/amp.png) no-repeat;
   width: 280px;
   height: 210px;
+  display: none;
+}
+
+#tweet .follow_us {
+  display: block;
+  text-indent: -3000px;
+  margin: 26px 0 0 90px;
+  padding: 4px 0;
+  width: 120px;
+  opacity: .9;
 }
 
 #tweet .twtr-widget .twtr-doc .twtr-hd, #tweet .twtr-widget .twtr-doc .twtr-ft {
@@ -236,7 +255,7 @@ table#events tbody tr td.when {
 }
 
 table#events tbody tr td.link {
-  width: 65px;
+  width: 68px;
 }
 
 /*		Tablet Layout: 768px.
