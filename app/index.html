@@ -35,7 +35,38 @@
   <div id="calendar">
   </div>
   
-  <div id="twitter-widget">
+  <div id="tweet">
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 4,
+      interval: 30000,
+      width: 270,
+      height: 120,
+      theme: {
+        shell: {
+          background: 'none',
+          color: '#fff'
+        },
+        tweets: {
+          background: 'none',
+          color: '#fff',
+          links: '#c56836'
+        }
+      },
+      features: {
+        scrollbar: true,
+        loop: false,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: false,
+        behavior: 'all'
+      }
+    }).render().setUser('bandwagonapp').start();
+    </script>
   </div>
     
   <div id="smedia">
@@ -50,37 +81,7 @@
   </div>
 
   <div id="tweet" style="display:none;">	
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-    new TWTR.Widget({
-      version: 2,
-      type: 'profile',
-      rpp: 4,
-      interval: 30000,
-      width: 250,
-      height: 150, 
-      theme: {
-        shell: {
-          background: '#333333',
-          color: '#ffffff'
-        },
-        tweets: {
-          background: '#000000',
-          color: '#ffffff',
-          links: '#07bdeb'
-        }
-      },
-      features: {
-        scrollbar: true,
-        loop: false,
-        live: true,
-        hashtags: true,
-        timestamp: true,
-        avatars: false,
-        behavior: 'all'
-      }
-    }).render().setUser('bandwagonapp').start();
-    </script>
+    
   </div>
 <ng:view></ng:view>
 

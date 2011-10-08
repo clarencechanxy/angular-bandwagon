@@ -130,7 +130,7 @@ nav#main ul li:hover {
   z-index: 0;
 }
 
-#twitter-widget {
+#tweet {
   position: absolute;
   top: 37px;
   margin-left: 618px;
@@ -139,6 +139,18 @@ nav#main ul li:hover {
   height: 210px;
 }
 
+#tweet .twtr-widget .twtr-doc .twtr-hd, #tweet .twtr-widget .twtr-doc .twtr-ft {
+  display: none !important;
+}
+
+#tweet .twtr-widget .twtr-doc .twtr-bd .twtr-timeline {
+  margin: 68px 0 0 10px;
+  font-size: 98%;
+}
+
+#tweet .twtr-widget .twtr-tweet {
+  border-bottom: none !important;
+}
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
