@@ -40,12 +40,12 @@
     <span class="day_name"></span>
     <span class="date_of_mth"></span>
     <span class="month"></span>
-    <div class="controls" style="display:none;">
+    <div class="controls">
       <a href="" class="prev_day">&lsaquo; prev</a>
       <a href="" class="today">today</a>
-      <a href="" class="next_day">next &rsaquo;</a>
+      <a href="" class="new_day">next &rsaquo;</a>
     </div>
-    <input type="hidden" name="cal_date.date"/>
+    <input type="hidden" name="cal_date.date" id="date_query"/>
   </div>
   
   <div id="tweet">
@@ -93,6 +93,7 @@
   
   <script src="lib/angular/angular.min.js" ng:autobind></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+  <script src="js/bandwagon.js"></script>
   <script src="events.js"></script>
   <script src="js/controllers.js"></script>
   <script src="http://platform.twitter.com/widgets.js"></script>
@@ -109,14 +110,7 @@
       //onload
       $("body").addClass(getCurrentPath());
       $("#calendar, header, #tweet").fadeIn(400);
-      
-      // Calendar
-      showCalendarToday();
-      
-      $("#calendar .next_day").click(function() {
-        getNextDay();
-      });
-      
+       
       // Navigation highlight
       $("#main ul li a").click(function() {
         var new_path = $(this).parent().attr("class");
@@ -124,41 +118,12 @@
         $("body").addClass(new_path);
       });
       
-    });
-    
-    // methods here
-    function getCurrentPath() {
-      var path = document.location.href.split('#/')[1]; 
-      return path;
-    }
-    
-    function getToday() {
-      today = new Date();
-      d = today.getDate();
-      dn = today.getDay();
-      m = today.getMonth();
-      y = today.getFullYear();
-    }
-
-    function showCalendarToday() {
-      getToday();
-      dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
-      month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");  
-      var current_day = d;
-      var day_name = dayNames[dn];
-      var current_month = month[m];
+      //
+      $("#search").focus(function() {
+        $("#date_query").val("").change();
+      });
       
-      $(".day_name").html(day_name);
-      $(".date_of_mth").html(current_day);
-      $(".month").html(current_month);
-
-      $("#calendar").data("today", d+'-'+(m+1)+'-'+y);
-      // console.log($("#calendar").data("today"));
-    }
-    
-    function getNextDay() {
-
-    }
+    });
   </script>
 </body>
 </html>
