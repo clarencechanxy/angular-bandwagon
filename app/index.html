@@ -21,7 +21,7 @@
       <li class="search"><a href="#/search">search</a></li>
       <li class="about"><a href="#/about">about</a></li>
       <li class="join-us"><a href="#/join-us">join us</a></li>
-      <li class="blog"><a href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
+      <li><a class="blog" href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
     </ul>
     <ul class="social">
       <li class="tweeter">
@@ -92,7 +92,7 @@
   </footer>
   
   <script src="lib/angular/angular.min.js" ng:autobind></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bandwagon.js"></script>
   <script src="events.js"></script>
@@ -113,13 +113,12 @@
       $("#calendar, header, #tweet").fadeIn(400);
        
       // Navigation highlight
-      $("#main ul li a").click(function() {
+      $("#main ul li a").not(".blog").click(function() {
         var new_path = $(this).parent().attr("class");
         $("body").removeClass(getCurrentPath());
         $("body").addClass(new_path);
       });
-      
-      //
+
       $("#search").focus(function() {
         $("#date_query").val("").change();
       });
