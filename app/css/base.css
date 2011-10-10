@@ -133,7 +133,7 @@ nav#main ul li a {
   font-family: helveticaneue-ultralight, "helvetica narrow", sans-serif;
   letter-spacing: 1px;
   color: #555;
-  padding: 4px 35px 8px;
+  padding: 6px 35px 6px;
 }
 
 nav#main ul li:hover {
@@ -346,10 +346,10 @@ table#events tbody tr td.link {
 
 .content .cols img.join_us {
   width: 100%;
-  margin-bottom: 2px;
-  -moz-box-shadow: 2px 5px 5px #ccc;
+  margin-bottom: -2px;
+/*  -moz-box-shadow: 2px 5px 5px #ccc;
   -webkit-box-shadow: 2px 5px 5px #ccc;
-  box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;*/
 }
 
 footer {
