@@ -163,7 +163,7 @@ body.bandwagon.join-us nav#main li.join-us a {
 
 #calendar {
   position: absolute;
-  top: 37px;
+  top: 36px;
   background: url(../img/calendar_bg.png) no-repeat;
   width: 140px;
   height: 191px;
@@ -205,7 +205,7 @@ body.bandwagon.join-us nav#main li.join-us a {
 
 #tweet {
   position: absolute;
-  top: 37px;
+  top: 36px;
   margin-left: 618px;
   background: url(../img/amp.png) no-repeat;
   width: 280px;
