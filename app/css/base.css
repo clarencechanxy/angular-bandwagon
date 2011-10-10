@@ -1,0 +1,433 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography
+	------------------	*/
+
+body {
+/*  font: 17px/24px Palatino, Constantia, "Palatino Linotype", serif;*/
+  font: 1.2em/22px "Helvetica-Narrow", "Arial Narrow", Helvetica, Arial, sans-serif;  
+}
+
+a:link, a:visited, a:hover, a:active  {
+  color: #c56936;
+  text-decoration: none;
+}
+
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+	width: 896px;
+	padding: 72px 48px 84px;
+	background: #fff;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+  margin: 0 auto;
+}
+
+.bandwagon.about header, .bandwagon.about #calendar, .bandwagon.about #tweet,
+.bandwagon.join-us header, .bandwagon.join-us #calendar, .bandwagon.join-us #tweet {
+  display: none !important;
+}
+
+header {
+  width: 330px;
+  height: 107px;
+  background: url(../img/logo.png) no-repeat;
+  margin: 0 0 0 220px;
+  display: none;
+}
+
+header h1, header h2 {
+  display: none;
+}
+
+header input#search {
+  width: 96%;
+  margin: 125px 0 0;
+  font-size: 14px;
+  padding: 6px 8px;
+  color: #555;
+/*  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 1px 1px 4px #d6d6d6;
+  -webkit-box-shadow: 1px 1px 4px #d6d6d6;
+  box-shadow: 1px 1px 4px #d6d6d6;*/
+}
+
+header input#search:focus {
+  color: #c56836;
+}
+
+nav#main {  
+  width: 896px;
+  position: absolute;
+  top: 0;
+  background-color: #e6e6e6;
+  -moz-box-shadow: 2px 5px 5px #ccc;
+  -webkit-box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;
+  z-index: 2;
+}
+
+nav#main ul li {
+  display: block;
+  list-style-type: none;
+  float: left;
+} 
+
+nav#main ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: helveticaneue-ultralight, "helvetica narrow", sans-serif;
+  letter-spacing: 1px;
+  color: #555;
+  padding: 6px 35px 6px;
+}
+
+nav#main ul li:hover {
+  background-color: #d6d6d6;
+}
+
+nav#main ul.social {
+  float: right;
+  margin: 4px -9px 0;
+}
+
+nav#main ul.social li:hover {
+  background-color:inherit;
+}
+
+nav#main ul.social li.tweeter {
+  margin: 2px 6px 0 0;
+}
+
+body.bandwagon.search nav#main li.search a,
+body.bandwagon.events nav#main li.search a,
+body.bandwagon.about nav#main li.about a,
+body.bandwagon.join-us nav#main li.join-us a {
+  background-color: #333;
+  color: #fff;
+}
+
+#calendar {
+  position: absolute;
+  top: 36px;
+  background: url(../img/calendar_bg.png) no-repeat;
+  width: 140px;
+  height: 191px;
+  z-index: 1;
+  display: none;
+}
+
+#calendar a {
+  font-weight: normal;
+  font-size: 15px;
+  padding: 0 1px;
+  text-decoration: underline;
+}
+
+#calendar .controls {
+  text-align: center;
+}
+
+#calendar span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: .9em;
+  font-family: arial black;
+  letter-spacing: -1px;
+  color: #4d4d4d;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+#calendar .day_name {
+  margin: 42px 0 0;
+}
+
+#calendar .date_of_mth {  
+  color: #c56936;
+  font-size: 3.7em;
+  margin: 14px 0 18px;
+}
+
+#tweet {
+  position: absolute;
+  top: 36px;
+  margin-left: 618px;
+  background: url(../img/amp.png) no-repeat;
+  width: 280px;
+  height: 210px;
+  display: none;
+}
+
+#tweet .follow_us {
+  display: block;
+  text-indent: -3000px;
+  margin: 26px 0 0 90px;
+  padding: 4px 0;
+  width: 120px;
+}
+
+#tweet .twtr-widget .twtr-doc .twtr-hd, #tweet .twtr-widget .twtr-doc .twtr-ft {
+  display: none !important;
+}
+
+#tweet .twtr-widget .twtr-doc .twtr-bd .twtr-timeline {
+  margin: 14px 0 0 12px !important;
+  font-size: 1.2em !important;
+  z-index: 0;
+}
+
+#tweet .twtr-widget .twtr-tweet {
+  border-bottom: none !important;
+}
+
+table#events {
+  width: 100%;
+  margin: 90px 0 0;
+/*  border: 1px solid #d2d2d2;
+  -moz-box-shadow: 1px 1px 10px #d2d2d2;
+  -webkit-box-shadow: 1px 1px 10px #d2d2d2;
+  box-shadow: 1px 1px 10px #d2d2d2;*/
+}
+
+table#events a {
+  font-weight: bold;
+}
+
+table#events a:hover {
+  text-decoration: underline;
+}
+
+table#events th {
+  background-color: #c56936;
+  color: #fff;
+  text-align: left;
+  padding: 4px 10px;
+  font-size: 17px;
+}
+
+table#events tbody tr td{
+/*  border-bottom: 1px solid #ccc;*/
+}
+
+table#events tbody tr:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
+
+table#events tbody tr:hover {
+  background-color: #efece4;
+  cursor: pointer;
+}
+
+table#events tbody tr td {
+  font-size: 15px;
+  color: #555;
+  padding: 5px 8px 5px 10px;
+}
+
+table#events tbody tr td.when {
+  width: 130px;
+}
+
+table#events tbody tr td.link {
+  width: 68px;
+}
+
+.content {
+  width: 896px;
+}
+
+.content .cols {
+  float: left;
+  margin-right: 8px;
+  color: #555;
+}
+
+.content .cols h2 {
+  background-color: #c56936;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 0 0 20px;
+  font-size: 17px;
+  -moz-box-shadow: 1px 2px 2px #aaa;
+  -webkit-box-shadow: 1px 2px 2px #aaa;
+  box-shadow: 1px 2px 2px #aaa;
+}
+
+.content .cols p {
+  font-size: .85em;
+  margin: 0 10px 10px;
+}
+
+.content .cols.once_upon {
+  width: 436px;
+}
+
+.content .cols.once_upon blockquote {
+  width: 90%;
+  margin: 20px auto;
+  font-style: italic;
+  color: #444;
+}
+
+.content .cols.about_clarence {
+  width: 344px;
+}
+
+.content .cols.about_clarence blockquote {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #444;
+  text-align: right;
+  margin-bottom: 55px;
+}
+
+.content .cols.about_clarence img {
+  float: left;
+  margin: 0 18px 10px 10px;
+/*  -moz-box-shadow: 2px 5px 5px #ccc;
+  -webkit-box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;*/
+}
+
+.content .cols img.join_us {
+  width: 100%;
+  margin-bottom: -2px;
+/*  -moz-box-shadow: 2px 5px 5px #ccc;
+  -webkit-box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;*/
+}
+
+footer {
+  clear: both;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+  color: #bbb;
+  margin: 60px 0 0;
+  padding: 5px 0 0;
+}
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+/*@media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+  body {
+    width: 712px;
+    padding: 48px 28px 60px;
+  }
+}*/
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+/*@media only screen and (max-width: 767px) {
+  
+  body {
+    width: 252px;
+    padding: 48px 34px 60px;
+  }
+  
+}*/
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  body {
+    width: 436px;
+    padding: 36px 22px 48px;
+  }
+  
+}*/
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+	
+	}
+	
+}
