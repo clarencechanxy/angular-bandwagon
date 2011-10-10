@@ -303,9 +303,9 @@ table#events tbody tr td.link {
   padding: 4px 8px;
   margin: 0 0 20px;
   font-size: 17px;
-  -moz-box-shadow: 2px 5px 5px #ccc;
-  -webkit-box-shadow: 2px 5px 5px #ccc;
-  box-shadow: 2px 5px 5px #ccc;
+  -moz-box-shadow: 1px 2px 2px #aaa;
+  -webkit-box-shadow: 1px 2px 2px #aaa;
+  box-shadow: 1px 2px 2px #aaa;
 }
 
 .content .cols p {
@@ -339,9 +339,9 @@ table#events tbody tr td.link {
 .content .cols.about_clarence img {
   float: left;
   margin: 0 18px 10px 10px;
-  -moz-box-shadow: 2px 5px 5px #ccc;
+/*  -moz-box-shadow: 2px 5px 5px #ccc;
   -webkit-box-shadow: 2px 5px 5px #ccc;
-  box-shadow: 2px 5px 5px #ccc;
+  box-shadow: 2px 5px 5px #ccc;*/
 }
 
 .content .cols img.join_us {
