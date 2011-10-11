@@ -325,7 +325,8 @@ table#events tbody tr td.link {
 }
 
 .content .cols.about_clarence {
-  width: 344px;
+  width: 450px;
+  margin-right: 0;
 }
 
 .content .cols.about_clarence blockquote {
