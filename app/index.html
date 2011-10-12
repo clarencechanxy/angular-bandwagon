@@ -1,86 +1,129 @@
 <!doctype html>
 <html xmlns:ng="http://angularjs.org/">
 <head>
-  <meta charset="utf-8">
   <title>Bandwagon- your live music gig finder</title>
-  <link rel="stylesheet" href="css/app.css"/> 
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <meta charset="utf-8">
   <meta name="description" content="Connecting you to live music." /> 
   <meta name="keywords" content="Bandwagon, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
-<link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
-
-<!-- last updated at 8th Oct -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body ng:controller="EventsCatCtrl">
-
-<!--get facebook open graph tag http://developers.facebook.com/docs/reference/plugins/like/#-->
-
-<div id="container">
-<div id="header">
-	<a href="#/home">Home</a>	
-	<a href="#/about">About</a>	
-	<a href="#/contribute-contact">Contribute and Contact</a>
-</div>
-
-<div id="smedia">
-	<a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-via="BandwagonApp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-
-	<div id="facebook">
-	<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=258528160836345&amp;xfbml=1"></script><fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true" font=""></fb:like> 
-	</div>
-</div>
-
-
-<div id="logo">
-	<img src="img/Logo-26-Sep.gif" alt="bandwagon_logo" />
-</div>
-
-<div id="tweet">	
-<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 250,
-  height: 150, 
-  theme: {
-    shell: {
-      background: '#333333',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#000000',
-      color: '#ffffff',
-      links: '#07bdeb'
-    }
-  },
-  features: {
-    scrollbar: true,
-    loop: false,
-    live: true,
-    hashtags: true,
-    timestamp: true,
-    avatars: false,
-    behavior: 'all'
-  }
-}).render().setUser('bandwagonapp').start();
-</script>
-</div>
-<ng:view></ng:view>
-
-  <script src="lib/angular/angular.js" ng:autobind></script>
+<body ng:controller="EventsCatCtrl" class="bandwagon">
+  <header>
+    <h1>bandwagon</h1>
+    <h2>live music gig finder</h2>
+    <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
+  </header>
+  
+  <nav id="main">
+    <ul>
+      <li class="search"><a href="#/search">search</a></li>
+      <li class="about"><a href="#/about">about</a></li>
+      <li class="join-us"><a href="#/join-us">join us</a></li>
+      <li><a class="blog" href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
+    </ul>
+    <ul class="social">
+      <li class="tweeter">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-via="BandwagonApp"></a>
+   	  </li>
+   	  <li>
+     	  <div id="facebook">
+     	    <div id="fb-root"></div>
+     	    <fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true"></fb:like> 
+     	  </div>
+   	  </li>
+    </ul>
+  </nav>
+   
+  <div id="calendar">
+    <span class="day_name"></span>
+    <span class="date_of_mth"></span>
+    <span class="month"></span>
+    <div class="controls">
+      <a href="" class="prev_day">&lsaquo; prev</a>
+      <a href="" class="today">today</a>
+      <a href="" class="new_day">next &rsaquo;</a>
+    </div>
+    <input type="hidden" name="cal_date.date" id="date_query"/>
+  </div>
+  
+  <div id="tweet">
+    <a href="http://twitter.com/bandwagonapp" target="_blank" class="follow_us" title="Follow us! Join in the conversation!">
+      Follow us! Join the conversation.
+    </a>
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 1,
+      interval: 30000,
+      width: 270,
+      height: 140,
+      theme: {
+        shell: {
+          background: 'none',
+          color: '#fff'
+        },
+        tweets: {
+          background: 'none',
+          color: '#fff',
+          links: '#c56936'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: false,
+        behavior: 'all'
+      }
+    }).render().setUser('bandwagonapp').start();
+    </script>
+  </div>
+  
+  <ng:view></ng:view> 
+      
+  <footer>
+    &#169; Copyright 2011 Bandwagon, All rights reserved | <a href="javascript:nospam('bandwagon','bandwagon.sg','Get in touch!')">bandwagon [at] bandwagon.sg</a>
+  </footer>
+  
+  <script src="lib/angular/angular.min.js" ng:autobind></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+  <script src="js/bandwagon.js"></script>
   <script src="events.js"></script>
   <script src="js/controllers.js"></script>
+  <script src="http://platform.twitter.com/widgets.js"></script>
+  <script src="http://connect.facebook.net/en_US/all.js#appId=258528160836345&amp;xfbml=1"></script>
   <script src="js/noSpam.js" type="text/javascript">
-	// No spam script
-	function nospam(user,domain,subject) {
-	locationstring = "mailto:" + user + "@" + domain + "?subject=" + subject;
-	window.location = locationstring;
-	}
-   </script> 
-</div>
-</div>
+    // No spam script
+    function nospam(user,domain,subject) {
+      locationstring = "mailto:" + user + "@" + domain + "?subject=" + subject;
+      window.location = locationstring;
+    }
+  </script> 
+  <script>
+    $(document).ready(function() {
+      //onload
+      $("body").addClass(getCurrentPath());
+      $("#calendar, header, #tweet").fadeIn(400);
+       
+      // Navigation highlight
+      $("#main ul li a").not(".blog").click(function() {
+        var new_path = $(this).parent().attr("class");
+        $("body").removeClass(getCurrentPath());
+        $("body").addClass(new_path);
+      });
+
+      $("#search").focus(function() {
+        $("#date_query").val("").change();
+      });
+      
+    });
+  </script>
 </body>
 </html>
