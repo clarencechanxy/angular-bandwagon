@@ -4,7 +4,7 @@ REBOL [
   Author: onetom@hackerspace.sg
 ]
 
-lines: read/lines %"11_8_OCT_04.tsv"
+lines: read/lines %"11_11_OCT_14.tsv"
 fields: parse/all lines/1 "^-"  remove lines
 
 print "events = ["
