@@ -488,7 +488,7 @@ px      68    160    252    344    436    528    620    712    */
 
 /*		Mobile Layout: 320px.
 		Gutters: 24px.
-		Outer margins: 34px.
+		Outer margins: 34px. //override 10px
 		Inherits styles from: Default Layout.
 ---------------------------------------------
 cols    1     2      3
@@ -497,8 +497,85 @@ px      68    160    252    */
 @media only screen and (max-width: 767px) {
   
   body {
-    width: 252px;
-    padding: 48px 34px 60px;
+    width: 300px;
+    padding: 48px 10px 60px;
+  }
+  
+  nav#main {  
+    width: 300px;
+  }
+  
+  nav#main ul li {
+    text-align: center;
+  }
+
+  nav#main ul li a {
+    text-align: center;
+    font-size: .8em;
+    padding: 4px 14px 4px;
+  }
+  
+  nav#main ul li:hover {
+    background-color: #e6e6e6;
+  }
+  
+  nav#main ul.social, #calendar, #tweet { 
+    display: none !important;
+  }
+  
+  header {
+    background-size: 232px;
+    width: 232px;
+    margin: -5px 0 0 36px;
+  }
+  
+  header input#search {
+    margin: 90px 0 0 -4px;
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  
+  table#events {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  table#events th {
+    font-size: 12px;
+  }
+
+  table#events tbody tr td {
+    font-size: 12px;
+    padding: 1px 2px 1px 3px;
+  }
+  
+  table#events tbody tr td.what, table#events th.what {
+    display: none;
+  }
+  
+  footer {
+    font-size: 11px;
+  }
+  
+  .content .cols {
+    width: 300px !important;
+    clear: both;
+  }
+  
+  .content .cols h2 {
+    font-size: 15px;
+  }
+
+  .content .cols p {
+    font-size: .8em;
+  }
+  
+  .content .cols.about_clarence blockquote {
+    margin-top: 15px;
+  }
+  
+  .join_us_imgs {
+    display: none;
   }
   
 }
@@ -514,10 +591,51 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+   
   body {
     width: 436px;
-    padding: 36px 22px 48px;
+    padding: 36px 22px 48px;   
+  }
+  
+  header {
+    width: 280px;
+    background-size: 280px;
+    margin: 15px 0 0 80px;
+  }
+  
+  header input#search {
+    margin: 100px 0 0 -4px;
+  }
+  
+  nav#main {  
+    width: 436px;
+  }
+  
+  nav#main ul li a {
+    font-size: .85em;
+    padding: 4px 30px 4px;
+  }
+  
+  table#events {
+    margin: 40px 0 0;
+  }
+  
+  table#events tbody tr td.what, table#events th.what {
+    display: table-cell;
+  }
+  
+  table#events th {
+    font-size: 13px;
+  }
+
+  table#events tbody tr td {
+    font-size: 13px;
+  }
+  
+  .content .cols {
+    margin-top: 10px;
+    width: 436px !important;
+    clear: both;
   }
   
 }
@@ -528,12 +646,12 @@ px      68    160    252    344    436    */
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
 
-@media 
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min-device-pixel-ratio: 2) {
-	
-	body {
-	
-	}
-	
-}
+/*@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  
+  body {
+  
+  }
+  
+}*/

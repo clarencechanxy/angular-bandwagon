@@ -4,7 +4,7 @@
       <th scope="column">When?</th>
       <th scope="column">Who?</th>
       <th scope="column">Where?</th>    
-      <th scope="column">What?</th>
+      <th scope="column" class="what">What?</th>
       <th scope="column">How much?</th>
       <th scope="column">Link</th>
     </tr>    
@@ -14,7 +14,7 @@
       <td class="when">{{event.date}} / {{event.time}}</td>
       <td>{{event.name}}</td>
       <td>{{event.place}}</td>
-      <td>{{event.genre}}</td>
+      <td class="what">{{event.genre}}</td>
       <td>{{event.price}}</td> 
       <td class="link"><a href="{{event.website}}" target="_blank">more info &rsaquo;</a></td>
     </tr>
