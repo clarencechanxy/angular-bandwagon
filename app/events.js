@@ -1,302 +1,5 @@
 events = [
 {
-"date": "17 Oct 11",
-"place": "Balaclava",
-"name": "Wendy & David",
-"genre": "classic; jazz",
-"time": "2000",
-"price": "Free + F&B Charges",
-"website": "http://www.imaginings.com.sg/",
-},
-{
-"date": "17 Oct 11",
-"place": "Beer Market",
-"name": "Phoebee and Dayvid",
-"genre": "Pop Rock; Top 40's",
-"time": "2000",
-"price": "Free + F&B Charges",
-"website": "http://www.beermarket.com.sg/",
-},
-{
-"date": "17 Oct 11",
-"place": "Crazy Elephant",
-"name": "Crazy Elephant Band",
-"genre": "Blues",
-"time": "2200",
-"price": "Free + F&B Charges",
-"website": "http://www.crazyelephant.com/",
-},
-{
-"date": "17 Oct 11",
-"place": "Highlander",
-"name": "Dejavu",
-"genre": "Acoustic",
-"time": "2130",
-"price": "Free + F&B Charges",
-"website": "http://www.highlanderasia.com/",
-},
-{
-"date": "17 Oct 11",
-"place": "Timbre Arts House",
-"name": "Surath & Rene",
-"genre": "Pop Rock",
-"time": "2030-2330",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "17 Oct 11",
-"place": "Timbre Old School",
-"name": "Pam & Chris",
-"genre": "Pop Rock",
-"time": "1945-2300",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "17 Oct 11",
-"place": "Timbre Substation",
-"name": "Michaela Therese",
-"genre": "Jazz",
-"time": "2215-0030",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "18 Oct 11",
-"place": "Beer Market",
-"name": "Howie, Nelson and Jez",
-"genre": "Pop Rock; Top 40's",
-"time": "2000",
-"price": "Free + F&B Charges",
-"website": "http://www.beermarket.com.sg/",
-},
-{
-"date": "18 Oct 11",
-"place": "Crazy Elephant",
-"name": "Crazy Elephant Band",
-"genre": "Blues",
-"time": "2200",
-"price": "Free + F&B Charges",
-"website": "http://www.crazyelephant.com/",
-},
-{
-"date": "18 Oct 11",
-"place": "Esplanade Theatre",
-"name": "Rays of Hope- NCCS Charity Concert",
-"genre": "Pop",
-"time": "2000",
-"price": "$38-208",
-"website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=hope1011",
-},
-{
-"date": "18 Oct 11",
-"place": "Hard Rock Café",
-"name": "Unified",
-"genre": "Top 40's; Rock",
-"time": "2030",
-"price": "Free + F&B Charges",
-"website": "http://www.hardrock.com",
-},
-{
-"date": "18 Oct 11",
-"place": "Highlander",
-"name": "Dejavu",
-"genre": "Acoustic",
-"time": "2130",
-"price": "Free + F&B Charges",
-"website": "http://www.highlanderasia.com/",
-},
-{
-"date": "18 Oct 11",
-"place": "Tab Singapore",
-"name": "Mel & Khim",
-"genre": "Pop",
-"time": "2030",
-"price": "Free + F&B Charges",
-"website": "http://www.tab.com.sg/2011/01/mel-khim/",
-},
-{
-"date": "18 Oct 11",
-"place": "The Pigeonhole",
-"name": "Bushwalla",
-"genre": "Pop Rock",
-"time": "2000",
-"price": "Free",
-"website": "http://www.thepigeonhole.com.sg/",
-},
-{
-"date": "18 Oct 11",
-"place": "The Pump Room @ Clarke Quay",
-"name": "Jive Talkin'",
-"genre": "Pop; Rock; Jazz",
-"time": "2245",
-"price": "Free + F&B Charges",
-"website": "http://www.pumproomasia.com/home.html",
-},
-{
-"date": "18 Oct 11",
-"place": "Timbre Arts House",
-"name": "53A",
-"genre": "Pop Rock",
-"time": "2015-2330",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "18 Oct 11",
-"place": "Timbre Old School",
-"name": "Fatt, Shili & Adi",
-"genre": "Pop Rock",
-"time": "1945-2300",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "18 Oct 11",
-"place": "Timbre Substation",
-"name": "Goodfellas",
-"genre": "Rock",
-"time": "2115-0030",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "18 Oct 11",
-"place": "Wala Wala Café Bar",
-"name": "Tabula",
-"genre": "Top 40's; Rock",
-"time": "2130",
-"price": "Free + F&B Charges",
-"website": "http://www.imaginings.com.sg/",
-},
-{
-"date": "19 Oct 11",
-"place": "Beer Market",
-"name": "Jack & Rai",
-"genre": "Pop Rock; Top 40's",
-"time": "2000",
-"price": "Free + F&B Charges",
-"website": "http://www.beermarket.com.sg/",
-},
-{
-"date": "19 Oct 11",
-"place": "Broun",
-"name": "Polkadot & Moonbeam",
-"genre": "Jazz; Contemporary",
-"time": "1930-2130",
-"price": "Free + F&B Charges",
-"website": "http://broun.sg/",
-},
-{
-"date": "19 Oct 11",
-"place": "CM-PB",
-"name": "Zsa + Claire",
-"genre": "Pop; Folk",
-"time": "2130-0045",
-"price": "Free + F&B Charges",
-"website": "http://www.screamquiet.com/",
-},
-{
-"date": "19 Oct 11",
-"place": "Crazy Elephant",
-"name": "Crazy Elephant Band",
-"genre": "Blues",
-"time": "2200",
-"price": "Free + F&B Charges",
-"website": "http://www.crazyelephant.com/",
-},
-{
-"date": "19 Oct 11",
-"place": "Hard Rock Café",
-"name": "Six In The City ft. Tabula",
-"genre": "Rock",
-"time": "2200",
-"price": "Free + F&B Charges",
-"website": "http://www.hardrock.com",
-},
-{
-"date": "19 Oct 11",
-"place": "Highlander",
-"name": "Dejavu",
-"genre": "Acoustic",
-"time": "2130",
-"price": "Free + F&B Charges",
-"website": "http://www.highlanderasia.com/",
-},
-{
-"date": "19 Oct 11",
-"place": "Paulaner Brauhaus",
-"name": "Zsa + Claire",
-"genre": "Pop; Folk",
-"time": "1900-2100",
-"price": "Free + F&B Charges",
-"website": "http://www.screamquiet.com/",
-},
-{
-"date": "19 Oct 11",
-"place": "Tab Singapore",
-"name": "The Next Movement",
-"genre": "Pop; Soul; R&B",
-"time": "2030",
-"price": "Free + F&B Charges",
-"website": "http://www.tab.com.sg/2011/01/the-next-movement/",
-},
-{
-"date": "19 Oct 11",
-"place": "Tab Singapore",
-"name": "Bevlyn ft Kevin Matthews",
-"genre": "Indie; Jazz",
-"time": "2030",
-"price": "$25",
-"website": "http://www.tab.com.sg/2011/01/bevlyn-khoo/",
-},
-{
-"date": "19 Oct 11",
-"place": "The Pump Room @ Clarke Quay",
-"name": "Jive Talkin'",
-"genre": "Pop; Rock; Jazz",
-"time": "2245",
-"price": "Free + F&B Charges",
-"website": "http://www.pumproomasia.com/home.html",
-},
-{
-"date": "19 Oct 11",
-"place": "Timbre Arts House",
-"name": "Enigma",
-"genre": "Pop Rock",
-"time": "2015-2330",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "19 Oct 11",
-"place": "Timbre Old School",
-"name": "Luthfi & Simon",
-"genre": "Pop Rock",
-"time": "1945-2300",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "19 Oct 11",
-"place": "Timbre Substation",
-"name": "Raw Earth",
-"genre": "Rock",
-"time": "2115-0030",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "19 Oct 11",
-"place": "Wala Wala Café Bar",
-"name": "Timmy ft. Ngak",
-"genre": "Pop rock",
-"time": "2130",
-"price": "Free + F&B Charges",
-"website": "http://www.imaginings.com.sg/",
-},
-{
 "date": "20 Oct 11",
 "place": "Beer Market",
 "name": "Zsa + Claire",
@@ -304,6 +7,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "20 Oct 11",
@@ -313,6 +17,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "20 Oct 11",
@@ -322,6 +27,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "20 Oct 11",
@@ -331,6 +37,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "20 Oct 11",
@@ -340,6 +47,7 @@ events = [
 "time": "",
 "price": "Free",
 "website": "http://www.timeoutsingapore.com/music/feature/alive-and-kicking-oct-2011",
+"l": "orchard road, tanglin",
 },
 {
 "date": "20 Oct 11",
@@ -349,6 +57,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "20 Oct 11",
@@ -358,6 +67,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "20 Oct 11",
@@ -367,6 +77,7 @@ events = [
 "time": "2015-2330",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
 },
 {
 "date": "20 Oct 11",
@@ -376,6 +87,7 @@ events = [
 "time": "2015-2330",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
 },
 {
 "date": "20 Oct 11",
@@ -385,6 +97,7 @@ events = [
 "time": "2030-2130",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "20 Oct 11",
@@ -394,6 +107,7 @@ events = [
 "time": "2230-2330",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "20 Oct 11",
@@ -403,6 +117,7 @@ events = [
 "time": "2200-2300",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "20 Oct 11",
@@ -412,6 +127,7 @@ events = [
 "time": "2330-0030",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "20 Oct 11",
@@ -421,6 +137,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "20 Oct 11",
+"place": "Quarubar",
+"name": "Wayne Sandz & Wayne Gideon",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "21 Oct 11",
@@ -430,6 +157,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "21 Oct 11",
@@ -439,6 +167,7 @@ events = [
 "time": "1930-2015",
 "price": "Free + F&B Charges",
 "website": "http://broun.sg/",
+"l": "raffles place, north canal, bridge, south, central",
 },
 {
 "date": "21 Oct 11",
@@ -448,6 +177,17 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "21 Oct 11",
+"place": "Drink Culture",
+"name": "Shili & Adi",
+"genre": "Pop; Acoustic",
+"time": "2000",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/photo.php?fbid=10150444452228273&set=o.263863426968023&type=1&theater",
+"l": "kreta ayer, chinatown, outram, neil",
 },
 {
 "date": "21 Oct 11",
@@ -457,6 +197,7 @@ events = [
 "time": "1930",
 "price": "$15-$72",
 "website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=essoe211011",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "21 Oct 11",
@@ -466,6 +207,7 @@ events = [
 "time": "Various",
 "price": "Free",
 "website": "http://www.esplanade.com/whats_on/programme_info/otw_fusion_smusion/index.jsp",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "21 Oct 11",
@@ -475,6 +217,7 @@ events = [
 "time": "2000",
 "price": "$45-225",
 "website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=pritam1011",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "21 Oct 11",
@@ -484,6 +227,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "21 Oct 11",
@@ -493,6 +237,7 @@ events = [
 "time": "1930",
 "price": "$128-288",
 "website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=yanni1011",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "21 Oct 11",
@@ -502,6 +247,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "21 Oct 11",
@@ -511,6 +257,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "21 Oct 11",
@@ -520,6 +267,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "21 Oct 11",
@@ -529,105 +277,7 @@ events = [
 "time": "1900-2100",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
-},
-{
-"date": "21 Oct 11",
-"place": "Tab Singapore",
-"name": "Mel & Khim",
-"genre": "Pop",
-"time": "1930",
-"price": "Free + F&B Charges",
-"website": "http://www.tab.com.sg/2011/01/mel-khim/",
-},
-{
-"date": "21 Oct 11",
-"place": "The Pump Room @ Clarke Quay",
-"name": "Jive Talkin'",
-"genre": "Pop; Rock; Jazz",
-"time": "2245",
-"price": "Free + F&B Charges",
-"website": "http://www.pumproomasia.com/home.html",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Arts House",
-"name": "Goodfellas",
-"genre": "Pop Rock",
-"time": "2130-0045",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Old School",
-"name": "Sugarlove",
-"genre": "Pop Rock",
-"time": "2015-2330",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Substation (Roktober stage)",
-"name": "The Marilyns",
-"genre": "Pop Rock",
-"time": "2100-2200",
-"price": "Free + F&B Charges",
-"website": "http://i54.tinypic.com/vykrcx.jpg",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Substation (Roktober stage)",
-"name": "New Jersey (Bon Jovi Tribute Band)",
-"genre": "Rock",
-"time": "2315-0000",
-"price": "Free + F&B Charges",
-"website": "http://i54.tinypic.com/vykrcx.jpg",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Substation (Roktober stage)",
-"name": "New Jersey (Bon Jovi Tribute Band)",
-"genre": "Rock",
-"time": "0030-0115 (early 22nd morn)",
-"price": "Free + F&B Charges",
-"website": "http://i54.tinypic.com/vykrcx.jpg",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Substation (Substation stage)",
-"name": "53A",
-"genre": "Pop Rock",
-"time": "2230-2315",
-"price": "Free + F&B Charges",
-"website": "http://i54.tinypic.com/vykrcx.jpg",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Substation (Substation stage)",
-"name": "53A",
-"genre": "Pop Rock",
-"time": "2345-0030",
-"price": "Free + F&B Charges",
-"website": "http://i54.tinypic.com/vykrcx.jpg",
-},
-{
-"date": "21 Oct 11",
-"place": "Timbre Substation (Substation stage)",
-"name": "53A",
-"genre": "Pop Rock",
-"time": "0100-0145 (early 22nd morn)",
-"price": "Free + F&B Charges",
-"website": "http://i54.tinypic.com/vykrcx.jpg",
-},
-{
-"date": "21 Oct 11",
-"place": "Wala Wala Café Bar",
-"name": "The Common People",
-"genre": "Pop rock",
-"time": "-",
-"price": "Free + F&B Charges",
-"website": "http://www.imaginings.com.sg/",
+"l": "temasek, raffles boulevard, suntec, city hall",
 },
 {
 "date": "21 Oct 11",
@@ -637,6 +287,127 @@ events = [
 "time": "2000",
 "price": "Free",
 "website": "http://www.sentosa.com.sg/en/whats-on/events/current-events/#item3257/",
+"l": "sentosa, harbourfront, resorts world",
+},
+{
+"date": "21 Oct 11",
+"place": "Tab Singapore",
+"name": "Mel & Khim",
+"genre": "Pop",
+"time": "1930",
+"price": "Free + F&B Charges",
+"website": "http://www.tab.com.sg/2011/01/mel-khim/",
+"l": "orchard road, tanglin",
+},
+{
+"date": "21 Oct 11",
+"place": "The Pump Room @ Clarke Quay",
+"name": "Jive Talkin'",
+"genre": "Pop; Rock; Jazz",
+"time": "2245",
+"price": "Free + F&B Charges",
+"website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Arts House",
+"name": "Goodfellas",
+"genre": "Pop Rock",
+"time": "2130-0045",
+"price": "Free + F&B Charges",
+"website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Old School",
+"name": "Sugarlove",
+"genre": "Pop Rock",
+"time": "2015-2330",
+"price": "Free + F&B Charges",
+"website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Substation (Roktober stage)",
+"name": "The Marilyns",
+"genre": "Pop Rock",
+"time": "2100-2200",
+"price": "Free + F&B Charges",
+"website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Substation (Roktober stage)",
+"name": "New Jersey (Bon Jovi Tribute Band)",
+"genre": "Rock",
+"time": "2315-0000",
+"price": "Free + F&B Charges",
+"website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Substation (Roktober stage)",
+"name": "New Jersey (Bon Jovi Tribute Band)",
+"genre": "Rock",
+"time": "0030-0115 (early 22nd morn)",
+"price": "Free + F&B Charges",
+"website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Substation (Substation stage)",
+"name": "53A",
+"genre": "Pop Rock",
+"time": "2230-2315",
+"price": "Free + F&B Charges",
+"website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Substation (Substation stage)",
+"name": "53A",
+"genre": "Pop Rock",
+"time": "2345-0030",
+"price": "Free + F&B Charges",
+"website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "21 Oct 11",
+"place": "Timbre Substation (Substation stage)",
+"name": "53A",
+"genre": "Pop Rock",
+"time": "0100-0145 (early 22nd morn)",
+"price": "Free + F&B Charges",
+"website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "21 Oct 11",
+"place": "Wala Wala Café Bar",
+"name": "The Common People",
+"genre": "Pop rock",
+"time": "-",
+"price": "Free + F&B Charges",
+"website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "21 Oct 11",
+"place": "Quarubar",
+"name": "Michaela Therese & Joe Jayaveeran",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "22 Oct 11",
@@ -646,6 +417,7 @@ events = [
 "time": "2230",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "22 Oct 11",
@@ -655,6 +427,7 @@ events = [
 "time": "1930-2130",
 "price": "Free + F&B Charges",
 "website": "http://broun.sg/",
+"l": "raffles place, north canal, bridge, south, central",
 },
 {
 "date": "22 Oct 11",
@@ -664,6 +437,17 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "22 Oct 11",
+"place": "Drink Culture",
+"name": "Woodberry",
+"genre": "Pop; Acoustic",
+"time": "2000",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/photo.php?fbid=10150444453233273&set=o.263863426968023&type=1&theater",
+"l": "kreta ayer, chinatown, outram, neil",
 },
 {
 "date": "22 Oct 11",
@@ -673,6 +457,7 @@ events = [
 "time": "Various",
 "price": "Free",
 "website": "http://www.esplanade.com/whats_on/programme_info/otw_fusion_smusion/index.jsp",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "22 Oct 11",
@@ -682,6 +467,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "22 Oct 11",
@@ -691,6 +477,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "22 Oct 11",
@@ -700,6 +487,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "22 Oct 11",
@@ -709,6 +497,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "22 Oct 11",
@@ -718,6 +507,7 @@ events = [
 "time": "",
 "price": "Free + F&B Charges",
 "website": "http://www.hoodbarandcafe.com/",
+"l": "kreta ayer, chinatown, outram, nei, keong saik",
 },
 {
 "date": "22 Oct 11",
@@ -727,6 +517,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.tab.com.sg/2011/01/the-next-movement/",
+"l": "orchard road, tanglin",
 },
 {
 "date": "22 Oct 11",
@@ -736,6 +527,7 @@ events = [
 "time": "2100",
 "price": "$15",
 "website": "http://www.facebook.com/the.pigeonhole/posts/171949642886590",
+"l": "duxton road, neil, chinatown, outram",
 },
 {
 "date": "22 Oct 11",
@@ -745,6 +537,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "22 Oct 11",
@@ -754,6 +547,7 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
 },
 {
 "date": "22 Oct 11",
@@ -763,6 +557,7 @@ events = [
 "time": "2115-1230",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
 },
 {
 "date": "22 Oct 11",
@@ -772,6 +567,7 @@ events = [
 "time": "2200-2315",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "22 Oct 11",
@@ -781,6 +577,7 @@ events = [
 "time": "0000-0115 (early 23 morn)",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "22 Oct 11",
@@ -790,6 +587,7 @@ events = [
 "time": "2300-2400",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "22 Oct 11",
@@ -799,6 +597,7 @@ events = [
 "time": "0100-0200 (early 23 morn)",
 "price": "Free + F&B Charges",
 "website": "http://i54.tinypic.com/vykrcx.jpg",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "22 Oct 11",
@@ -808,6 +607,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "22 Oct 11",
+"place": "Quarubar",
+"name": "Alemay & Shawn Letts",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "23 Oct 11",
@@ -817,6 +627,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "23 Oct 11",
@@ -826,6 +637,7 @@ events = [
 "time": "Various",
 "price": "Free",
 "website": "http://www.esplanade.com/whats_on/programme_info/otw_fusion_smusion/index.jsp",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "23 Oct 11",
@@ -835,6 +647,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "23 Oct 11",
@@ -844,6 +657,7 @@ events = [
 "time": "1930-2400",
 "price": "Free + F&B Charges / Optional paid Buffet",
 "website": "http://www.sistic.com.sg/portal/dt?retry=1&dt.provider=PortletWindowProcessChannel&dt.action=process&dt.window.portletAction=RENDER&dt.containerName=JSPTabContainer/sEventsCalendar&contentCode=bbq1011&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.windowProvider.currentChannelMode=VIEW&dt.isPortletRequest=true",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "23 Oct 11",
@@ -853,6 +667,7 @@ events = [
 "time": "-",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
 },
 {
 "date": "24 Oct 11",
@@ -862,6 +677,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "orchard road, somerset, central, ion",
 },
 {
 "date": "24 Oct 11",
@@ -871,6 +687,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "24 Oct 11",
@@ -880,6 +697,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "24 Oct 11",
@@ -889,6 +707,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "24 Oct 11",
@@ -898,6 +717,7 @@ events = [
 "time": "2030-2330",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
 },
 {
 "date": "24 Oct 11",
@@ -907,6 +727,7 @@ events = [
 "time": "1945-2300",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
 },
 {
 "date": "24 Oct 11",
@@ -916,6 +737,17 @@ events = [
 "time": "2215-0030",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "24 Oct 11",
+"place": "Quarubar",
+"name": "Dawn Ho & Munir Alsagoff",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "25 Oct 11",
@@ -925,6 +757,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "25 Oct 11",
@@ -934,6 +767,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "25 Oct 11",
@@ -943,6 +777,7 @@ events = [
 "time": "2030",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "25 Oct 11",
@@ -952,6 +787,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "25 Oct 11",
@@ -961,6 +797,7 @@ events = [
 "time": "2030",
 "price": "Free + F&B Charges",
 "website": "http://www.tab.com.sg/2011/01/mel-khim/",
+"l": "orchard road, tanglin",
 },
 {
 "date": "25 Oct 11",
@@ -970,6 +807,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/the.pigeonhole",
+"l": "duxton road, neil, chinatown, outram",
 },
 {
 "date": "25 Oct 11",
@@ -979,6 +817,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "25 Oct 11",
@@ -988,6 +827,7 @@ events = [
 "time": "2015-2330",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
 },
 {
 "date": "25 Oct 11",
@@ -997,6 +837,7 @@ events = [
 "time": "1945-2300",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
 },
 {
 "date": "25 Oct 11",
@@ -1006,6 +847,7 @@ events = [
 "time": "2115-0030",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "25 Oct 11",
@@ -1015,6 +857,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "25 Oct 11",
+"place": "Quarubar",
+"name": "Dawn Ho & Munir Alsagoff",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "26 Oct 11",
@@ -1024,6 +877,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "26 Oct 11",
@@ -1033,6 +887,7 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "dempsey, orchard, napier",
 },
 {
 "date": "26 Oct 11",
@@ -1042,6 +897,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "26 Oct 11",
@@ -1051,6 +907,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "26 Oct 11",
@@ -1060,6 +917,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "26 Oct 11",
@@ -1069,6 +927,7 @@ events = [
 "time": "1900-2100",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "temasek, raffles boulevard, suntec, city hall",
 },
 {
 "date": "26 Oct 11",
@@ -1078,6 +937,7 @@ events = [
 "time": "2030",
 "price": "Free + F&B Charges",
 "website": "http://www.tab.com.sg/2011/01/the-next-movement/",
+"l": "orchard road, tanglin",
 },
 {
 "date": "26 Oct 11",
@@ -1087,6 +947,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "26 Oct 11",
@@ -1096,6 +957,7 @@ events = [
 "time": "2015-2330",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
 },
 {
 "date": "26 Oct 11",
@@ -1105,6 +967,7 @@ events = [
 "time": "1945-2300",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
 },
 {
 "date": "26 Oct 11",
@@ -1114,6 +977,7 @@ events = [
 "time": "2115-0030",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "26 Oct 11",
@@ -1123,6 +987,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "26 Oct 11",
+"place": "Quarubar",
+"name": "Lily Nuris & Wayne Sandz",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "27 Oct 11",
@@ -1132,6 +1007,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "27 Oct 11",
@@ -1141,6 +1017,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "27 Oct 11",
@@ -1150,6 +1027,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "27 Oct 11",
@@ -1159,6 +1037,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "27 Oct 11",
@@ -1168,6 +1047,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "27 Oct 11",
@@ -1177,6 +1057,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "27 Oct 11",
@@ -1186,6 +1067,7 @@ events = [
 "time": "2015-2330",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
 },
 {
 "date": "27 Oct 11",
@@ -1195,6 +1077,7 @@ events = [
 "time": "2015-2330",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
 },
 {
 "date": "27 Oct 11",
@@ -1204,6 +1087,7 @@ events = [
 "time": "2215-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "27 Oct 11",
@@ -1213,6 +1097,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "27 Oct 11",
+"place": "Quarubar",
+"name": "Wayne Sandz & Wayne Gideon",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "28 Oct 11",
@@ -1222,6 +1117,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "28 Oct 11",
@@ -1231,6 +1127,7 @@ events = [
 "time": "1930-2130",
 "price": "Free + F&B Charges",
 "website": "http://broun.sg/",
+"l": "raffles place, north canal, bridge, south, central",
 },
 {
 "date": "28 Oct 11",
@@ -1240,6 +1137,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "28 Oct 11",
@@ -1249,6 +1147,7 @@ events = [
 "time": "2130",
 "price": "$25",
 "website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=randolf1011",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "28 Oct 11",
@@ -1258,6 +1157,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "28 Oct 11",
@@ -1267,6 +1167,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "28 Oct 11",
@@ -1276,6 +1177,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "28 Oct 11",
@@ -1285,6 +1187,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "28 Oct 11",
@@ -1294,60 +1197,7 @@ events = [
 "time": "1900-2100",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
-},
-{
-"date": "28 Oct 11",
-"place": "Tab Singapore",
-"name": "Mel & Khim",
-"genre": "Pop",
-"time": "1930",
-"price": "Free + F&B Charges",
-"website": "http://www.tab.com.sg/2011/01/mel-khim/",
-},
-{
-"date": "28 Oct 11",
-"place": "The Pump Room @ Clarke Quay",
-"name": "Jive Talkin'",
-"genre": "Pop; Rock; Jazz",
-"time": "2245",
-"price": "Free + F&B Charges",
-"website": "http://www.pumproomasia.com/home.html",
-},
-{
-"date": "28 Oct 11",
-"place": "Timbre Arts House",
-"name": "Goodfellas",
-"genre": "Pop Rock",
-"time": "2130-0045",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "28 Oct 11",
-"place": "Timbre Old School",
-"name": "Sugarlove",
-"genre": "Pop Rock",
-"time": "2015-2330",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "28 Oct 11",
-"place": "Timbre Substation",
-"name": "53A",
-"genre": "Pop",
-"time": "2230-0145",
-"price": "Free + F&B Charges",
-"website": "http://www.timbregroup.asia/timbresg/main.asp",
-},
-{
-"date": "28 Oct 11",
-"place": "Wala Wala Café Bar",
-"name": "The Common People",
-"genre": "Pop rock",
-"time": "-",
-"price": "Free + F&B Charges",
-"website": "http://www.imaginings.com.sg/",
+"l": "temasek, raffles boulevard, suntec, city hall",
 },
 {
 "date": "28 Oct 11",
@@ -1357,6 +1207,77 @@ events = [
 "time": "2000",
 "price": "Free",
 "website": "http://www.sentosa.com.sg/en/whats-on/events/current-events/#item3257/",
+"l": "sentosa, harbourfront, resorts world",
+},
+{
+"date": "28 Oct 11",
+"place": "Tab Singapore",
+"name": "Mel & Khim",
+"genre": "Pop",
+"time": "1930",
+"price": "Free + F&B Charges",
+"website": "http://www.tab.com.sg/2011/01/mel-khim/",
+"l": "orchard road, tanglin",
+},
+{
+"date": "28 Oct 11",
+"place": "The Pump Room @ Clarke Quay",
+"name": "Jive Talkin'",
+"genre": "Pop; Rock; Jazz",
+"time": "2245",
+"price": "Free + F&B Charges",
+"website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
+},
+{
+"date": "28 Oct 11",
+"place": "Timbre Arts House",
+"name": "Goodfellas",
+"genre": "Pop Rock",
+"time": "2130-0045",
+"price": "Free + F&B Charges",
+"website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
+},
+{
+"date": "28 Oct 11",
+"place": "Timbre Old School",
+"name": "Sugarlove",
+"genre": "Pop Rock",
+"time": "2015-2330",
+"price": "Free + F&B Charges",
+"website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
+},
+{
+"date": "28 Oct 11",
+"place": "Timbre Substation",
+"name": "53A",
+"genre": "Pop",
+"time": "2230-0145",
+"price": "Free + F&B Charges",
+"website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "armenian, city hall, fort canning",
+},
+{
+"date": "28 Oct 11",
+"place": "Wala Wala Café Bar",
+"name": "The Common People",
+"genre": "Pop rock",
+"time": "-",
+"price": "Free + F&B Charges",
+"website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "28 Oct 11",
+"place": "Quarubar",
+"name": "Michaela Therese & Joe Jayaveeran",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "29 Oct 11",
@@ -1366,6 +1287,7 @@ events = [
 "time": "2230",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "29 Oct 11",
@@ -1375,6 +1297,7 @@ events = [
 "time": "1930-2130",
 "price": "Free + F&B Charges",
 "website": "http://broun.sg/",
+"l": "raffles place, north canal, bridge, south, central",
 },
 {
 "date": "29 Oct 11",
@@ -1384,6 +1307,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "29 Oct 11",
@@ -1393,6 +1317,7 @@ events = [
 "time": "1700",
 "price": "$55-$65",
 "website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=fire1011",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "29 Oct 11",
@@ -1402,6 +1327,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "29 Oct 11",
@@ -1411,6 +1337,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "29 Oct 11",
@@ -1420,6 +1347,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "29 Oct 11",
@@ -1429,6 +1357,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "29 Oct 11",
@@ -1438,6 +1367,7 @@ events = [
 "time": "",
 "price": "Free + F&B Charges",
 "website": "http://www.hoodbarandcafe.com/",
+"l": "kreta ayer, chinatown, outram, nei, keong saik",
 },
 {
 "date": "29 Oct 11",
@@ -1447,6 +1377,7 @@ events = [
 "time": "2000",
 "price": "$120-480",
 "website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=faye1011",
+"l": "kallang, east",
 },
 {
 "date": "29 Oct 11",
@@ -1456,6 +1387,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.tab.com.sg/2011/01/the-next-movement/",
+"l": "orchard road, tanglin",
 },
 {
 "date": "29 Oct 11",
@@ -1465,6 +1397,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "29 Oct 11",
@@ -1474,6 +1407,7 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "city hall, old parliament, fullerton",
 },
 {
 "date": "29 Oct 11",
@@ -1483,6 +1417,7 @@ events = [
 "time": "2115-1230",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "mt sophia, dhobby ghaut",
 },
 {
 "date": "29 Oct 11",
@@ -1492,6 +1427,7 @@ events = [
 "time": "2230-0145",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "29 Oct 11",
@@ -1501,6 +1437,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
+},
+{
+"date": "29 Oct 11",
+"place": "Quarubar",
+"name": "Alemay & Shawn Letts",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "30 Oct 11",
@@ -1510,6 +1457,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "30 Oct 11",
@@ -1519,6 +1467,7 @@ events = [
 "time": "2245",
 "price": "Free + F&B Charges",
 "website": "http://www.pumproomasia.com/home.html",
+"l": "clarke quay, central",
 },
 {
 "date": "30 Oct 11",
@@ -1528,6 +1477,7 @@ events = [
 "time": "2145-0030",
 "price": "Free + F&B Charges",
 "website": "http://www.timbregroup.asia/timbresg/main.asp",
+"l": "armenian, city hall, fort canning",
 },
 {
 "date": "30 Oct 11",
@@ -1537,6 +1487,7 @@ events = [
 "time": "-",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "holland, buona vista, west",
 },
 {
 "date": "31 Oct 11",
@@ -1546,6 +1497,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "orchard road, somerset, central, ion",
 },
 {
 "date": "31 Oct 11",
@@ -1555,6 +1507,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "31 Oct 11",
@@ -1564,6 +1517,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "31 Oct 11",
@@ -1573,6 +1527,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "31 Oct 11",
+"place": "Quarubar",
+"name": "Dawn Ho & Munir Alsagoff",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "1 Nov 11",
@@ -1582,6 +1547,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "1 Nov 11",
@@ -1591,6 +1557,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "1 Nov 11",
@@ -1600,6 +1567,7 @@ events = [
 "time": "1930",
 "price": "$28-$68",
 "website": "http://www.esplanade.com/whats_on/programme_info/mozart_madness/index.jsp",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "1 Nov 11",
@@ -1609,6 +1577,7 @@ events = [
 "time": "2000",
 "price": "$110-$140",
 "website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=snake1111",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "1 Nov 11",
@@ -1618,6 +1587,7 @@ events = [
 "time": "2030",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "1 Nov 11",
@@ -1627,6 +1597,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "1 Nov 11",
+"place": "Quarubar",
+"name": "Dawn Ho & Munir Alsagoff",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "2 Nov 11",
@@ -1636,6 +1617,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "2 Nov 11",
@@ -1645,6 +1627,7 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "dempsey, orchard, napier",
 },
 {
 "date": "2 Nov 11",
@@ -1654,6 +1637,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "2 Nov 11",
@@ -1663,6 +1647,27 @@ events = [
 "time": "2000",
 "price": "$40-$120",
 "website": "http://www.esplanade.com/whats_on/programme_info/kd_lang_and_the_siss_boom_band/index.jsp",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
+},
+{
+"date": "2 Nov 11",
+"place": "Esplanade Theatre",
+"name": "Mosaic k.d. lang & The Siss Boom Bang",
+"genre": "Pop; Country Rock",
+"time": "2000",
+"price": "$40-$120",
+"website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=kdlang1111",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
+},
+{
+"date": "2 Nov 11",
+"place": "Grand Theater, Marina Bay Sands",
+"name": "HITMAN - David Foster and Friends",
+"genre": "Pop; Classic",
+"time": "1930",
+"price": "$108-$228",
+"website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=foster1111",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "2 Nov 11",
@@ -1672,6 +1677,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "2 Nov 11",
@@ -1681,6 +1687,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "2 Nov 11",
+"place": "Quarubar",
+"name": "Lily Nuris & Wayne Sandz",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "3 Nov 11",
@@ -1690,6 +1707,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "3 Nov 11",
@@ -1699,6 +1717,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "3 Nov 11",
@@ -1708,6 +1727,17 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
+},
+{
+"date": "3 Nov 11",
+"place": "Grand Theater, Marina Bay Sands",
+"name": "HITMAN - David Foster and Friends",
+"genre": "Pop; Classic",
+"time": "1930",
+"price": "$108-$228",
+"website": "http://www.sistic.com.sg/portal/dt?dt.isPortletRequest=true&dt.action=process&dt.provider=PortletWindowProcessChannel&dt.windowProvider.targetPortletChannel=JSPTabContainer/sEventsCalendar/Event&dt.containerName=JSPTabContainer/sEventsCalendar&dt.windowProvider.currentChannelMode=VIEW&dt.window.portletAction=RENDER&contentCode=foster1111",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "3 Nov 11",
@@ -1717,6 +1747,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "3 Nov 11",
@@ -1726,6 +1757,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "3 Nov 11",
+"place": "Quarubar",
+"name": "Wayne Sandz & Wayne Gideon",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "4 Nov 11",
@@ -1735,6 +1777,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "4 Nov 11",
@@ -1744,6 +1787,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "4 Nov 11",
@@ -1753,6 +1797,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "4 Nov 11",
@@ -1762,6 +1807,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "4 Nov 11",
@@ -1771,6 +1817,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "4 Nov 11",
@@ -1780,6 +1827,17 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "4 Nov 11",
+"place": "Quarubar",
+"name": "Michaela Therese & Joe Jayaveeran",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "5 Nov 11",
@@ -1789,6 +1847,7 @@ events = [
 "time": "2230",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "5 Nov 11",
@@ -1798,6 +1857,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "5 Nov 11",
@@ -1807,6 +1867,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "5 Nov 11",
@@ -1816,6 +1877,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "5 Nov 11",
@@ -1825,6 +1887,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "5 Nov 11",
@@ -1834,6 +1897,7 @@ events = [
 "time": "2130",
 "price": "Free + F&B Charges",
 "website": "http://www.highlanderasia.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "5 Nov 11",
@@ -1843,6 +1907,17 @@ events = [
 "time": "2000",
 "price": "$10",
 "website": "http://www.thepigeonhole.com.sg/",
+"l": "duxton road, neil, chinatown, outram",
+},
+{
+"date": "5 Nov 11",
+"place": "Quarubar",
+"name": "Alemay & Shawn Letts",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "6 Nov 11",
@@ -1852,6 +1927,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "7 Nov 11",
@@ -1861,6 +1937,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "orchard road, somerset, central, ion",
 },
 {
 "date": "7 Nov 11",
@@ -1870,6 +1947,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "7 Nov 11",
@@ -1879,6 +1957,17 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
+},
+{
+"date": "7 Nov 11",
+"place": "Quarubar",
+"name": "Dawn Ho & Munir Alsagoff",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "8 Nov 11",
@@ -1888,6 +1977,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "8 Nov 11",
@@ -1897,6 +1987,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "8 Nov 11",
@@ -1906,6 +1997,17 @@ events = [
 "time": "2030",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
+},
+{
+"date": "8 Nov 11",
+"place": "Quarubar",
+"name": "Dawn Ho & Munir Alsagoff",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "9 Nov 11",
@@ -1915,6 +2017,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "9 Nov 11",
@@ -1924,6 +2027,7 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "dempsey, orchard, napier",
 },
 {
 "date": "9 Nov 11",
@@ -1933,6 +2037,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "9 Nov 11",
@@ -1942,6 +2047,27 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
+},
+{
+"date": "9 Nov 11",
+"place": "Republic Polytechnic, South Agora",
+"name": "Quintessential II",
+"genre": "Rock; Indie",
+"time": "1700- 2000",
+"price": "Free",
+"website": "http://www.facebook.com/event.php?eid=164262650329687",
+"l": "woodlands, west",
+},
+{
+"date": "9 Nov 11",
+"place": "Quarubar",
+"name": "Lily Nuris & Wayne Sandz",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "10 Nov 11",
@@ -1951,6 +2077,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "10 Nov 11",
@@ -1960,6 +2087,7 @@ events = [
 "time": "2030-2330",
 "price": "$15",
 "website": "www.kerongchok.com",
+"l": "arab street, bugis",
 },
 {
 "date": "10 Nov 11",
@@ -1969,6 +2097,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "10 Nov 11",
@@ -1978,6 +2107,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "10 Nov 11",
@@ -1987,6 +2117,27 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
+},
+{
+"date": "10 Nov 11",
+"place": "Republic Polytechnic, South Agora",
+"name": "BEATLEMANIA!",
+"genre": "Rock",
+"time": "1700",
+"price": "Free",
+"website": "http://www.facebook.com/event.php?eid=231090416944806",
+"l": "woodlands, west",
+},
+{
+"date": "10 Nov 11",
+"place": "Quarubar",
+"name": "Wayne Sandz & Wayne Gideon",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "11 Nov 11",
@@ -1996,6 +2147,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "11 Nov 11",
@@ -2005,6 +2157,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "11 Nov 11",
@@ -2014,6 +2167,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "11 Nov 11",
@@ -2023,6 +2177,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "11 Nov 11",
@@ -2032,6 +2187,17 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
+},
+{
+"date": "11 Nov 11",
+"place": "Quarubar",
+"name": "Michaela Therese & Joe Jayaveeran",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "12 Nov 11",
@@ -2041,6 +2207,7 @@ events = [
 "time": "2230",
 "price": "Free + F&B Charges",
 "website": "http://www.beermarket.com.sg/",
+"l": "clarke quay, central",
 },
 {
 "date": "12 Nov 11",
@@ -2050,6 +2217,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "12 Nov 11",
@@ -2059,6 +2227,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "12 Nov 11",
@@ -2068,6 +2237,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "12 Nov 11",
@@ -2077,6 +2247,17 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
+},
+{
+"date": "12 Nov 11",
+"place": "Quarubar",
+"name": "Alemay & Shawn Letts",
+"genre": "Jazz; Latin; Tango",
+"time": "2100",
+"price": "Free + F&B Charges",
+"website": "http://www.facebook.com/group.php?gid=46581108311",
+"l": "frankel, east, tampines, simei, bedok, tana merah, siglap",
 },
 {
 "date": "13 Nov 11",
@@ -2086,6 +2267,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "14 Nov 11",
@@ -2095,6 +2277,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "orchard road, somerset, central, ion",
 },
 {
 "date": "14 Nov 11",
@@ -2104,6 +2287,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.crazyelephant.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "15 Nov 11",
@@ -2113,6 +2297,7 @@ events = [
 "time": "2030",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "16 Nov 11",
@@ -2122,6 +2307,7 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "dempsey, orchard, napier",
 },
 {
 "date": "16 Nov 11",
@@ -2131,6 +2317,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "17 Nov 11",
@@ -2140,6 +2327,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "17 Nov 11",
@@ -2149,6 +2337,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "17 Nov 11",
@@ -2158,6 +2347,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "18 Nov 11",
@@ -2167,6 +2357,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "18 Nov 11",
@@ -2176,6 +2367,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "18 Nov 11",
@@ -2185,6 +2377,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "19 Nov 11",
@@ -2194,6 +2387,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "19 Nov 11",
@@ -2203,6 +2397,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "19 Nov 11",
@@ -2212,6 +2407,17 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
+},
+{
+"date": "19 Nov 11",
+"place": "Home Club",
+"name": "Mosh party 7",
+"genre": "Metal",
+"time": "1500 - 2200",
+"price": "$12",
+"website": "http://www.facebook.com/event.php?eid=108154609292965",
+"l": "river valley, upper circular, clarke quay, new, south bridge",
 },
 {
 "date": "21 Nov 11",
@@ -2221,6 +2427,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "orchard road, somerset, central, ion",
 },
 {
 "date": "22 Nov 11",
@@ -2230,6 +2437,7 @@ events = [
 "time": "2030",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "23 Nov 11",
@@ -2239,6 +2447,7 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "dempsey, orchard, napier",
 },
 {
 "date": "23 Nov 11",
@@ -2248,6 +2457,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "24 Nov 11",
@@ -2257,6 +2467,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "clarke quay, central",
 },
 {
 "date": "24 Nov 11",
@@ -2266,6 +2477,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "24 Nov 11",
@@ -2275,6 +2487,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "25 Nov 11",
@@ -2284,6 +2497,7 @@ events = [
 "time": "2130-2300",
 "price": "$25",
 "website": "http://syndicate.sg/2011/10/esplanade-syndicate-sessions-2011/",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "25 Nov 11",
@@ -2293,6 +2507,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "25 Nov 11",
@@ -2302,6 +2517,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "25 Nov 11",
@@ -2311,6 +2527,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "26 Nov 11",
@@ -2320,6 +2537,7 @@ events = [
 "time": "1930-2215",
 "price": "Free + F&B Charges",
 "website": "http://www.facebook.com/TheFullertonBayHotel",
+"l": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 },
 {
 "date": "26 Nov 11",
@@ -2329,6 +2547,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrock.com",
+"l": "orchard road, tanglin",
 },
 {
 "date": "26 Nov 11",
@@ -2338,6 +2557,7 @@ events = [
 "time": "2200",
 "price": "Free + F&B Charges",
 "website": "http://www.hardrockhotelsingapore.com/",
+"l": "sentosa, harbourfront, resorts world",
 },
 {
 "date": "28 Nov 11",
@@ -2347,6 +2567,7 @@ events = [
 "time": "2000",
 "price": "Free + F&B Charges",
 "website": "http://www.imaginings.com.sg/",
+"l": "orchard road, somerset, central, ion",
 },
 {
 "date": "30 Nov 11",
@@ -2356,5 +2577,6 @@ events = [
 "time": "2130-0045",
 "price": "Free + F&B Charges",
 "website": "http://www.screamquiet.com/",
+"l": "dempsey, orchard, napier",
 },
 ]
