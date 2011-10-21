@@ -96,8 +96,8 @@ header input#search {
   font-size: 14px;
   padding: 6px 8px;
   color: #555;
-/*  border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
+  border: 1px solid #ccc;
+/*  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   -moz-box-shadow: 1px 1px 4px #d6d6d6;
@@ -229,6 +229,7 @@ body.bandwagon.join-us nav#main li.join-us a {
   margin: 14px 0 0 12px !important;
   font-size: 1.2em !important;
   z-index: 0;
+  width: 252px;
 }
 
 #tweet .twtr-widget .twtr-tweet {
@@ -258,10 +259,6 @@ table#events th {
   text-align: left;
   padding: 4px 10px;
   font-size: 17px;
-}
-
-table#events tbody tr td{
-/*  border-bottom: 1px solid #ccc;*/
 }
 
 table#events tbody tr:nth-child(2n+1) {
@@ -333,7 +330,8 @@ table#events tbody tr td.link {
   font-style: italic;
   font-size: 1.2em;
   color: #444;
-  text-align: right;
+  text-align: center;
+  margin-top: 85px;
   margin-bottom: 55px;
 }
 
@@ -371,32 +369,216 @@ footer {
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
-/*@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   
   body {
     width: 712px;
     padding: 48px 28px 60px;
   }
-}*/
+  
+  nav#main {  
+    width: 712px;
+  }
+  
+  nav#main ul li a {
+    padding: 6px 28px 6px;
+  }
+  
+  header {
+    width: 260px;
+    background-size: 260px;
+    margin: 25px 0 0 165px;
+  }
+  
+  header input#search {
+    margin: 102px 0 0;
+  }
+  
+  #calendar {
+    background-size: 125px;
+    width: 125px;
+  }
+  
+  #calendar span {
+    font-size: .8em;
+  }
+  
+  #calendar .day_name {
+    margin: 40px 0 0;
+  }
+
+  #calendar .date_of_mth {  
+    font-size: 2.8em;
+    margin: 10px 0 12px;
+  }
+  
+  #calendar .controls {
+    margin-top: -6px;
+  }
+  
+  #calendar a {
+    font-size: 15px;
+  }
+  
+  #tweet {
+    background-size: 250px;
+    width: 250px;
+    margin-left: 465px;
+  }
+  
+  #tweet .follow_us {
+    margin: 23px 0 0 83px;
+    padding: 4px 0;
+    width: 95px;
+  }
+  
+  #tweet .twtr-widget .twtr-doc .twtr-bd .twtr-timeline {
+    margin: 4px 0 0 10px !important;
+    width: 222px;
+  }
+  
+  #twtr-widget-1 .twtr-tweet-text {
+    font-size: 90%;
+  }
+  
+  table#events {
+    margin: 55px 0 0;
+  }
+  
+  table#events th {
+    font-size: 15px;
+  }
+  
+  table#events tbody tr td {
+    font-size: 14px;
+  }
+  
+  footer {
+    font-size: 12px;
+  }
+  
+  .content {
+    width: 712px;
+  }
+  
+  .content .cols h2 {
+    font-size: 15px;
+  }
+
+  .content .cols p {
+    font-size: .8em;
+  }
+  
+  .content .cols.once_upon {
+    width: 348px;
+  }
+  
+  .content .cols.about_clarence {
+    width: 356px;
+    margin-right: 0;
+  }
+  
+  .content .cols.about_clarence blockquote {
+    margin-top: 55px;
+  }
+  
+}
 
 
 
 /*		Mobile Layout: 320px.
 		Gutters: 24px.
-		Outer margins: 34px.
+		Outer margins: 34px. //override 10px
 		Inherits styles from: Default Layout.
 ---------------------------------------------
 cols    1     2      3
 px      68    160    252    */
 
-/*@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   
   body {
-    width: 252px;
-    padding: 48px 34px 60px;
+    width: 300px;
+    padding: 48px 10px 60px;
   }
   
-}*/
+  nav#main {  
+    width: 300px;
+  }
+  
+  nav#main ul li {
+    text-align: center;
+  }
+
+  nav#main ul li a {
+    text-align: center;
+    font-size: .8em;
+    padding: 4px 14px 4px;
+  }
+  
+  nav#main ul li:hover {
+    background-color: #e6e6e6;
+  }
+  
+  nav#main ul.social, #calendar, #tweet { 
+    display: none !important;
+  }
+  
+  header {
+    background-size: 232px;
+    width: 232px;
+    margin: -5px 0 0 36px;
+  }
+  
+  header input#search {
+    margin: 90px 0 0 -4px;
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  
+  table#events {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  table#events th {
+    font-size: 12px;
+  }
+
+  table#events tbody tr td {
+    font-size: 12px;
+    padding: 1px 2px 1px 3px;
+  }
+  
+  table#events tbody tr td.what, table#events th.what {
+    display: none;
+  }
+  
+  footer {
+    font-size: 11px;
+  }
+  
+  .content .cols {
+    width: 300px !important;
+    clear: both;
+  }
+  
+  .content .cols h2 {
+    font-size: 15px;
+  }
+
+  .content .cols p {
+    font-size: .8em;
+  }
+  
+  .content .cols.about_clarence blockquote {
+    margin-top: 15px;
+  }
+  
+  .join_us_imgs {
+    display: none;
+  }
+  
+}
 
 
 
@@ -408,14 +590,55 @@ px      68    160    252    */
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
-/*@media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+   
   body {
     width: 436px;
-    padding: 36px 22px 48px;
+    padding: 36px 22px 48px;   
   }
   
-}*/
+  header {
+    width: 280px;
+    background-size: 280px;
+    margin: 15px 0 0 80px;
+  }
+  
+  header input#search {
+    margin: 100px 0 0 -4px;
+  }
+  
+  nav#main {  
+    width: 436px;
+  }
+  
+  nav#main ul li a {
+    font-size: .85em;
+    padding: 4px 30px 4px;
+  }
+  
+  table#events {
+    margin: 40px 0 0;
+  }
+  
+  table#events tbody tr td.what, table#events th.what {
+    display: table-cell;
+  }
+  
+  table#events th {
+    font-size: 13px;
+  }
+
+  table#events tbody tr td {
+    font-size: 13px;
+  }
+  
+  .content .cols {
+    margin-top: 10px;
+    width: 436px !important;
+    clear: both;
+  }
+  
+}
 
 
 /*	Retina media query.
@@ -423,12 +646,12 @@ px      68    160    252    344    436    */
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
 
-@media 
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min-device-pixel-ratio: 2) {
-	
-	body {
-	
-	}
-	
-}
+/*@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  
+  body {
+  
+  }
+  
+}*/
