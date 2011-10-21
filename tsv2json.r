@@ -4,7 +4,7 @@ Date: 2011-08-08
 Author: onetom@hackerspace.sg
 ]
 
-lines: read/lines %"/Users/Clarence/Dropbox/Bandwagon_data/events.tsv"
+lines: read/lines %"11_13_OCT_17.tsv"
 fields: parse/all lines/1 "^-" remove lines
 
 print "events = ["
@@ -20,4 +20,5 @@ print "},"
 ]
 ]
 print "]"
+
 
