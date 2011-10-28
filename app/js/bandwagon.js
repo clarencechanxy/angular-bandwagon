@@ -47,14 +47,6 @@ function prevDay() {
 // Calendar
 showToday();
   
-$("#calendar .new_day").click(function(e) {
-  nextDay();
-});
-
-$("#calendar .prev_day").click(function() {
-  prevDay();
-});
-
-$("#calendar .today").click(function() {
-  showToday();
-});
+$("#calendar .next_day").click(nextDay);
+$("#calendar .prev_day").click(prevDay);
+$("#calendar .today").click(showToday);
