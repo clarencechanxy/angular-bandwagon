@@ -40,7 +40,7 @@
     <span class="day_name"></span>
     <span class="date_of_mth"></span>
     <span class="month"></span>
-    <div class="controls" style="display:none;">
+    <div class="controls">
       <a href="" class="prev_day">&lsaquo; prev</a>
       <a href="" class="today">today</a>
       <a href="" class="next_day">next &rsaquo;</a>
@@ -157,7 +157,41 @@
     }
     
     function getNextDay() {
+      // console.log($("#calendar").data("today"));
+      // var next_day = new Date(y, m, d+1);
+    
+      // var date_str = $("#calendar").data("today").split("-");
 
+      // date_str[0] = today.getDate() + 1;
+      // date_str[1] = today.getMonth();
+      // date_str[2] = today.getFullYear();
+      // console.log(date_str[0]);
+      // console.log(date_str[1]);
+      // console.log(date_str[2]);
+      // 
+      // var next_day = new Date(date_str[2], date_str[1], date_str[0]);
+      // var new_date_day = next_day.getDate();
+      // var new_date_dayname = dayNames[next_day.getDay()];
+      // var new_date_month = month[next_day.getMonth()];
+      // var new_date_year = next_day.getFullYear();
+      // 
+      // $("#calendar").data("today", new_date_day+'-'+next_day.getMonth()'-'+new_date_year);
+      // console.log($("#calendar").data("today"));
+      
+      // console.log(new_date_day);
+      // console.log(new_date_dayname);
+      // console.log(new_date_month);
+      // console.log(new_date_year);
+      
+      var today = new Date("MARCH 12, 2011");
+      console.log(today.getDate());
+      console.log(today.getMonth()+1);
+      console.log(today.getFullYear());
+      var next_day = today;
+      next_day.setDate(today.getDate()+1);
+      console.log(next_day.getDate());
+      console.log(next_day.getMonth()+1);
+      console.log(next_day.getFullYear());
     }
   </script>
 </body>
