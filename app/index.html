@@ -30,7 +30,7 @@
    	  <li>
      	  <div id="facebook">
      	    <div id="fb-root"></div>
-     	    <fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true" font=""></fb:like> 
+     	    <fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true"></fb:like> 
      	  </div>
    	  </li>
     </ul>
@@ -40,10 +40,10 @@
     <span class="day_name"></span>
     <span class="date_of_mth"></span>
     <span class="month"></span>
-    <div class="controls">
-      <a href="">&lsaquo; prev</a>
-      <a href="">today</a>
-      <a href="">next &rsaquo;</a>
+    <div class="controls" style="display:none;">
+      <a href="" class="prev_day">&lsaquo; prev</a>
+      <a href="" class="today">today</a>
+      <a href="" class="next_day">next &rsaquo;</a>
     </div>
     <input type="hidden" name="cal_date.date"/>
   </div>
@@ -106,20 +106,18 @@
   </script> 
   <script>
     $(document).ready(function() {
-
+      //onload
       $("body").addClass(getCurrentPath());
       $("#calendar, header, #tweet").fadeIn(400);
       
       // Calendar
-      $(".day_name").html(day_name);
-      $(".date_of_mth").html(current_day);
-      $(".month").html(current_month);
+      showCalendarToday();
       
-      // $("#calendar").click(function() {
-        $("#calendar input").val("19 Oct 11").change();
-      // });
+      $("#calendar .next_day").click(function() {
+        getNextDay();
+      });
       
-      // Navigation current
+      // Navigation highlight
       $("#main ul li a").click(function() {
         var new_path = $(this).parent().attr("class");
         $("body").removeClass(getCurrentPath());
@@ -128,18 +126,39 @@
       
     });
     
+    // methods here
     function getCurrentPath() {
-     var path = document.location.href.split('#/')[1]; 
-     return path;
+      var path = document.location.href.split('#/')[1]; 
+      return path;
+    }
+    
+    function getToday() {
+      today = new Date();
+      d = today.getDate();
+      dn = today.getDay();
+      m = today.getMonth();
+      y = today.getFullYear();
     }
 
-    var dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
-    var month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");  
+    function showCalendarToday() {
+      getToday();
+      dayNames = new Array("SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY");    
+      month = new Array("JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER");  
+      var current_day = d;
+      var day_name = dayNames[dn];
+      var current_month = month[m];
+      
+      $(".day_name").html(day_name);
+      $(".date_of_mth").html(current_day);
+      $(".month").html(current_month);
 
-    var d = new Date();
-    var current_day = d.getDate();
-    var day_name = dayNames[d.getDay()];
-    var current_month = month[d.getMonth()];
+      $("#calendar").data("today", d+'-'+(m+1)+'-'+y);
+      // console.log($("#calendar").data("today"));
+    }
+    
+    function getNextDay() {
+
+    }
   </script>
 </body>
 </html>

@@ -60,7 +60,10 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
-/*html {background-color: #f9f9f9;}*/
+html {
+/*  background-color: #f9f9f9;*/ 
+  overflow-x: hidden;
+}
 
 body {
 	width: 896px;
@@ -192,13 +195,13 @@ body.bandwagon.join-us nav#main li.join-us a {
 }
 
 #calendar .day_name {
-  margin: 42px 0 0;
+  margin: 53px 0 0;
 }
 
 #calendar .date_of_mth {  
   color: #c56936;
-  font-size: 3.4em;
-  margin: 12px 0 14px;
+  font-size: 3.7em;
+  margin: 14px 0 18px;
 }
 
 #tweet {
@@ -224,7 +227,7 @@ body.bandwagon.join-us nav#main li.join-us a {
 }
 
 #tweet .twtr-widget .twtr-doc .twtr-bd .twtr-timeline {
-  margin: 12px 0 0 10px !important;
+  margin: 14px 0 0 12px !important;
   font-size: 1.2em !important;
   z-index: 0;
 }
