@@ -55,9 +55,9 @@
     <span class="date_of_mth"></span>
     <span class="month"></span>
     <div class="controls">
-      <a href="" class="prev_day">&lsaquo; prev</a>
-      <a href="" class="today">today</a>
-      <a href="" class="next_day">next &rsaquo;</a>
+      <a href="" class="prev_day" onClick="_gaq.push(['_trackEvent', 'Calender', 'prev']);">&lsaquo; prev</a>
+      <a href="" class="today" onClick="_gaq.push(['_trackEvent', 'Calender', 'today']);">today</a>
+      <a href="" class="next_day" onClick="_gaq.push(['_trackEvent', 'Calender', 'next_day']);">next &rsaquo;</a>
     </div>
     <input type="hidden" name="cal_date.date" id="date_query"/>
   </div>

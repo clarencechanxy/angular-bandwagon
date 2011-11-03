@@ -16,7 +16,7 @@
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'place', event.place])">{{event.place}}</td>
       <td class="what" ng:click="_gaq.push(['_trackEvent', 'event', 'genre', event.genre]);">{{event.genre}}</td>
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'price', event.price]);">{{event.price}}</td> 
-      <td class="link"><a href="{{event.website}}" target="_blank" ng:click="_gaq.push(['_trackEvent', 'event', 'date', event.website]);">more info &rsaquo;</a></td>
+      <td class="link"><a href="{{event.website}}" target="_blank" ng:click="_gaq.push(['_trackEvent', 'event', 'website', event.website]);">more info &rsaquo;</a></td>
     </tr>
   </tbody>
 </table>
