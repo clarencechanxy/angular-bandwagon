@@ -395,6 +395,18 @@ footer {
   background-color: #fff;
 }
 
+#mc_embed_signup #mc-embedded-subscribe {
+  margin-top: 10px !important;
+}
+
+#mc_embed_signup span.error {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  margin: -6px 0 6px 0;
+  font-style: italic;
+}
+
 .subscribe {
   cursor: pointer;
   background-color: #c56936;

@@ -70,3 +70,30 @@ $(".subscribe").click(function() {
   }
 });
 
+// Mailchimp submit form
+$("#mc-embedded-subscribe").click(function() {
+  $(".error").remove();
+  var notValid = false;
+  var validEmailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  var emailAddVal = $("#mce-EMAIL").val();
+  
+  if (emailAddVal == '') {
+    notValid = true;
+    $("#mce-EMAIL").after("<span class='error'>Please fill in an email address!</span>");
+  }
+  else if (!validEmailReg.test(emailAddVal)) {
+    notValid = true;
+    $("#mce-EMAIL").after("<span class='error'>Please fill in a valid email address!</span>");
+  }
+  if (notValid == true) {
+    return false;
+  }
+  else {
+    $('#mc_embed_signup').animate({
+      left: '-=243',
+    }, 200, function() {
+      $(this).addClass('hidden');
+      $("#mce-EMAIL").val("");
+    });
+  }
+});
