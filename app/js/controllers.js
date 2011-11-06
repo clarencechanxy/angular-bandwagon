@@ -23,3 +23,12 @@ function EventsListCtrl() {
    this._gaq = _gaq
   this.events = events;
 }
+
+function Main() {
+  this.filter = function(event) {
+    if (this.date && event.date !== this.date) return false;
+    if (this.query)
+      return event.name.toLowerCase().indexOf(this.query.toLowerCase()) !== -1;
+    return true;
+  };
+}

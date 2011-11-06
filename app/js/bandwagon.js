@@ -50,3 +50,23 @@ showToday();
 $("#calendar .next_day").click(nextDay);
 $("#calendar .prev_day").click(prevDay);
 $("#calendar .today").click(showToday);
+
+// Subscribe
+$(".subscribe").click(function() {
+  if($("#mc_embed_signup").hasClass('hidden')) {
+    $('#mc_embed_signup').animate({
+      left: '+=243',
+    }, 200, function() {
+      $(this).removeClass('hidden');
+    }); 
+  }
+  else {
+    $('#mc_embed_signup').animate({
+      left: '-=243',
+    }, 200, function() {
+      $(this).addClass('hidden');
+      $("#mce-EMAIL").val("");
+    });
+  }
+});
+

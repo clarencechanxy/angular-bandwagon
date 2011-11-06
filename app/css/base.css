@@ -261,6 +261,11 @@ table#events th {
   font-size: 17px;
 }
 
+table#events th a.sortable {
+  color: #fff;
+  text-decoration: underline;
+}
+
 table#events tbody tr:nth-child(2n+1) {
   background-color: #e6e6e6;
 }
@@ -360,6 +365,53 @@ footer {
   padding: 5px 0 0;
 }
 
+#mc_embed_signup {
+/*  display: none;*/
+  background:#c56936; 
+  width: 230px;
+  height: 140px; 
+  font: 14px Helvetica,Arial,sans-serif;
+  position: absolute;
+/*  left: -3px;*/
+  left: -246px;
+  top: 100px;
+  z-index: 9;
+  border:3px solid #bbb;
+  padding: 5px !important;
+}
+
+#mc_embed_signup label {
+  color: #fff;
+  font-size: 14px !important;
+}
+
+#mc_embed_signup input.email {
+  width: 90% !important;
+  border: 1px solid #ccc !important;
+  padding: 8px 6px !important;
+}
+
+#mc_embed_signup .button {
+  background-color: #fff;
+}
+
+.subscribe {
+  cursor: pointer;
+  background-color: #c56936;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  position: absolute;
+/*  float: right;*/
+  margin: 22px 0 0 205px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 8px;
+  border:3px solid #bbb;
+  border-top: 0;
+  color: #fff;
+}
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
