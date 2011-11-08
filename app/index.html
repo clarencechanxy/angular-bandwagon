@@ -8,6 +8,7 @@
   <meta name="keywords" content="Bandwagon, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css">
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script type="text/javascript">
 
@@ -59,7 +60,7 @@
       <a href="" class="today" onClick="_gaq.push(['_trackEvent', 'Calender', 'today']);">today</a>
       <a href="" class="next_day" onClick="_gaq.push(['_trackEvent', 'Calender', 'next_day']);">next &rsaquo;</a>
     </div>
-    <input type="hidden" name="cal_date.date" id="date_query"/>
+    <input type="hidden" name="date" id="date_query"/>
   </div>
   
   <div id="tweet">
@@ -98,6 +99,19 @@
     }).render().setUser('bandwagonapp').start();
     </script>
   </div>
+  
+  <!-- Begin MailChimp Signup Form -->
+  <!-- <div id="mc_embed_signup" class="hidden">
+      <div class="subscribe">Subscribe</div>
+      <form action="http://bandwagon.us2.list-manage1.com/subscribe/post?u=68be48aa72ec273269d26fa70&amp;id=e543f4e830" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+      	<input type="text" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address">
+      	<div class="clear">
+      	  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+      	</div>
+      </form>
+    </div> -->
+  <!--End mc_embed_signup-->
   
   <ng:view></ng:view> 
       

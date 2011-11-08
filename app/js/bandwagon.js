@@ -50,3 +50,50 @@ showToday();
 $("#calendar .next_day").click(nextDay);
 $("#calendar .prev_day").click(prevDay);
 $("#calendar .today").click(showToday);
+
+// Subscribe
+$(".subscribe").click(function() {
+  if($("#mc_embed_signup").hasClass('hidden')) {
+    $('#mc_embed_signup').animate({
+      left: '+=243',
+    }, 200, function() {
+      $(this).removeClass('hidden');
+    }); 
+  }
+  else {
+    $('#mc_embed_signup').animate({
+      left: '-=243',
+    }, 200, function() {
+      $(this).addClass('hidden');
+      $("#mce-EMAIL").val("");
+    });
+  }
+});
+
+// Mailchimp submit form
+$("#mc-embedded-subscribe").click(function() {
+  $(".error").remove();
+  var notValid = false;
+  var validEmailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  var emailAddVal = $("#mce-EMAIL").val();
+  
+  if (emailAddVal == '') {
+    notValid = true;
+    $("#mce-EMAIL").after("<span class='error'>Please fill in an email address!</span>");
+  }
+  else if (!validEmailReg.test(emailAddVal)) {
+    notValid = true;
+    $("#mce-EMAIL").after("<span class='error'>Please fill in a valid email address!</span>");
+  }
+  if (notValid == true) {
+    return false;
+  }
+  else {
+    $('#mc_embed_signup').animate({
+      left: '-=243',
+    }, 200, function() {
+      $(this).addClass('hidden');
+      $("#mce-EMAIL").val("");
+    });
+  }
+});
