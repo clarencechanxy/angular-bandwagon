@@ -11,7 +11,7 @@
   </thead>
   <tbody ng:controller="Main">
     <tr ng:repeat="event in events.$filter(filter).$orderBy(predicate, reverse)">
-      <td class="when" ng:click="_gaq.push(['_trackEvent', 'event', 'date', event.date]); data-date="{{event.dateObj}}"">{{event.date}} / {{event.time}}</td>
+      <td class="when" ng:click="_gaq.push(['_trackEvent', 'event', 'date', event.date]);" data-date="{{event.dateObj}}">{{event.date}} / {{event.time}}</td>
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'name', event.name]);">{{event.name}}</td>
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'place', event.place])">{{event.place}}</td>
       <td class="what" ng:click="_gaq.push(['_trackEvent', 'event', 'genre', event.genre]);">{{event.genre}}</td>
