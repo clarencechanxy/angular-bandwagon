@@ -1,17 +1,17 @@
 <table border="0" cellpadding="0" cellspacing="0" id="events" summary="Your list of live music gigs in Singapore">
   <thead>
     <tr>
-      <th scope="column"><a href="" class="sortable" ng:click="sort = 'date'; reverse=!reverse">When?</a></th>
-      <th scope="column"><a href="" class="sortable" ng:click="sort = 'name'; reverse=!reverse">Who?</a></th>
-      <th scope="column"><a href="" class="sortable" ng:click="sort = 'place'; reverse=!reverse">Where?</a></th>    
-      <th scope="column" class="what"><a href="" class="sortable" ng:click="sort = 'genre'; reverse=!reverse">What?</a></th>
+      <th scope="column"><a href="" class="sortable" ng:click="predicate='dateObj'; reverse=!reverse">When?</a></th>
+      <th scope="column"><a href="" class="sortable" ng:click="predicate='name'; reverse=!reverse">Who?</a></th>
+      <th scope="column"><a href="" class="sortable" ng:click="predicate='place'; reverse=!reverse">Where?</a></th>    
+      <th scope="column" class="what"><a href="" class="sortable" ng:click="predicate = 'genre'; reverse=!reverse">What?</a></th>
       <th scope="column">How much?</th>
       <th scope="column">Link</th>
     </tr>    
   </thead>
   <tbody ng:controller="Main">
-    <tr ng:repeat="event in events.$filter(filter).$orderBy(sort, reverse)">
-      <td class="when" ng:click="_gaq.push(['_trackEvent', 'event', 'date', event.date]);">{{event.date}} / {{event.time}}</td>
+    <tr ng:repeat="event in events.$filter(filter).$orderBy(predicate, reverse)">
+      <td class="when" ng:click="_gaq.push(['_trackEvent', 'event', 'date', event.date]); data-date="{{event.dateObj}}"">{{event.date}} / {{event.time}}</td>
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'name', event.name]);">{{event.name}}</td>
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'place', event.place])">{{event.place}}</td>
       <td class="what" ng:click="_gaq.push(['_trackEvent', 'event', 'genre', event.genre]);">{{event.genre}}</td>

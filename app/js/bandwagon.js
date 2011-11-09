@@ -51,25 +51,6 @@ $("#calendar .next_day").click(nextDay);
 $("#calendar .prev_day").click(prevDay);
 $("#calendar .today").click(showToday);
 
-// Subscribe
-$(".subscribe").click(function() {
-  if($("#mc_embed_signup").hasClass('hidden')) {
-    $('#mc_embed_signup').animate({
-      left: '+=243',
-    }, 200, function() {
-      $(this).removeClass('hidden');
-    }); 
-  }
-  else {
-    $('#mc_embed_signup').animate({
-      left: '-=243',
-    }, 200, function() {
-      $(this).addClass('hidden');
-      $("#mce-EMAIL").val("");
-    });
-  }
-});
-
 // Mailchimp submit form
 $("#mc-embedded-subscribe").click(function() {
   $(".error").remove();
@@ -96,4 +77,30 @@ $("#mc-embedded-subscribe").click(function() {
       $("#mce-EMAIL").val("");
     });
   }
+});
+
+// Subscribe tab
+$(".subscribe").click(function() {
+  if($("#mc_embed_signup").hasClass('hidden')) {
+    $('#mc_embed_signup').animate({
+      left: '+=243',
+    }, 200, function() {
+      $(this).removeClass('hidden');
+    }); 
+  }
+  else {
+    $('#mc_embed_signup').animate({
+      left: '-=243',
+    }, 200, function() {
+      $(this).addClass('hidden');
+      $("#mce-EMAIL").val("");
+    });
+  }
+});
+
+
+//
+$.each(events, function(index, elem) {
+  var dateObjStr = {dateObj: Date.parse(elem.date.replace(/(..)$/, '20'+"$1"))};
+  $.extend(elem, dateObjStr);
 });
