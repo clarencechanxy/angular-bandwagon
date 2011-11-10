@@ -1526,7 +1526,7 @@ events = [
 {
 "date": "16 Nov 11",
 "place": "Avalon @ Marina Bay Sands",
-"name": "Holy F**k",
+"name": "Holy F**k (live) & Klaxons (DJ set)",
 "genre": "Electro-noise",
 "time": "2100",
 "price": "$45 - $60",
