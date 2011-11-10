@@ -366,13 +366,11 @@ footer {
 }
 
 #mc_embed_signup {
-/*  display: none;*/
   background:#c56936; 
   width: 230px;
   height: 140px; 
   font: 14px Helvetica,Arial,sans-serif;
-  position: absolute;
-/*  left: -3px;*/
+  position: fixed;
   left: -246px;
   top: 100px;
   z-index: 9;

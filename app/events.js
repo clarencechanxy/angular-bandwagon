@@ -4403,4 +4403,4 @@ events = [
 "Location": "city hall, raffles place, tanjong pagar, marina square, suntec city, fullterton, rafflescity",
 "Regular": "none",
 },
-]
+];

@@ -20,7 +20,7 @@ function EventsCatCtrl($route) {
 
 function EventsListCtrl() {
   var self = this;
-   this._gaq = _gaq
+  this._gaq = _gaq
   this.events = events;
 }
 
