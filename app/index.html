@@ -154,7 +154,10 @@
       $("#search").bind({
         focus: function() {
           $("#date_query").val("").change();
-          $(this).autocomplete({source: searchItems});
+          $(this).autocomplete({
+            source: searchItems,
+            minLength: 1,
+          });
         }
       });
     })();

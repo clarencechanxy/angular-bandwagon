@@ -4369,7 +4369,7 @@ events = [
 },
 {
 "date": "4 Feb 12",
-"place": "Esplanade Concert Hall",
+"place": "Esplanade Concertrt Hall",
 "name": "Melodies of Classic Virtues: San Zi Jing and Di Zi Gui",
 "genre": "Classical; Mandarin",
 "time": "1930",
