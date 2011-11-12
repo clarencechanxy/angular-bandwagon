@@ -94,8 +94,8 @@ header input#search {
   width: 96%;
   margin: 125px 0 0;
   font-size: 14px;
+  color: #666;
   padding: 6px 8px;
-  color: #555;
   border: 1px solid #ccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -429,8 +429,20 @@ footer {
   border-color: #888 !important;
   opacity: .95;
   width: 328px !important;
-  font-size: 13px !important;
-  color: #c56836;
+  font-size: 14px !important;
+}
+
+.ui-widget-content a {
+  color: #666 !important;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border-color: #fff !important;
+  background: #efece2 !important;
+  color: #444 !important;
+  -webkit-border-radius: 0px!important;
+  -moz-border-radius: 0px!important;
+  border-radius: 0px!important;
 }
 
 /*		Tablet Layout: 768px.
@@ -554,6 +566,10 @@ px      68    160    252    344    436    528    620    712    */
     margin-top: 55px;
   }
   
+  .ui-autocomplete {
+    width: 260px !important;
+  }
+  
 }
 
 
@@ -654,6 +670,10 @@ px      68    160    252    */
     display: none;
   }
   
+  .ui-autocomplete {
+    width: 234px !important;
+  }
+  
 }
 
 
@@ -716,6 +736,10 @@ px      68    160    252    344    436    */
   
   #mc_embed_signup{
     display: block;
+  }
+  
+  .ui-autocomplete {
+    width: 280px !important;
   }
 }
 
