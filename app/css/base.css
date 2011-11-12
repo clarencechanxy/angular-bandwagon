@@ -239,10 +239,10 @@ body.bandwagon.join-us nav#main li.join-us a {
 table#events {
   width: 100%;
   margin: 90px 0 0;
-/*  border: 1px solid #d2d2d2;
+  border: 1px solid #d2d2d2;
   -moz-box-shadow: 1px 1px 10px #d2d2d2;
   -webkit-box-shadow: 1px 1px 10px #d2d2d2;
-  box-shadow: 1px 1px 10px #d2d2d2;*/
+  box-shadow: 1px 1px 10px #d2d2d2;
 }
 
 table#events a {
@@ -640,6 +640,10 @@ px      68    160    252    */
     display: none;
   }
   
+  #mc_embed_signup{
+    display: none;
+  }
+  
 }
 
 
@@ -700,6 +704,9 @@ px      68    160    252    344    436    */
     clear: both;
   }
   
+  #mc_embed_signup{
+    display: block;
+  }
 }
 
 

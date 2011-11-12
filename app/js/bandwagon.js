@@ -98,9 +98,22 @@ $(".subscribe").click(function() {
   }
 });
 
+searchItems = [];
 
-//
 $.each(events, function(index, elem) {
   var dateObjStr = {dateObj: Date.parse(elem.date.replace(/(..)$/, '20'+"$1"))};
   $.extend(elem, dateObjStr);
+  $.each(elem.genre.split('; '), function(index, value) {
+    insertUniqueItem(value); 
+  });
+  insertUniqueItem(elem.name);
+  insertUniqueItem(elem.place);  
 });
+  
+function insertUniqueItem(value) {
+  if ($.inArray(value, searchItems) === -1) {
+    searchItems.push(value);
+  }
+}
+  
+// console.log('no of events: ' + events.length + ' | unique searchable items: ' + searchItems.length);
