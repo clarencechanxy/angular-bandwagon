@@ -94,19 +94,21 @@ header input#search {
   width: 96%;
   margin: 125px 0 0;
   font-size: 14px;
+  color: #666;
   padding: 6px 8px;
-  color: #555;
   border: 1px solid #ccc;
 /*  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: 1px 1px 4px #d6d6d6;
-  -webkit-box-shadow: 1px 1px 4px #d6d6d6;
-  box-shadow: 1px 1px 4px #d6d6d6;*/
+  border-radius: 3px;*/
 }
 
 header input#search:focus {
   color: #c56836;
+  outline: none;
+  border: 1px solid #888;
+/*  -moz-box-shadow: 1px 1px 4px #d6d6d6;
+  -webkit-box-shadow: 1px 1px 4px #d6d6d6;
+  box-shadow: 1px 1px 4px #d6d6d6;*/
 }
 
 nav#main {  
@@ -239,10 +241,10 @@ body.bandwagon.join-us nav#main li.join-us a {
 table#events {
   width: 100%;
   margin: 90px 0 0;
-/*  border: 1px solid #d2d2d2;
+  border: 1px solid #d2d2d2;
   -moz-box-shadow: 1px 1px 10px #d2d2d2;
   -webkit-box-shadow: 1px 1px 10px #d2d2d2;
-  box-shadow: 1px 1px 10px #d2d2d2;*/
+  box-shadow: 1px 1px 10px #d2d2d2;
 }
 
 table#events a {
@@ -423,6 +425,30 @@ footer {
   color: #fff;
 }
 
+.ui-autocomplete {
+  border-color: #888 !important;
+  opacity: .95;
+  width: 328px !important;
+  font-size: 14px !important;
+  border-top: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.ui-widget-content a {
+  color: #666 !important;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border-color: #fff !important;
+  background: #efece2 !important;
+  color: #444 !important;
+  -webkit-border-radius: 0px!important;
+  -moz-border-radius: 0px!important;
+  border-radius: 0px!important;
+}
+
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
 		Outer margins: 28px.
@@ -544,6 +570,10 @@ px      68    160    252    344    436    528    620    712    */
     margin-top: 55px;
   }
   
+  .ui-autocomplete {
+    width: 260px !important;
+  }
+  
 }
 
 
@@ -640,6 +670,14 @@ px      68    160    252    */
     display: none;
   }
   
+  #mc_embed_signup{
+    display: none;
+  }
+  
+  .ui-autocomplete {
+    width: 234px !important;
+  }
+  
 }
 
 
@@ -700,6 +738,13 @@ px      68    160    252    344    436    */
     clear: both;
   }
   
+  #mc_embed_signup{
+    display: block;
+  }
+  
+  .ui-autocomplete {
+    width: 280px !important;
+  }
 }
 
 
