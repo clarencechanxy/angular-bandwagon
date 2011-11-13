@@ -97,18 +97,18 @@ header input#search {
   color: #666;
   padding: 6px 8px;
   border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
+/*  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 3px;*/
 }
 
 header input#search:focus {
   color: #c56836;
   outline: none;
   border: 1px solid #888;
-  -moz-box-shadow: 1px 1px 4px #d6d6d6;
+/*  -moz-box-shadow: 1px 1px 4px #d6d6d6;
   -webkit-box-shadow: 1px 1px 4px #d6d6d6;
-  box-shadow: 1px 1px 4px #d6d6d6;
+  box-shadow: 1px 1px 4px #d6d6d6;*/
 }
 
 nav#main {  
@@ -430,6 +430,10 @@ footer {
   opacity: .95;
   width: 328px !important;
   font-size: 14px !important;
+  border-top: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 .ui-widget-content a {
