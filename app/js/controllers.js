@@ -27,10 +27,13 @@ function EventsListCtrl() {
 function Main() {
   this.filter = function(event) {
     var query = this.query.toLowerCase();
-    if (this.date && event.date !== this.date) return false;
-    if (query)
-      return (event.name.toLowerCase().indexOf(query) && event.place.toLowerCase().indexOf(query) && 
-              event.genre.toLowerCase().indexOf(query) && event.price.toLowerCase().indexOf(query)) !== -1;
+    element = [event.name, event.place, event.genre, event.price].join(' ').toLowerCase();
+    if (this.date && event.date !== this.date) {
+      return false;
+    }
+    if (query) {
+      return (element.indexOf(query)) !== -1;
+    }
     return true;
   };
 }
