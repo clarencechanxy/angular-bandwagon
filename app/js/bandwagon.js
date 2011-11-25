@@ -51,6 +51,16 @@ $("#calendar .next_day").click(nextDay);
 $("#calendar .prev_day").click(prevDay);
 $("#calendar .today").click(showToday);
 
+// Tipsy for special gigs
+function specialGigsHighlight() {
+  $("table#events img.special_gig").tipsy({gravity: 's', live: true, fade: true});
+}
+
+// Reset other filters
+function resetFilters() {
+  $("#date_query, #special_gig").val("").change();
+}
+
 // Mailchimp submit form
 $("#mc-embedded-subscribe").click(function() {
   $(".error").remove();
@@ -83,14 +93,14 @@ $("#mc-embedded-subscribe").click(function() {
 $(".subscribe").click(function() {
   if($("#mc_embed_signup").hasClass('hidden')) {
     $('#mc_embed_signup').animate({
-      left: '+=243',
+      left: '+=280',
     }, 200, function() {
       $(this).removeClass('hidden');
     }); 
   }
   else {
     $('#mc_embed_signup').animate({
-      left: '-=243',
+      left: '-=280',
     }, 200, function() {
       $(this).addClass('hidden');
       $("#mce-EMAIL").val("");
@@ -101,13 +111,20 @@ $(".subscribe").click(function() {
 searchItems = [];
 
 $.each(events, function(index, elem) {
-  var dateObjStr = {dateObj: Date.parse(elem.date.replace(/(..)$/, '20'+"$1"))};
+  if (elem.time == "-" || elem.time == "") {
+    var dateObjStr = {dateObj: Date.parse(elem.date.replace(/(..)$/, '20'+"$1"))};
+  } 
+  else {
+    var time_str = elem.time.substr(0, 4).replace(/(..)$/, ':'+"$1");
+    var dateObjStr = {dateObj: Date.parse(elem.date.replace(/(..)$/, '20'+"$1")+ " " + time_str)};    
+  }
   $.extend(elem, dateObjStr);
+  
   $.each(elem.genre.split('; '), function(index, value) {
     insertUniqueItem(value); 
   });
   insertUniqueItem(elem.name);
-  insertUniqueItem(elem.place);  
+  insertUniqueItem(elem.place); 
 });
   
 function insertUniqueItem(value) {
@@ -115,5 +132,5 @@ function insertUniqueItem(value) {
     searchItems.push(value);
   }
 }
-  
+
 // console.log('no of events: ' + events.length + ' | unique searchable items: ' + searchItems.length);

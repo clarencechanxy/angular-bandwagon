@@ -8,8 +8,9 @@
   <meta name="keywords" content="Bandwagon, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="css/base.css"/>
-  <link rel="stylesheet" href="css/themes/base/jquery.ui.all.css">
-  <link rel="stylesheet" href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css">
+  <link rel="stylesheet" href="css/themes/base/jquery.ui.all.css"/>
+  <link rel="stylesheet" href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css"/>
+  <link rel="stylesheet" href="css/tipsy.css">
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -28,11 +29,15 @@
     <h1>bandwagon</h1>
     <h2>live music gig finder</h2>
     <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
+    <section class='special_gig_controls'>
+      <a data-value='' class='special_gig_filter'>all gigs</a> | <a data-value='true' class='special_gig_filter'>non-regular gigs</a>
+      <input type="hidden" value='' name="special_gig" id="special_gig">
+    </section>
   </header>
   
   <nav id="main">
     <ul>
-      <li class="search"><a href="#/search">search</a></li>
+      <li class="search" title="search this shit"><a href="#/search">search</a></li>
       <li class="about"><a href="#/about">about</a></li>
       <li class="join-us"><a href="#/join-us">join us</a></li>
       <li><a class="blog" href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
@@ -101,26 +106,25 @@
   
   <!-- Begin MailChimp Signup Form -->
   <div id="mc_embed_signup" class="hidden">
-    <div class="subscribe">Subscribe</div>
+    <div class="subscribe">Subscribe to our gig updates</div>
     <form action="http://bandwagon.us2.list-manage1.com/subscribe/post?u=68be48aa72ec273269d26fa70&amp;id=e543f4e830" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-    	<label for="mce-EMAIL">Join the exclusive list that gets the very best gig news!</label>
+      <p>BE THE FIRST TO HEAR ABOUT NEW GIGS!</p>
+    	<label for="mce-EMAIL">Join our mailing list for exclusive news, events and promotions</label>
     	<input type="text" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address">
-    	<div class="clear">
-    	  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-    	</div>
+    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
     </form>
   </div>
-
   <!--End mc_embed_signup-->
   
   <ng:view></ng:view> 
-      
+  
   <footer>
     &#169; Copyright 2011 Bandwagon, All rights reserved | <a href="javascript:nospam('bandwagon','bandwagon.sg','Get in touch!')">bandwagon [at] bandwagon.sg</a>
   </footer>
   
   <script src="lib/angular/angular.min.js" ng:autobind></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>-->
+  <script src="js/jquery.min.js"></script>
   <script src="events.js"></script>
   <script src="js/bandwagon.js"></script>
   <script src="js/controllers.js"></script>
@@ -128,6 +132,7 @@
   <script src="js/ui/jquery.ui.widget.js"></script>
   <script src="js/ui/jquery.ui.position.js"></script>
   <script src="js/ui/jquery.ui.autocomplete.js"></script>
+  <script src="js/tipsy.js"></script>
   <script src="http://platform.twitter.com/widgets.js"></script>
   <script src="http://connect.facebook.net/en_US/all.js#appId=258528160836345&amp;xfbml=1"></script>
   <script src="js/noSpam.js">
@@ -138,25 +143,39 @@
     }
   </script> 
   <script>
-    $(document).ready(function() {
-      //onload
-      $("body").addClass(getCurrentPath());
-      $("#calendar, header, #tweet").fadeIn(400);
-       
-      // Navigation highlight
-      $("#main ul li a").not(".blog").click(function() {
-        var new_path = $(this).parent().attr("class");
-        $("body").removeClass(getCurrentPath());
-        $("body").addClass(new_path);
-      });
-        
-      $("#search").bind({
-        focus: function() {
-          $("#date_query").val("").change();
-          $(this).autocomplete({source: searchItems});
-        }
-      });
+  $(document).ready(function() {
+    //onload
+    $("body").addClass(getCurrentPath());
+    $("#calendar, header, #tweet").fadeIn(400);
+     
+    // Navigation highlight
+    $("#main ul li a").not(".blog").click(function() {
+      var new_path = $(this).parent().attr("class");
+      $("body").removeClass(getCurrentPath());
+      $("body").addClass(new_path);
     });
+      
+    $('.special_gig_filter').click(function() {
+      resetFilters();
+      if (($(this).attr('data-value')) !== '') {
+        $("#special_gig").val($(this).attr('data-value')).change();
+      }
+      else {
+        $("#search").val('').change();  
+      }
+    });  
+      
+    $("#search").bind({
+      focus: function() {
+        resetFilters();
+        $(this).autocomplete({source: searchItems});
+      },
+      autocompleteselect: function(event, ui) {
+        $(this).val(ui.item.value).change();
+      }
+    });
+  });
+  $(window).load(specialGigsHighlight);
   </script>
 </body>
 </html>

@@ -111,6 +111,21 @@ header input#search:focus {
   box-shadow: 1px 1px 4px #d6d6d6;*/
 }
 
+header .special_gig_controls {
+  padding-left: 90px;
+  color: #666;
+  font-size: 15px;
+}
+
+header a.special_gig_filter {
+  color: #666;
+  text-decoration: underline;  
+}
+
+header a.special_gig_filter:hover {
+  color: #c56936;
+}
+
 nav#main {  
   width: 896px;
   position: absolute;
@@ -119,7 +134,7 @@ nav#main {
   -moz-box-shadow: 2px 5px 5px #ccc;
   -webkit-box-shadow: 2px 5px 5px #ccc;
   box-shadow: 2px 5px 5px #ccc;
-  z-index: 2;
+  z-index: 0;
 }
 
 nav#main ul li {
@@ -165,7 +180,7 @@ body.bandwagon.join-us nav#main li.join-us a {
 
 #calendar {
   position: absolute;
-  top: 36px;
+  top: 34px;
   background: url(../img/calendar_bg.png) no-repeat;
   width: 140px;
   height: 191px;
@@ -207,7 +222,7 @@ body.bandwagon.join-us nav#main li.join-us a {
 
 #tweet {
   position: absolute;
-  top: 36px;
+  top: 35px;
   margin-left: 618px;
   background: url(../img/amp.png) no-repeat;
   width: 280px;
@@ -281,6 +296,17 @@ table#events tbody tr td {
   font-size: 15px;
   color: #555;
   padding: 5px 8px 5px 10px;
+}
+
+table#events tbody tr td img.special_gig {
+  cursor: pointer;
+  float: left;
+  margin-top: -2px;
+  padding: 0 2px 0;
+}
+
+table#events tbody tr td img.regular {
+  display: none;
 }
 
 table#events tbody tr td.when {
@@ -368,61 +394,65 @@ footer {
 }
 
 #mc_embed_signup {
-  background:#c56936; 
-  width: 230px;
-  height: 140px; 
+  background: url(../img/subscribe_tab.png) no-repeat;
+  width: 336px;
+  height: 190px; 
   font: 14px Helvetica,Arial,sans-serif;
   position: fixed;
-  left: -246px;
+  left: -282px;
   top: 100px;
   z-index: 9;
-  border:3px solid #bbb;
-  padding: 5px !important;
+  padding-left: 8px;
+}
+
+#mc_embed_signup form{
+  width: 258px !important;
+}
+
+#mc_embed_signup p {
+  color: #c56936;
+  font-size: 18px;
 }
 
 #mc_embed_signup label {
   color: #fff;
+  padding: 2px 0;
   font-size: 14px !important;
 }
 
 #mc_embed_signup input.email {
-  width: 90% !important;
+  width: 215px !important;
   border: 1px solid #ccc !important;
   padding: 8px 6px !important;
 }
 
 #mc_embed_signup .button {
-  background-color: #fff;
+  display: inline-block !important;
+  background: transparent url(../img/subscribe_submit.png) no-repeat !important;
+  width: 105px !important;
+  height: 29px;
+  text-indent: -9999px;
 }
 
 #mc_embed_signup #mc-embedded-subscribe {
-  margin-top: 10px !important;
+  margin-top: 2px !important;
 }
 
 #mc_embed_signup span.error {
   display: block;
-  color: #fff;
+  color: #999;
   font-size: 12px;
-  margin: -6px 0 6px 0;
+  margin: -6px 0 0 0;
   font-style: italic;
 }
 
 .subscribe {
-  cursor: pointer;
-  background-color: #c56936;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  position: absolute;
-/*  float: right;*/
-  margin: 22px 0 0 205px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 6px 8px;
-  border:3px solid #bbb;
-  border-top: 0;
-  color: #fff;
+  cursor: pointer !important;
+  background: url(../img/subscribe_tab_btn.png) no-repeat;
+  width: 65px;
+  height: 190px;
+  float: right;
+  text-indent: -9999px;
 }
 
 .ui-autocomplete {

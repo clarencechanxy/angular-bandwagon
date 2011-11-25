@@ -27,13 +27,24 @@ function EventsListCtrl() {
 function Main() {
   this.filter = function(event) {
     var query = this.query.toLowerCase();
-    element = [event.name, event.place, event.genre, event.price].join(' ').toLowerCase();
+    element = [event.name, event.place, event.genre, event.price, event.special].join(' ').toLowerCase();
     if (this.date && event.date !== this.date) {
       return false;
+    }
+    if (this.special_gig == "true") {
+      return (event.special.indexOf("y")) !== -1;
     }
     if (query) {
       return (element.indexOf(query)) !== -1;
     }
     return true;
   };
+  this.specialGig = function(value) {
+    if (value == 'y') {
+      return 'special_gig';
+    }
+    else {
+      return 'regular';
+    }
+  }
 }
