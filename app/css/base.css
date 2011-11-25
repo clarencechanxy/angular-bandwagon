@@ -78,19 +78,19 @@ body {
   display: none !important;
 }
 
-header {
+header#bw {
   width: 330px;
   height: 107px;
-  background: url(../img/logo_beta.png) no-repeat;
+  background: url('../img/logo_beta.png') no-repeat;
   margin: 0 0 0 220px;
   display: none;
 }
 
-header h1, header h2 {
+header#bw h1, header#bw h2 {
   display: none;
 }
 
-header input#search {
+header#bw input#search {
   width: 96%;
   margin: 125px 0 0;
   font-size: 14px;
@@ -102,7 +102,7 @@ header input#search {
   border-radius: 3px;*/
 }
 
-header input#search:focus {
+header#bw input#search:focus {
   color: #c56836;
   outline: none;
   border: 1px solid #888;
@@ -111,18 +111,18 @@ header input#search:focus {
   box-shadow: 1px 1px 4px #d6d6d6;*/
 }
 
-header .special_gig_controls {
+header#bw .special_gig_controls {
   padding-left: 90px;
   color: #666;
   font-size: 15px;
 }
 
-header a.special_gig_filter {
+header#bw a.special_gig_filter {
   color: #666;
   text-decoration: underline;  
 }
 
-header a.special_gig_filter:hover {
+header#bw a.special_gig_filter:hover {
   color: #c56936;
 }
 
