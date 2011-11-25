@@ -3,7 +3,7 @@ REBOL [
 	Date: 2011-08-08
 	Author: onetom@hackerspace.sg
 	Usage: {
-		$ rebol -qws tsv2json.r events\ -\ Gig\ list.tsv events | less
+		$ rebol -qws tsv2json.r events\ -\ Gig\ list.tsv events | less | tee app/events.js
 		$ rebol -qws tsv2json.r events\ -\ Artiste.tsv artiste | less
 	}
 ]
@@ -24,7 +24,7 @@ json: func[line] [
 events: func[line] [ if now/date - 3 <= to-date line/1 [ json line ] ]
 artiste: :json
 
-lines: read/lines tsv
+lines: read/lines %"/Users/Clarence/Dropbox/Bandwagon_data/events - Gig list.tsv"
 fields: parse/all lines/1 "^-" remove lines
 
 print [ var "= [" ]
