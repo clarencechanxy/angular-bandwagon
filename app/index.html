@@ -25,7 +25,7 @@
   </script>
 </head>
 <body ng:controller="EventsCatCtrl" class="bandwagon">
-  <header>
+  <header id="bw">
     <h1>bandwagon</h1>
     <h2>live music gig finder</h2>
     <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
@@ -145,7 +145,7 @@
   $(document).ready(function() {
     //onload
     $("body").addClass(getCurrentPath());
-    $("#calendar, header, #tweet").fadeIn(400);
+    $("#calendar, header#bw, #tweet").fadeIn(400);
      
     // Navigation highlight
     $("#main ul li a").not(".blog").click(function() {
