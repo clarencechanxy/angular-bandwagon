@@ -512,6 +512,10 @@ px      68    160    252    344    436    528    620    712    */
     margin: 102px 0 0;
   }
   
+  header .special_gig_controls {
+    padding-left: 60px;
+  }
+  
   #calendar {
     background-size: 125px;
     width: 125px;
@@ -657,8 +661,12 @@ px      68    160    252    */
     padding: 6px 8px;
   }
   
+  header .special_gig_controls {
+    padding-left: 45px;
+  }
+  
   table#events {
-    margin-top: 30px;
+    margin-top: 35px;
     width: 100%;
   }
   
@@ -737,6 +745,10 @@ px      68    160    252    344    436    */
     margin: 100px 0 0 -4px;
   }
   
+  header .special_gig_controls {
+    padding-left: 65px;
+  }
+  
   nav#main {  
     width: 436px;
   }
@@ -747,7 +759,7 @@ px      68    160    252    344    436    */
   }
   
   table#events {
-    margin: 40px 0 0;
+    margin: 50px 0 0;
   }
   
   table#events tbody tr td.what, table#events th.what {
