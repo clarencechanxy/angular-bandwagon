@@ -6,7 +6,7 @@
       <th scope="column"><a href="" class="sortable" ng:click="predicate='place'; reverse=!reverse">Where?</a></th>    
       <th scope="column" class="what"><a href="" class="sortable" ng:click="predicate = 'genre'; reverse=!reverse">What?</a></th>
       <th scope="column">How much?</th>
-      <th scope="column">Link</th>
+      <th scope="column"></th>
     </tr>    
   </thead>
   <tbody ng:controller="Main">
@@ -16,7 +16,47 @@
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'place', event.place])">{{event.place}}</td>
       <td class="what" ng:click="_gaq.push(['_trackEvent', 'event', 'genre', event.genre]);">{{event.genre}}</td>
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'price', event.price]);">{{event.price}}</td> 
-      <td class="link"><a href="{{event.website}}" target="_blank" ng:click="_gaq.push(['_trackEvent', 'event', 'website', event.website]);">more info &rsaquo;</a></td>
+      <td class="link">
+        <section class="share_more"> 
+          <ul>
+            <li>
+              <img src="img/btn_chevron.png" height="9">
+              <ul class="sub_menu">
+                <li>
+                  <a href="{{event.website}}" target="_blank" ng:click="_gaq.push(['_trackEvent', 'event', 'website', event.website]);"><img src="img/btn_more.png"></a>
+                </li>
+                <li class="twitter">
+                  <a onclick="socialShare('{{event.name}}', '{{event.place}}', '{{event.date}}', 'tweet');"><img src="img/tweet_share.png"></a>
+                </li>
+                <li class="facebook">
+                  <a onclick="socialShare('{{event.name}}', '{{event.place}}', '{{event.date}}', 'fb');"><img src="img/fb_share.png"></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        <section>
+      </td>
     </tr>
   </tbody>
 </table>
+
+<script src="http://platform.twitter.com/widgets.js"></script>
+
+<script>
+function socialShare(name, venue, date, type) {
+  var title = encodeURIComponent(name);
+  var venue = encodeURIComponent(venue);
+  var date = encodeURIComponent(date);
+  var summary = title + ' @' + venue + ', ' + date;
+  var url = "";
+  if (type == 'fb') {
+    url = "http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D="+title+"&p%5Bsummary%5D="+summary+"&p%5Burl%5D=http://www.bandwagon.sg&p%5Bimages%5D%5B0%5D=http://www.bandwagon.sg/img/bw_flame.png";
+  }
+  else if (type == 'tweet') {
+    url = "https://twitter.com/intent/tweet?original_referer=http://www.bandwagon.sg&source=tweetbutton&text="+title+"+%40"+venue+"%2C+"+date+"&url=http%3A%2F%2Fbandwagon.sg&via=BandwagonApp";
+  }
+  var left = (screen.width / 2) - (700 / 2);
+  var top = (screen.height / 2) - (450 / 2);
+  window.open(url, 'Bandwagon', "menubar=no,width=700,height=450" + ",toolbar=no,scrollbars=no,top=" + top + ",left=" + left);
+}
+</script>

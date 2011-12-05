@@ -53,7 +53,7 @@ $("#calendar .today").click(showToday);
 
 // Tipsy for special gigs
 function specialGigsHighlight() {
-  $("table#events img.special_gig").tipsy({gravity: 's', live: true, fade: true});
+  $("table#events img.special_gig").tipsy({gravity: 's', live: true});
 }
 
 // Reset other filters
