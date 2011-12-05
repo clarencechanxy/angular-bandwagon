@@ -4,8 +4,11 @@
   <title>Bandwagon- your live music gig finder</title>
   <link rel="shortcut icon" href="img/favicon.ico" />
   <meta charset="utf-8">
-  <meta name="description" content="Connecting you to live music." /> 
-  <meta name="keywords" content="Bandwagon, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
+  <meta name="description" content="Connecting you to live music. Bandwagon, live music gig finder." /> 
+  <meta name="keywords" content="Bandwagon, Singapore, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
+  <meta property="og:title" content="Bandwagon- your live music gig finder" /> 
+  <meta property="og:description" content="Connecting you to live music. Bandwagon, live music gig finder." /> 
+  <meta property="og:image" content="http://localhost:8000/app/img/bw_flame.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="css/base.css"/>
   <link rel="stylesheet" href="css/themes/base/jquery.ui.all.css"/>
@@ -37,21 +40,19 @@
   
   <nav id="main">
     <ul>
-      <li class="search" title="search this shit"><a href="#/search">search</a></li>
+      <li class="search"><a href="#/search">search</a></li>
       <li class="about"><a href="#/about">about</a></li>
       <li class="join-us"><a href="#/join-us">join us</a></li>
       <li><a class="blog" href="http://blog.bandwagon.sg/" target="_blank">blog</a></li>
     </ul>
     <ul class="social">
       <li class="tweeter">
-        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-via="BandwagonApp"></a>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Bandwagon: live music search made easy!" data-count="none" data-url="http://bandwagon.sg" data-via="BandwagonApp"></a>
    	  </li>
-   	  <li>
-     	  <div id="facebook">
-     	    <div id="fb-root"></div>
-     	    <fb:like href="http://search.bandwagon.sg" send="true" layout="button_count" width="65px" show_faces="true"></fb:like> 
-     	  </div>
-   	  </li>
+      <li class="facebook">
+        <div id="fb-root"></div>
+        <fb:like href="http://bandwagon.sg" send="false" layout="button_count" width="65" show_faces="false"></fb:like> 
+      </li>
     </ul>
   </nav>
    
@@ -132,7 +133,6 @@
   <script src="js/ui/jquery.ui.position.js"></script>
   <script src="js/ui/jquery.ui.autocomplete.js"></script>
   <script src="js/tipsy.js"></script>
-  <script src="http://platform.twitter.com/widgets.js"></script>
   <script src="http://connect.facebook.net/en_US/all.js#appId=258528160836345&amp;xfbml=1"></script>
   <script src="js/noSpam.js">
     // No spam script
