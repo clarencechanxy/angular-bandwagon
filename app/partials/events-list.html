@@ -25,6 +25,9 @@
                 <li>
                   <a href="{{event.website}}" target="_blank" ng:click="_gaq.push(['_trackEvent', 'event', 'website', event.website]);"><img src="img/btn_more.png"></a>
                 </li>
+                <li class="email">
+                  <a href="mailto:?subject={{event.name}}@{{event.place}}, {{event.date}}"><img src="img/btn_email.png"></a>
+                </li>
                 <li class="twitter">
                   <a onclick="socialShare('{{event.name}}', '{{event.place}}', '{{event.date}}', 'tweet');"><img src="img/tweet_share.png"></a>
                 </li>
