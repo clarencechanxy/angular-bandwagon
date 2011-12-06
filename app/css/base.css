@@ -170,6 +170,10 @@ nav#main ul.social li.tweeter {
   margin: 2px 6px 0 0;
 }
 
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+  display: none !important;
+}
+
 body.bandwagon.search nav#main li.search a,
 body.bandwagon.events nav#main li.search a,
 body.bandwagon.about nav#main li.about a,
@@ -262,6 +266,10 @@ table#events {
   box-shadow: 1px 1px 10px #d2d2d2;
 }
 
+table#events ul li {
+  list-style-type: none;
+}
+
 table#events a {
   font-weight: bold;
 }
@@ -314,7 +322,32 @@ table#events tbody tr td.when {
 }
 
 table#events tbody tr td.link {
-  width: 68px;
+  width: 24px;
+}
+
+table#events tbody tr td.link .share_more ul.sub_menu {
+  background: url(../img/share_more.png) no-repeat;
+  width: 81px;
+  height: 87px;
+  padding-top: 5px;
+}
+
+table#events tbody tr td.link .share_more ul li ul.sub_menu {
+  display: none;
+  position: absolute;
+  margin: -55px 0 0 18px;
+}
+
+table#events tbody tr td.link .share_more ul li ul.sub_menu li {
+  margin: 2px 0 0 16px;
+}
+
+table#events tbody tr td.link .share_more ul li:hover ul.sub_menu {
+  display: block;
+}
+
+table#events tbody tr td.link .share_more ul li ul.sub_menu li.facebook {
+  margin: 0 0 0 13px;
 }
 
 .content {
