@@ -27,7 +27,7 @@ function EventsListCtrl() {
 function Main() {
   this.filter = function(event) {
     var query = this.query.toLowerCase();
-    element = [event.name, event.place, event.genre, event.price, event.special].join(' ').toLowerCase();
+    element = [event.name, event.place, event.genre, event.price, event.special, event.date].join(' ').toLowerCase();
     if (this.date && event.date !== this.date) {
       return false;
     }
