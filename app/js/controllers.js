@@ -31,7 +31,7 @@ function Main() {
     if (this.date && event.date !== this.date) {
       return false;
     }
-    if (this.special_gig == "true") {
+    if (this.special_gig == "gig_picks") {
       return (event.special.indexOf("y")) !== -1;
     }
     if (query) {

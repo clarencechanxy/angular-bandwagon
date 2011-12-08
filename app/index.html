@@ -8,7 +8,7 @@
   <meta name="keywords" content="Bandwagon, Singapore, live, music, gig, finder, locator, fans, jazz, rock, pop, indie, concert, performance" />
   <meta property="og:title" content="Bandwagon- your live music gig finder" /> 
   <meta property="og:description" content="Connecting you to live music. Bandwagon, live music gig finder." /> 
-  <meta property="og:image" content="http://localhost:8000/app/img/bw_flame.png" />
+  <meta property="og:image" content="http://www.bandwagon.sg/img/bw_flame.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="css/base.css"/>
   <link rel="stylesheet" href="css/themes/base/jquery.ui.all.css"/>
@@ -33,8 +33,8 @@
     <h2>live music gig finder</h2>
     <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
     <section class='special_gig_controls'>
-      <a data-value='' class='special_gig_filter'>all gigs</a> | <a data-value='true' class='special_gig_filter'>non-regular gigs</a>
-      <input type="hidden" value='' name="special_gig" id="special_gig">
+      <a data-value='all' class='special_gig_filter'>all gigs</a> | <a data-value='non_regular' class='special_gig_filter'>non-regular gigs</a> | <a data-value='gig_picks' class='special_gig_filter'>gig picks</a>
+      <input type="text" value='' name="special_gig" id="special_gig">
     </section>
   </header>
   
@@ -156,6 +156,8 @@
     });
       
     $('.special_gig_filter').click(function() {
+      var special_gig = $(this).attr('data-value');
+      $("#special_gig").val(special_gig);
       resetFilters();
       if (($(this).attr('data-value')) !== '') {
         $("#special_gig").val($(this).attr('data-value')).change();

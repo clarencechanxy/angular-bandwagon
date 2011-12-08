@@ -335,7 +335,7 @@ table#events tbody tr td.link .share_more ul.sub_menu {
 table#events tbody tr td.link .share_more ul li ul.sub_menu {
   display: none;
   position: absolute;
-  margin: -55px 0 0 18px;
+  margin: -66px 0 0 18px;
 }
 
 table#events tbody tr td.link .share_more ul li ul.sub_menu li {
