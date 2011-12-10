@@ -34,12 +34,16 @@ function Main() {
     if (this.special_gig == "gig_picks") {
       return (event.special.indexOf("y")) !== -1;
     }
+    if (this.special_gig == "non_regular") {
+      return (event.non_regular.indexOf("y")) !== -1;
+    }
     if (query) {
       return (element.indexOf(query)) !== -1;
     }
     return true;
   };
   this.specialGig = function(value) {
+    console.log(value);
     if (value == 'y') {
       return 'special_gig';
     }
