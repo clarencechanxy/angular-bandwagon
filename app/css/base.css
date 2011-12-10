@@ -695,11 +695,11 @@ px      68    160    252    */
   }
   
   header .special_gig_controls {
-    padding-left: 45px;
+    padding-left: 17px;
   }
   
   table#events {
-    margin-top: 35px;
+    margin-top: 38px;
     width: 100%;
   }
   
@@ -710,6 +710,14 @@ px      68    160    252    */
   table#events tbody tr td {
     font-size: 12px;
     padding: 1px 2px 1px 3px;
+  }
+  
+  table#events td.link, table#events tr th.link {
+    display: none;
+  }
+  
+  table#events .share_more {
+    display: none;
   }
   
   table#events tbody tr td.what, table#events th.what {

@@ -6,7 +6,7 @@
       <th scope="column"><a href="" class="sortable" ng:click="predicate='place'; reverse=!reverse">Where?</a></th>    
       <th scope="column" class="what"><a href="" class="sortable" ng:click="predicate = 'genre'; reverse=!reverse">What?</a></th>
       <th scope="column">How much?</th>
-      <th scope="column"></th>
+      <th scope="column" class="link"></th>
     </tr>    
   </thead>
   <tbody ng:controller="Main">
@@ -15,7 +15,7 @@
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'name', event.name]);"><img ng:class="specialGig(event.special)" title="{{event.blurp}}" src="img/star.png"/>{{event.name}}</td>
       <td ng:click="_gaq.push(['_trackEvent', 'event', 'place', event.place])">{{event.place}}</td>
       <td class="what" ng:click="_gaq.push(['_trackEvent', 'event', 'genre', event.genre]);">{{event.genre}}</td>
-      <td ng:click="_gaq.push(['_trackEvent', 'event', 'price', event.price]);">{{event.price}}</td> 
+      <td class="price" ng:click="_gaq.push(['_trackEvent', 'event', 'price', event.price]);">{{event.price}}</td> 
       <td class="link">
         <section class="share_more"> 
           <ul>
