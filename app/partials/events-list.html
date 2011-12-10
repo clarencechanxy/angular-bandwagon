@@ -1,10 +1,10 @@
 <table border="0" cellpadding="0" cellspacing="0" id="events" summary="Your list of live music gigs in Singapore" ng:init="predicate='dateObj'">
   <thead>
     <tr>
-      <th scope="column"><a href="" class="sortable" ng:click="predicate='dateObj'; reverse=!reverse">When?</a></th>
-      <th scope="column"><a href="" class="sortable" ng:click="predicate='name'; reverse=!reverse">Who?</a></th>
-      <th scope="column"><a href="" class="sortable" ng:click="predicate='place'; reverse=!reverse">Where?</a></th>    
-      <th scope="column" class="what"><a href="" class="sortable" ng:click="predicate = 'genre'; reverse=!reverse">What?</a></th>
+      <th scope="column"><a href="" class="sortable" ng:click="predicate='dateObj'; reverse=!reverse" ng:click="_gaq.push(['_trackEvent', 'sort', 'when']);">When?</a></th>
+      <th scope="column"><a href="" class="sortable" ng:click="predicate='name'; reverse=!reverse" ng:click="_gaq.push(['_trackEvent', 'sort', 'who']);">Who?</a></th>
+      <th scope="column"><a href="" class="sortable" ng:click="predicate='place'; reverse=!reverse" ng:click="_gaq.push(['_trackEvent', 'sort', 'where']);">Where?</a></th>    
+      <th scope="column" class="what"><a href="" class="sortable" ng:click="predicate = 'genre'; reverse=!reverse" ng:click="_gaq.push(['_trackEvent', 'sort', 'what']);">What?</a></th>
       <th scope="column">How much?</th>
       <th scope="column"></th>
     </tr>    
@@ -26,13 +26,13 @@
                   <a href="{{event.website}}" target="_blank" ng:click="_gaq.push(['_trackEvent', 'event', 'website', event.website]);"><img src="img/btn_more.png"></a>
                 </li>
                 <li class="email">
-                  <a href="mailto:?subject={{event.name}}@{{event.place}}, {{event.date}}"><img src="img/btn_email.png"></a>
+                  <a href="mailto:?subject={{event.name}}@{{event.place}}, {{event.date}}" ng:click="_gaq.push(['_trackEvent', 'share', 'email', event.website]);"><img src="img/btn_email.png"></a>
                 </li>
                 <li class="twitter">
-                  <a onclick="socialShare('{{event.name}}', '{{event.place}}', '{{event.date}}', 'tweet');"><img src="img/tweet_share.png"></a>
+                  <a onclick="socialShare('{{event.name}}', '{{event.place}}', '{{event.date}}', 'tweet');" ng:click="_gaq.push(['_trackEvent', 'share', 'tweet', event.website]);"><img src="img/tweet_share.png"></a>
                 </li>
                 <li class="facebook">
-                  <a onclick="socialShare('{{event.name}}', '{{event.place}}', '{{event.date}}', 'fb');"><img src="img/fb_share.png"></a>
+                  <a onclick="socialShare('{{event.name}}', '{{event.place}}', '{{event.date}}', 'fb');" ng:click="_gaq.push(['_trackEvent', 'share', 'facebook', event.website]);"><img src="img/fb_share.png"></a>
                 </li>
               </ul>
             </li>
