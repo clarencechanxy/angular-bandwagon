@@ -111,7 +111,7 @@ $(".subscribe").click(function() {
 searchItems = [];
 
 $.each(events, function(index, elem) {
-  if (elem.time == "-" || elem.time == "") {
+  if (elem.time == "-" || elem.time == "" || elem.time == "TBA") {
     var dateObjStr = {dateObj: Date.parse(elem.date.replace(/(..)$/, '20'+"$1"))};
   } 
   else {

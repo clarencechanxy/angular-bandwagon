@@ -27,12 +27,15 @@ function EventsListCtrl() {
 function Main() {
   this.filter = function(event) {
     var query = this.query.toLowerCase();
-    element = [event.name, event.place, event.genre, event.price, event.special].join(' ').toLowerCase();
+    element = [event.name, event.place, event.genre, event.price, event.special, event.date].join(' ').toLowerCase();
     if (this.date && event.date !== this.date) {
       return false;
     }
-    if (this.special_gig == "true") {
+    if (this.special_gig == "gig_picks") {
       return (event.special.indexOf("y")) !== -1;
+    }
+    if (this.special_gig == "non_regular") {
+      return (event.non_regular.indexOf("y")) !== -1;
     }
     if (query) {
       return (element.indexOf(query)) !== -1;
@@ -40,6 +43,7 @@ function Main() {
     return true;
   };
   this.specialGig = function(value) {
+    console.log(value);
     if (value == 'y') {
       return 'special_gig';
     }
