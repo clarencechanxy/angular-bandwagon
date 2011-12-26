@@ -159,7 +159,7 @@ nav#main ul li:hover {
 
 nav#main ul.social {
   float: right;
-  margin: 4px -9px 0;
+  margin: 4px 1px 0;
 }
 
 nav#main ul.social li:hover {
@@ -694,10 +694,13 @@ px      68    160    252    */
     padding: 6px 8px;
   }
   
-  header .special_gig_controls {
-    padding-left: 17px;
-  }
-  
+	header .special_gig_controls {
+		padding-left: 0 !important;
+		width: 270px;
+		margin: 2px auto 2px -17px !important;
+		text-align: center;
+	}
+	
   table#events {
     margin-top: 38px;
     width: 100%;
