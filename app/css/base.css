@@ -392,6 +392,11 @@ table#events tbody tr td.link .share_more ul li ul.sub_menu li.facebook {
   margin-right: 0;
 }
 
+.content .cols.in_the_press {
+  width: 450px;
+  margin-right: 0;
+}
+
 .content .cols.about_clarence blockquote {
   font-style: italic;
   font-size: 1.2em;
