@@ -142,7 +142,6 @@ function showMoreInfo(event) {
                 <li class="facebook"><a href="#fb_share" data-share-type="fb"><img src="img/fb_share.png"></a></li>\
               </ul>'
   $("header#bw").before(tpl);
-  // for handheld devices
   $(".overlay").height($(document).height());
   $("mobile.sub_menu").css('top', ($(document).height()/2));
   $(".overlay").click(function() {

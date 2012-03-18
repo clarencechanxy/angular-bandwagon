@@ -112,7 +112,8 @@ header input#search:focus {
 }
 
 header .special_gig_controls {
-  padding-left: 75px;
+  /*padding-left: 75px;*/
+  text-align: center;
   color: #666;
   font-size: 15px;
 }
@@ -582,7 +583,7 @@ px      68    160    252    344    436    528    620    712    */
   }
   
   header .special_gig_controls {
-    padding-left: 40px;
+    /*padding-left: 40px;*/
   }
   
   #calendar {
@@ -731,9 +732,9 @@ px      68    160    252    */
   }
   
 	header .special_gig_controls {
-		padding-left: 0 !important;
-		width: 270px;
-		margin: 2px auto 2px -17px !important;
+		/*padding-left: 0 !important;*/
+		width: 235px;
+		/*margin: 2px auto 2px -17px !important;*/
 		text-align: center;
 	}
 	
@@ -826,7 +827,8 @@ px      68    160    252    344    436    */
   }
   
   header .special_gig_controls {
-    padding-left: 36px;
+    width: 280px;
+    /*padding-left: 36px;*/
   }
   
   nav#main {  
