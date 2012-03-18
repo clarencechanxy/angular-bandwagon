@@ -141,7 +141,10 @@ function showMoreInfo(event) {
                 <li class="twitter"><a href="#twitter_share" data-share-type="tweet"><img src="img/tweet_share.png"></a></li>\
                 <li class="facebook"><a href="#fb_share" data-share-type="fb"><img src="img/fb_share.png"></a></li>\
               </ul>'
-  $("body").before(tpl);
+  $("header#bw").before(tpl);
+  // for handheld devices
+  $(".overlay").height($(document).height());
+  $("mobile.sub_menu").css('top', ($(document).height()/2));
   $(".overlay").click(function() {
     $(this).remove();
     $(".mobile.sub_menu").remove();
