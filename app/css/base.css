@@ -519,9 +519,9 @@ footer {
 
 .overlay {
   background-color: #000;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+/*  top: 0;
+  left: 0;*/
   width: 100%;
   height: 100%;
   opacity: .6;
@@ -861,7 +861,7 @@ px      68    160    252    344    436    */
   }
   
   #mc_embed_signup{
-    display: block;
+    display: none;
   }
   
   .ui-autocomplete {
