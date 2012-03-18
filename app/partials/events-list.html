@@ -11,11 +11,11 @@
   </thead>
   <tbody ng:controller="Main">
     <tr ng:repeat="event in events.$filter(filter).$orderBy(predicate, reverse)">
-      <td class="when" ng:click="_gaq.push(['_trackEvent', 'event', 'date', event.date]);" data-date="{{event.dateObj}}">{{event.date}} / {{event.time}}</td>
-      <td ng:click="_gaq.push(['_trackEvent', 'event', 'name', event.name]);"><img ng:class="specialGig(event.special)" title="{{event.blurp}}" src="img/star.png"/>{{event.name}}</td>
-      <td ng:click="_gaq.push(['_trackEvent', 'event', 'place', event.place])">{{event.place}}</td>
-      <td class="what" ng:click="_gaq.push(['_trackEvent', 'event', 'genre', event.genre]);">{{event.genre}}</td>
-      <td class="price" ng:click="_gaq.push(['_trackEvent', 'event', 'price', event.price]);">{{event.price}}</td> 
+      <td class="when" ng:click="_gaq.push(['_trackEvent', 'event', 'date', event.date]); mobileMoreInfo(event);" data-date="{{event.dateObj}}">{{event.date}} / {{event.time}}</td>
+      <td ng:click="_gaq.push(['_trackEvent', 'event', 'name', event.name]); mobileMoreInfo(event);"><img ng:class="specialGig(event.special)" title="{{event.blurp}}" src="img/star.png"/>{{event.name}}</td>
+      <td ng:click="_gaq.push(['_trackEvent', 'event', 'place', event.place]); mobileMoreInfo(event);">{{event.place}}</td>
+      <td class="what" ng:click="_gaq.push(['_trackEvent', 'event', 'genre', event.genre]); mobileMoreInfo(event);">{{event.genre}}</td>
+      <td class="price" ng:click="_gaq.push(['_trackEvent', 'event', 'price', event.price]); mobileMoreInfo(event);">{{event.price}}</td> 
       <td class="link">
         <section class="share_more"> 
           <ul>
@@ -44,7 +44,6 @@
 </table>
 
 <script src="http://platform.twitter.com/widgets.js"></script>
-
 <script>
 function socialShare(name, venue, date, type) {
   var title = encodeURIComponent(name);
