@@ -43,12 +43,16 @@ function Main() {
     return true;
   };
   this.specialGig = function(value) {
-    console.log(value);
     if (value == 'y') {
       return 'special_gig';
     }
     else {
       return 'regular';
+    }
+  }
+  this.mobileMoreInfo = function(event) {
+    if (window.innerWidth < 768) {
+      showMoreInfo(event);
     }
   }
 }

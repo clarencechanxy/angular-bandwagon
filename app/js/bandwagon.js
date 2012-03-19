@@ -133,4 +133,24 @@ function insertUniqueItem(value) {
   }
 }
 
+function showMoreInfo(event) {
+  var tpl = '<div class="overlay"></div>\
+              <ul class="mobile sub_menu"> \
+                <li><a href="'+event.website+'" target="_blank" ><img src="img/btn_more.png"></a></li>\
+                <li class="email"><a href="mailto:?subject='+event.name+"@"+event.place+", "+event.date+'"><img src="img/btn_email.png"></a></li>\
+                <li class="twitter"><a href="#twitter_share" data-share-type="tweet"><img src="img/tweet_share.png"></a></li>\
+                <li class="facebook"><a href="#fb_share" data-share-type="fb"><img src="img/fb_share.png"></a></li>\
+              </ul>'
+  $("header#bw").before(tpl);
+  $(".overlay").height($(document).height());
+  $("mobile.sub_menu").css('top', ($(document).height()/2));
+  $(".overlay").click(function() {
+    $(this).remove();
+    $(".mobile.sub_menu").remove();
+  });
+  $(".mobile.sub_menu li a").click(function() {
+    socialShare(event.name, event.place, event.date, $(this).data('share-type'));
+  })
+}
+
 // console.log('no of events: ' + events.length + ' | unique searchable items: ' + searchItems.length);
