@@ -178,18 +178,18 @@
       }
     });
   });
-
   
-    $(window).bind('scroll', function() {
+  $(window).bind({
+    scroll: function() {
       if (is_touch_device()) {
         $("ul.mobile.sub_menu").css("top", $(window).height()/2 + window.pageYOffset);
       }
       else {
         $("ul.mobile.sub_menu").css("top", $(window).height()/2);
       }
-    });
-  
-  $(window).load(specialGigsHighlight);
+    },
+    load: specialGigsHighlight()
+  });  
   </script>
 </body>
 </html>
