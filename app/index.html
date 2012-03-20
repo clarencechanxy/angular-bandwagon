@@ -33,7 +33,9 @@
     <h2>live music gig finder</h2>
     <input type="text" name="query" id="search" placeholder="Filter your gig search!"/>
     <section class='special_gig_controls'>
-      <a data-value='all' class='special_gig_filter'>all gigs</a> | <a data-value='non_regular' class='special_gig_filter'>non-regular gigs</a> | <a data-value='gig_picks' class='special_gig_filter'>gig picks</a>
+      <a data-value='all' class='special_gig_filter'>all gigs</a> | 
+      <a data-value='non_regular' class='special_gig_filter'>non-regular gigs</a> | 
+      <a data-value='gig_picks' class='special_gig_filter'>gig picks</a>
       <input type="hidden" value='' name="special_gig" id="special_gig">
     </section>	
   </header>
@@ -176,6 +178,17 @@
       }
     });
   });
+
+  
+    $(window).bind('scroll', function() {
+      if (is_touch_device()) {
+        $("ul.mobile.sub_menu").css("top", $(window).height()/2 + window.pageYOffset);
+      }
+      else {
+        $("ul.mobile.sub_menu").css("top", $(window).height()/2);
+      }
+    });
+  
   $(window).load(specialGigsHighlight);
   </script>
 </body>

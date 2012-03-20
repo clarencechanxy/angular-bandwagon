@@ -112,10 +112,11 @@ header input#search:focus {
 }
 
 header .special_gig_controls {
-  /*padding-left: 75px;*/
   text-align: center;
   color: #666;
   font-size: 15px;
+  width: 99%;
+  margin: 0 auto;
 }
 
 header a.special_gig_filter {
@@ -529,11 +530,11 @@ footer {
   z-index: 10;
 }
 
-ul.sub_menu.mobile {
+ul.mobile.sub_menu {
   background: url(../img/share_more.png) -6px 0 no-repeat;
-  position: absolute;
+  position: fixed;
   width: 75px;
-  top: 50%;
+  /*top: 50%;*/
   left: 50%;
   margin: -60px 0 0 -40px;
   opacity: 1 !important;
@@ -631,6 +632,10 @@ px      68    160    252    344    436    528    620    712    */
   
   #twtr-widget-1 .twtr-tweet-text {
     font-size: 90%;
+  }
+
+  #mc_embed_signup {
+    display: none;
   }
   
   table#events {
@@ -731,12 +736,9 @@ px      68    160    252    */
     padding: 6px 8px;
   }
   
-	header .special_gig_controls {
-		/*padding-left: 0 !important;*/
-		width: 235px;
-		/*margin: 2px auto 2px -17px !important;*/
-		text-align: center;
-	}
+	header .special_gig_controls .special_gig_filter {
+    font-size: 13px;
+  }
 	
   table#events {
     margin-top: 38px;
@@ -827,8 +829,11 @@ px      68    160    252    344    436    */
   }
   
   header .special_gig_controls {
-    width: 280px;
-    /*padding-left: 36px;*/
+    /*width: 280px;*/
+  }
+
+  header .special_gig_controls .special_gig_filter {
+    font-size: 14px;
   }
   
   nav#main {  
@@ -877,12 +882,13 @@ px      68    160    252    344    436    */
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
 
-/*@media 
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-device-pixel-ratio: 2) {
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   
   body {
-  
+  }
+
+  .special_gig_controls .special_gig_filter {
+    font-size: 3px;
   }
   
 }*/
