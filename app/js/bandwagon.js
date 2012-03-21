@@ -133,6 +133,10 @@ function insertUniqueItem(value) {
   }
 }
 
+function is_touch_device() {
+  return !!('ontouchstart' in window) ? 1 : 0;
+}
+
 function showMoreInfo(event) {
   var tpl = '<div class="overlay"></div>\
               <ul class="mobile sub_menu"> \
@@ -143,7 +147,14 @@ function showMoreInfo(event) {
               </ul>'
   $("header#bw").before(tpl);
   $(".overlay").height($(document).height());
-  $("mobile.sub_menu").css('top', ($(document).height()/2));
+  
+  if (is_touch_device()) {
+    $("ul.mobile.sub_menu").css("top", $(window).height()/2 + window.pageYOffset);
+  }
+  else {
+    $("ul.mobile.sub_menu").css("top", $(window).height()/2);
+  }
+
   $(".overlay").click(function() {
     $(this).remove();
     $(".mobile.sub_menu").remove();
