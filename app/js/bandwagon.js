@@ -7,7 +7,7 @@ function getCurrentPath() {
 
 dayNames = ["SUNDAY","MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
 month = ["JANUARY", "FEBRUARY", "MARCH",  "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
-short_month = ["Jan", "Feb", "Mar",  "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+short_month = ["Jan", "Feb", "Mar",  "Apr", "May", "Jun", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
 function showToday() {
   today = new Date();
