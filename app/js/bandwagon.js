@@ -161,7 +161,7 @@ function showMoreInfo(event) {
   });
   $(".mobile.sub_menu li a").click(function() {
     socialShare(event.name, event.place, event.date, $(this).data('share-type'));
-  })
+  });
 }
 
 // console.log('no of events: ' + events.length + ' | unique searchable items: ' + searchItems.length);

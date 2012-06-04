@@ -203,6 +203,7 @@ body.bandwagon.join-us nav#main li.join-us a {
 
 #calendar .controls {
   text-align: center;
+  font-size: 13px;
 }
 
 #calendar span {
@@ -606,7 +607,7 @@ px      68    160    252    344    436    528    620    712    */
   }
   
   #calendar .controls {
-    margin-top: -6px;
+    margin-top: -2px;
   }
   
   #calendar a {
